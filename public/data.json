@@ -1,0 +1,846 @@
+{
+  "nodes": [
+    {
+      "id": "personality-yajnavalkya",
+      "name": "Yajnavalkya",
+      "group": 0,
+      "val": 10,
+      "type": "personality",
+      "role": "Vedischer Weiser",
+      "bio": "Wichtiger Lehrer der Brihadaranyaka Upanishad. Formuliert Atman als reines Bewusstsein.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23b99b5d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EVedischer%20Weiser%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EYajnavalkya%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3EATM%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-patanjali",
+      "name": "Patanjali",
+      "group": 0,
+      "val": 10,
+      "type": "personality",
+      "role": "Systematiker des Yoga",
+      "bio": "Verfasser der Yoga Sutras. Systematisiert den achtgliedrigen Pfad des Yoga.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23b99b5d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3ESystematiker%20des%20Yoga%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EPatanjali%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3EYOG%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-shankara",
+      "name": "Shankara",
+      "group": 0,
+      "val": 10,
+      "type": "personality",
+      "role": "Philosoph des Advaita",
+      "bio": "Begruender des Advaita Vedanta. Lehrt Nicht-Zweiheit von Atman und Brahman.",
+      "portraitUrl": "/images/shankara.svg"
+    },
+    {
+      "id": "personality-ramana",
+      "name": "Ramana Maharshi",
+      "group": 0,
+      "val": 10,
+      "type": "personality",
+      "role": "Advaita-Lehrer",
+      "bio": "Lehrt Selbsterforschung durch die Frage \"Wer bin ich?\" ohne Ritual und Systemzwang.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23b99b5d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EAdvaita-Lehrer%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3ERamana%20Maharshi%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3EWHO%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-vivekananda",
+      "name": "Swami Vivekananda",
+      "group": 0,
+      "val": 10,
+      "type": "personality",
+      "role": "Botschafter des Vedanta",
+      "bio": "Bringt Vedanta auf das Weltparlament der Religionen und oeffnet ihn fuer den globalen Dialog.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23b99b5d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EBotschafter%20des%20Vedanta%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3ESwami%20Vivekananda%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3EVED%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-buddha",
+      "name": "Siddhartha Gautama",
+      "group": 6,
+      "val": 10,
+      "type": "personality",
+      "role": "Der Buddha",
+      "bio": "Begruender des Buddhismus. Lehrt den Mittleren Weg zwischen Askese und Genuss.",
+      "portraitUrl": "/images/buddha.jpg"
+    },
+    {
+      "id": "personality-nagarjuna",
+      "name": "Nagarjuna",
+      "group": 6,
+      "val": 10,
+      "type": "personality",
+      "role": "Philosoph der Leere",
+      "bio": "Begruendet die Madhyamaka-Schule und entwickelt die Philosophie der Leerheit.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23c89a54%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EPhilosoph%20der%20Leere%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3ENagarjuna%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3ESUN%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-thich-nhat-hanh",
+      "name": "Thich Nhat Hanh",
+      "group": 6,
+      "val": 10,
+      "type": "personality",
+      "role": "Zen-Meister",
+      "bio": "Begruendet einen engagierten Buddhismus und popularisiert Achtsamkeit als Lebenskunst.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23c89a54%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EZen-Meister%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EThich%20Nhat%20Hanh%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3EZEN%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-goenka",
+      "name": "S. N. Goenka",
+      "group": 6,
+      "val": 10,
+      "type": "personality",
+      "role": "Vipassana-Lehrer",
+      "bio": "Verbreitet die Vipassana-Meditation weltweit in 10-Tage-Retreats.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23c89a54%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EVipassana-Lehrer%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3ES.%20N.%20Goenka%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3EVIP%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-ajahn-chah",
+      "name": "Ajahn Chah",
+      "group": 6,
+      "val": 10,
+      "type": "personality",
+      "role": "Waldmönch",
+      "bio": "Praegt die moderne Theravada-Rezeption mit Einfachheit, Strenge und Humor.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23c89a54%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EWaldm%C3%B6nch%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EAjahn%20Chah%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3ETHR%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-laozi",
+      "name": "Laozi",
+      "group": 3,
+      "val": 10,
+      "type": "personality",
+      "role": "Begruender des Daoismus",
+      "bio": "Legendärer Verfasser des Daodejing. Lehrt Wu Wei und Rueckkehr zum Natuerlichen.",
+      "portraitUrl": "/images/laozi.jpg"
+    },
+    {
+      "id": "personality-zhuangzi",
+      "name": "Zhuangzi",
+      "group": 3,
+      "val": 10,
+      "type": "personality",
+      "role": "Daoistischer Philosoph",
+      "bio": "Meister der Paradoxie und der Relativierung aller Standpunkte.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%237aa061%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EDaoistischer%20Philosoph%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EZhuangzi%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3ECHI%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-zhang-sanfeng",
+      "name": "Zhang Sanfeng",
+      "group": 3,
+      "val": 10,
+      "type": "personality",
+      "role": "Legendenfigur des Taiji",
+      "bio": "Daoistischer Moench, dem die Erfindung des Taiji zugeschrieben wird.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%237aa061%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3ELegendenfigur%20des%20Taiji%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EZhang%20Sanfeng%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3ETAI%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-sokrates",
+      "name": "Sokrates",
+      "group": 9,
+      "val": 10,
+      "type": "personality",
+      "role": "Begruender der Fragekunst",
+      "bio": "Philosophiert ueber Pruefung, Gewissen und dialogische Selbsterkenntnis.",
+      "portraitUrl": "/images/sokrates.jpg"
+    },
+    {
+      "id": "personality-platon",
+      "name": "Platon",
+      "group": 9,
+      "val": 10,
+      "type": "personality",
+      "role": "Ideenphilosoph",
+      "bio": "Gruendet die Akademie und entwickelt Ideenlehre, Paideia und politische Philosophie.",
+      "portraitUrl": "/images/platon.jpg"
+    },
+    {
+      "id": "personality-aristoteles",
+      "name": "Aristoteles",
+      "group": 5,
+      "val": 10,
+      "type": "personality",
+      "role": "Systematiker",
+      "bio": "Begruendet Logik, Tugendethik und eine formale Ordnung des Wissens.",
+      "portraitUrl": "/images/aristoteles.jpg"
+    },
+    {
+      "id": "personality-heraklit",
+      "name": "Heraklit",
+      "group": 0,
+      "val": 10,
+      "type": "personality",
+      "role": "Philosoph des Werdens",
+      "bio": "Denkt Wandel, Spannung und den Logos als Grundfigur der Wirklichkeit.",
+      "portraitUrl": "/images/heraklit.jpg"
+    },
+    {
+      "id": "personality-parmenides",
+      "name": "Parmenides",
+      "group": 0,
+      "val": 10,
+      "type": "personality",
+      "role": "Philosoph des Seins",
+      "bio": "Stellt dem Wandel die These eines unveraenderlichen Seins entgegen.",
+      "portraitUrl": "/images/parmenides.jpg"
+    },
+    {
+      "id": "personality-pythagoras",
+      "name": "Pythagoras",
+      "group": 0,
+      "val": 10,
+      "type": "personality",
+      "role": "Mathematiker und Mystiker",
+      "bio": "Verbindet Zahl, Kosmos und Lebensform in einer philosophischen Gemeinschaft.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23c28c68%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EMathematiker%20und%20Mystiker%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EPythagoras%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3ENUM%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-seneca",
+      "name": "Seneca",
+      "group": 1,
+      "val": 10,
+      "type": "personality",
+      "role": "Stoischer Staatsmann",
+      "bio": "Verbindet stoische Lebenskunst mit politischer Verantwortung und Selbstpruefung.",
+      "portraitUrl": "/images/seneca.svg"
+    },
+    {
+      "id": "personality-aurelius",
+      "name": "Marc Aurel",
+      "group": 1,
+      "val": 10,
+      "type": "personality",
+      "role": "Philosophenkaiser",
+      "bio": "Die Selbstbetrachtungen verdichten stoische Regierung des Selbst unter den Bedingungen der Macht.",
+      "portraitUrl": "/images/aurelius.svg"
+    },
+    {
+      "id": "personality-epictet",
+      "name": "Epiktet",
+      "group": 1,
+      "val": 10,
+      "type": "personality",
+      "role": "Stoischer Lehrer",
+      "bio": "Lehrt innere Freiheit durch die Unterscheidung dessen, was in unserer Macht steht und was nicht.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23c28c68%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EStoischer%20Lehrer%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EEpiktet%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3EDISC%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-zenon",
+      "name": "Zenon von Kition",
+      "group": 1,
+      "val": 10,
+      "type": "personality",
+      "role": "Begruender der Stoa",
+      "bio": "Gruendet die Schule in der Stoa Poikile in Athen.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23c28c68%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EBegruender%20der%20Stoa%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EZenon%20von%20Kition%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3EPORT%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-augustinus",
+      "name": "Augustinus",
+      "group": 1,
+      "val": 10,
+      "type": "personality",
+      "role": "Theologe der Innerlichkeit",
+      "bio": "Denkt Erinnerung, Gnade und Rueckkehr als Wege in den inneren Raum der Wahrheit.",
+      "portraitUrl": "/images/augustinus.jpg"
+    },
+    {
+      "id": "personality-eckhart",
+      "name": "Meister Eckhart",
+      "group": 1,
+      "val": 10,
+      "type": "personality",
+      "role": "Mystiker und Theologe",
+      "bio": "Lehrt Gelassenheit als Loslassen aller Bilder, selbst der Bilder von Gott.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23b48bc9%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EMystiker%20und%20Theologe%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EMeister%20Eckhart%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3EVOID%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-teresa",
+      "name": "Teresa von Avila",
+      "group": 1,
+      "val": 10,
+      "type": "personality",
+      "role": "Mystikerin und Reformerin",
+      "bio": "Beschreibt die Wohnungen der Seele als Stufen einer inneren Verwandlung.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23b48bc9%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EMystikerin%20und%20Reformerin%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3ETeresa%20von%20Avila%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3ESOUL%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-hildegard",
+      "name": "Hildegard von Bingen",
+      "group": 1,
+      "val": 10,
+      "type": "personality",
+      "role": "Visionaerin",
+      "bio": "Verbindet Mystik, Musik, Naturbeobachtung und kosmische Bildwelten.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23b48bc9%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EVisionaerin%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EHildegard%20von%20Bingen%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3EVIS%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-merton",
+      "name": "Thomas Merton",
+      "group": 1,
+      "val": 10,
+      "type": "personality",
+      "role": "Moench und Autor",
+      "bio": "Verbindet christliche Kontemplation mit Zen und sozialem Engagement.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23b48bc9%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EMoench%20und%20Autor%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EThomas%20Merton%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3EDIAL%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-konfuzius",
+      "name": "Konfuzius",
+      "group": 2,
+      "val": 10,
+      "type": "personality",
+      "role": "Lehrer der Kultivierung",
+      "bio": "Verbindet Menschlichkeit, Ritual und Selbstformung als Grundlage guter Ordnung.",
+      "portraitUrl": "/images/konfuzios.jpg"
+    },
+    {
+      "id": "personality-mengzi",
+      "name": "Mengzi",
+      "group": 2,
+      "val": 10,
+      "type": "personality",
+      "role": "Zweiter Weiser",
+      "bio": "Lehrt die angeborene Guete des Menschen und die Keime der Tugend.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23cda25f%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EZweiter%20Weiser%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EMengzi%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3EGOOD%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-zhu-xi",
+      "name": "Zhu Xi",
+      "group": 2,
+      "val": 10,
+      "type": "personality",
+      "role": "Neo-Konfuzianer",
+      "bio": "Systematisiert den Neo-Konfuzianismus und verbindet Metaphysik mit Bildung.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23cda25f%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3ENeo-Konfuzianer%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EZhu%20Xi%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3ERITE%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-wang-yangming",
+      "name": "Wang Yangming",
+      "group": 2,
+      "val": 10,
+      "type": "personality",
+      "role": "Neo-Konfuzianer",
+      "bio": "Lehrt die Einheit von Wissen und Handeln.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23cda25f%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3ENeo-Konfuzianer%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EWang%20Yangming%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3EACT%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-plotinus",
+      "name": "Plotin",
+      "group": 5,
+      "val": 10,
+      "type": "personality",
+      "role": "Neuplatoniker",
+      "bio": "Entfaltet das Eine, den Nous und die Rueckkehr der Seele als gestufte Ontologie.",
+      "portraitUrl": "/images/plotin.jpg"
+    },
+    {
+      "id": "personality-porphyry",
+      "name": "Porphyrios",
+      "group": 5,
+      "val": 10,
+      "type": "personality",
+      "role": "Editor der Enneaden",
+      "bio": "Schueler Plotins und Herausgeber der Enneaden. Vermittelt Neuplatonismus in systematischer Form.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23a78295%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3EEditor%20der%20Enneaden%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EPorphyrios%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3EEDIT%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-proclus",
+      "name": "Proklos",
+      "group": 5,
+      "val": 10,
+      "type": "personality",
+      "role": "Neuplatonischer Systematiker",
+      "bio": "Verfeinert die gestufte Ontologie des Neuplatonismus und die Vermittlungslogik zwischen Ebenen.",
+      "portraitUrl": "data:image/svg+xml;charset=UTF-8,%0A%20%20%20%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20900%20560%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23a78295%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%231b2c3d%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22560%22%20rx%3D%2234%22%20fill%3D%22%23111821%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2224%22%20y%3D%2224%22%20width%3D%22852%22%20height%3D%22512%22%20rx%3D%2228%22%20fill%3D%22url(%23g)%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%22112%22%20fill%3D%22rgba(255%2C255%2C255%2C0.14)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22708%22%20cy%3D%22148%22%20r%3D%2270%22%20fill%3D%22rgba(255%2C255%2C255%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%2268%22%20y%3D%2286%22%20width%3D%22278%22%20height%3D%22330%22%20rx%3D%2224%22%20fill%3D%22rgba(255%2C255%2C255%2C0.12)%22%20stroke%3D%22rgba(255%2C255%2C255%2C0.28)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22194%22%20r%3D%2272%22%20fill%3D%22rgba(17%2C24%2C33%2C0.22)%22%2F%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22207%22%20cy%3D%22174%22%20r%3D%2242%22%20fill%3D%22rgba(255%2C255%2C255%2C0.30)%22%2F%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22151%22%20y%3D%22250%22%20width%3D%22112%22%20height%3D%2286%22%20rx%3D%2242%22%20fill%3D%22rgba(17%2C24%2C33%2C0.24)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22154%22%20fill%3D%22rgba(255%2C255%2C255%2C0.78)%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20letter-spacing%3D%226%22%3ENeuplatonischer%20Systematiker%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22252%22%20fill%3D%22%23fff7f9%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2266%22%20font-weight%3D%22700%22%3EProklos%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22332%22%20fill%3D%22rgba(255%2C255%2C255%2C0.88)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2226%22%3ESTEP%3C%2Ftext%3E%0A%20%20%20%20%20%20%3Crect%20x%3D%22430%22%20y%3D%22374%22%20width%3D%22270%22%20height%3D%222%22%20fill%3D%22rgba(255%2C255%2C255%2C0.42)%22%2F%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%22430%22%20y%3D%22422%22%20fill%3D%22rgba(255%2C255%2C255%2C0.82)%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2224%22%3EEpistemic%20Atlas%3C%2Ftext%3E%0A%20%20%20%20%3C%2Fsvg%3E%0A%20%20"
+    },
+    {
+      "id": "personality-descartes",
+      "name": "Descartes",
+      "group": 5,
+      "val": 10,
+      "type": "personality",
+      "role": "Methodischer Neubeginn",
+      "bio": "Begruendet den methodischen Zweifel und verschiebt Gewissheit in das denkende Ich.",
+      "portraitUrl": "/images/descartes.jpg"
+    },
+    {
+      "id": "personality-kant",
+      "name": "Immanuel Kant",
+      "group": 5,
+      "val": 10,
+      "type": "personality",
+      "role": "Kritiker der Vernunft",
+      "bio": "Untersucht die Bedingungen von Erkenntnis, Freiheit und Urteilskraft.",
+      "portraitUrl": "/images/kant.jpg"
+    },
+    {
+      "id": "personality-hegel",
+      "name": "G. W. F. Hegel",
+      "group": 5,
+      "val": 10,
+      "type": "personality",
+      "role": "Dialektiker",
+      "bio": "Denkt Geschichte, Begriff und Widerspruch als sich entfaltenden Prozess.",
+      "portraitUrl": "/images/hegel.svg"
+    },
+    {
+      "id": "personality-nietzsche",
+      "name": "Friedrich Nietzsche",
+      "group": 5,
+      "val": 10,
+      "type": "personality",
+      "role": "Genealoge der Werte",
+      "bio": "Schneidet die Herkunft moralischer Werte auf und verschiebt Denken in Kritik und Umwertung.",
+      "portraitUrl": "/images/nietzsche.jpg"
+    },
+    {
+      "id": "personality-camus",
+      "name": "Albert Camus",
+      "group": 5,
+      "val": 10,
+      "type": "personality",
+      "role": "Denker des Absurden",
+      "bio": "Verbindet Sinnkrise, Revolte und Haltung ohne metaphysische Absicherung.",
+      "portraitUrl": "/images/camus.svg"
+    },
+    {
+      "id": "shared-bridge-vedic-buddhist",
+      "name": "Buddhismus antwortet auf vedische Fragen",
+      "group": 11,
+      "val": 9,
+      "type": "bridge",
+      "summary": "Zwischen Upanishaden und Buddhismus bleibt die Frage nach Selbst, Befreiung und Übung gemeinsam, die Antwort auf das Selbst aber kippt radikal.",
+      "tensionPoints": [
+        "Atman vs. Anatta bleibt die Grundspannung dieser Brücke."
+      ],
+      "sharedMotifs": [
+        "Bewusstseinsschulung",
+        "Befreiung",
+        "Meditation als Weg"
+      ],
+      "answerDifferences": [
+        "Upanishadisch: Atman ist tragender Grund.",
+        "Buddhistisch: Kein dauerhaftes Selbst, sondern Nicht-Selbst und Vergänglichkeit."
+      ]
+    },
+    {
+      "id": "shared-bridge-daoist-zen",
+      "name": "Zen integriert daoistische Natürlichkeit",
+      "group": 11,
+      "val": 7,
+      "type": "bridge",
+      "summary": "Daoistische Natürlichkeit und buddhistische Disziplin berühren sich in Zen, ohne einfach identisch zu werden.",
+      "tensionPoints": [
+        "Zen bleibt disziplinierter und formgebundener als Daoismus."
+      ],
+      "sharedMotifs": [
+        "Natürlichkeit",
+        "Jenseits der Worte",
+        "Spontaneität"
+      ],
+      "answerDifferences": [
+        "Daoismus: Mit dem Fluss gehen.",
+        "Zen-nahe Lesart: Strenge Praxis als Weg in diese Natürlichkeit."
+      ]
+    },
+    {
+      "id": "shared-bridge-greek-stoic",
+      "name": "Griechische Philosophie wird Lebenspraxis",
+      "group": 11,
+      "val": 9,
+      "type": "bridge",
+      "summary": "Die Stoa verschiebt griechische Theoria in tägliche Übung, Affektarbeit und Selbstregierung.",
+      "tensionPoints": [
+        "Die Stoiker verdichten Philosophie stärker in Disziplin und Affektregulation."
+      ],
+      "sharedMotifs": [
+        "Logos",
+        "Tugend",
+        "Selbstprüfung"
+      ],
+      "answerDifferences": [
+        "Klassisch griechisch: Erkenntnis als Schau und Ordnung.",
+        "Stoisch: Erkenntnis als tägliche Praxis der Haltung."
+      ]
+    },
+    {
+      "id": "shared-bridge-stoic-buddhist",
+      "name": "Innere Freiheit ohne historischen Kontakt",
+      "group": 11,
+      "val": 7,
+      "type": "bridge",
+      "summary": "Stoische und buddhistische Praxis suchen beide innere Freiheit, aber aus gegensätzlichen Anthropologien heraus.",
+      "tensionPoints": [
+        "Selbstbeherrschung und Nicht-Selbst stehen quer zueinander."
+      ],
+      "sharedMotifs": [
+        "Nicht-Anhaften",
+        "Übung",
+        "Affektarbeit"
+      ],
+      "answerDifferences": [
+        "Stoa: Ein festes Selbst urteilt und übt.",
+        "Buddhismus: Das Selbst wird gerade in seiner Festigkeit durchschaut."
+      ]
+    },
+    {
+      "id": "shared-bridge-vedic-christian",
+      "name": "Einheitserfahrung in verschiedenen Rahmen",
+      "group": 11,
+      "val": 6,
+      "type": "bridge",
+      "summary": "Upanishadische Einheitserfahrung und christliche Innerlichkeit treffen sich in der Sprache des Grundes, nicht in derselben Ontologie.",
+      "tensionPoints": [
+        "Unio und Nicht-Zweiheit dürfen nicht kurzgeschlossen werden."
+      ],
+      "sharedMotifs": [
+        "Stille",
+        "Rückkehr nach innen",
+        "Nähe zum Absoluten"
+      ],
+      "answerDifferences": [
+        "Advaita: Atman und Brahman sind nicht zwei.",
+        "Christlich: Vereinigung ja, Identität von Geschöpf und Schöpfer nein."
+      ]
+    },
+    {
+      "id": "shared-bridge-greek-confucian",
+      "name": "Bildung und Tugend als Selbstkultivierung",
+      "group": 11,
+      "val": 6,
+      "type": "bridge",
+      "summary": "Griechische Tugendethik und konfuzianische Kultivierung treffen sich in der Selbstformung, aber nicht in denselben sozialen und metaphysischen Akzenten.",
+      "tensionPoints": [
+        "Konfuzianische Ethik ist relationaler und ritueller als die klassische griechische Fassung."
+      ],
+      "sharedMotifs": [
+        "Bildung",
+        "Tugend",
+        "Selbstarbeit"
+      ],
+      "answerDifferences": [
+        "Griechisch: Einsicht ins Gute und vernünftige Form.",
+        "Konfuzianisch: Beziehung, Ritual und Kultivierung im sozialen Gewebe."
+      ]
+    },
+    {
+      "id": "shared-bridge-buddhist-contemplative",
+      "name": "Buddhistische Praxis wird Forschungsgegenstand",
+      "group": 11,
+      "val": 8,
+      "type": "bridge",
+      "summary": "Meditative Verfahren wandern aus buddhistischen Kontexten in säkulare Forschung, Therapie und Bewusstseinswissenschaft.",
+      "tensionPoints": [
+        "Die säkulare Form verliert oft Pfad, Ethik und metaphysische Einbettung."
+      ],
+      "sharedMotifs": [
+        "Achtsamkeit",
+        "Trainierbarkeit des Geistes",
+        "Beobachtung"
+      ],
+      "answerDifferences": [
+        "Buddhistisch: Befreiung steht im Mittelpunkt.",
+        "Säkular: Messbarkeit, Regulation und Gesundheit rücken nach vorn."
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "personality-yajnavalkya",
+      "target": "personality-patanjali",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-yajnavalkya",
+      "target": "personality-ramana",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-yajnavalkya",
+      "target": "personality-heraklit",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-patanjali",
+      "target": "personality-vivekananda",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-patanjali",
+      "target": "personality-pythagoras",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-vivekananda",
+      "target": "personality-heraklit",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-buddha",
+      "target": "personality-thich-nhat-hanh",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-buddha",
+      "target": "personality-goenka",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-buddha",
+      "target": "personality-ajahn-chah",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-nagarjuna",
+      "target": "personality-ajahn-chah",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-goenka",
+      "target": "personality-ajahn-chah",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-laozi",
+      "target": "personality-zhuangzi",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-laozi",
+      "target": "personality-zhang-sanfeng",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-aristoteles",
+      "target": "personality-proclus",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-aristoteles",
+      "target": "personality-descartes",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-aristoteles",
+      "target": "personality-hegel",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-aristoteles",
+      "target": "personality-camus",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-seneca",
+      "target": "personality-teresa",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-seneca",
+      "target": "personality-hildegard",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-aurelius",
+      "target": "personality-epictet",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-aurelius",
+      "target": "personality-zenon",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-aurelius",
+      "target": "personality-eckhart",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-aurelius",
+      "target": "personality-teresa",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-aurelius",
+      "target": "personality-hildegard",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-epictet",
+      "target": "personality-zenon",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-epictet",
+      "target": "personality-hildegard",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-zenon",
+      "target": "personality-augustinus",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-zenon",
+      "target": "personality-eckhart",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-zenon",
+      "target": "personality-teresa",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-zenon",
+      "target": "personality-hildegard",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-augustinus",
+      "target": "personality-eckhart",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-eckhart",
+      "target": "personality-hildegard",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-teresa",
+      "target": "personality-merton",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-konfuzius",
+      "target": "personality-mengzi",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-konfuzius",
+      "target": "personality-zhu-xi",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-mengzi",
+      "target": "personality-wang-yangming",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-plotinus",
+      "target": "personality-proclus",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-plotinus",
+      "target": "personality-descartes",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-plotinus",
+      "target": "personality-nietzsche",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-porphyry",
+      "target": "personality-descartes",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-porphyry",
+      "target": "personality-hegel",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-porphyry",
+      "target": "personality-nietzsche",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-proclus",
+      "target": "personality-descartes",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-proclus",
+      "target": "personality-nietzsche",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-descartes",
+      "target": "personality-kant",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-descartes",
+      "target": "personality-camus",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-kant",
+      "target": "personality-camus",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-hegel",
+      "target": "personality-nietzsche",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-hegel",
+      "target": "personality-camus",
+      "type": "cluster",
+      "value": 2
+    },
+    {
+      "source": "personality-nietzsche",
+      "target": "personality-camus",
+      "type": "cluster",
+      "value": 2
+    }
+  ]
+}
