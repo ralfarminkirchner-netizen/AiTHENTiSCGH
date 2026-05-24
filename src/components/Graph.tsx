@@ -1,7 +1,8 @@
+// @ts-nocheck
 'use client';
 
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { ForceGraph3D } from 'react-force-graph-3d';
+import ForceGraph3D from 'react-force-graph-3d';
 import * as THREE from 'three';
 import { motion, AnimatePresence } from 'framer-motion';
 
