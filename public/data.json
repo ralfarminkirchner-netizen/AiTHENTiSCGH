@@ -1,283 +1,870 @@
 {
   "nodes": [
     {
-      "id": "yajnavalkya",
-      "name": "Yajnavalkya",
-      "type": "personality",
-      "role": "Vedischer Weiser",
-      "time": 1,
+      "id": "ent-ifs",
+      "name": "Internal Family Systems (IFS)",
+      "type": "method",
+      "cluster": "therapy",
       "val": 20,
-      "bio": "Formuliert Atman als reines Bewusstsein."
+      "time": 1
     },
     {
-      "id": "patanjali",
-      "name": "Patanjali",
-      "type": "personality",
-      "role": "Systematiker",
-      "time": 1,
+      "id": "ent-dbt",
+      "name": "Dialectical Behavior Therapy (DBT)",
+      "type": "method",
+      "cluster": "therapy",
       "val": 20,
-      "bio": "Verfasser der Yoga Sutras."
+      "time": 1
     },
     {
-      "id": "shankara",
-      "name": "Shankara",
-      "type": "personality",
-      "role": "Philosoph",
-      "time": 2,
+      "id": "ent-act",
+      "name": "Acceptance and Commitment Therapy (ACT)",
+      "type": "method",
+      "cluster": "therapy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-cbt",
+      "name": "Cognitive Behavioral Therapy (CBT)",
+      "type": "method",
+      "cluster": "therapy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-schema",
+      "name": "Schema Therapy",
+      "type": "method",
+      "cluster": "therapy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-gestalt",
+      "name": "Gestalt Therapy",
+      "type": "method",
+      "cluster": "therapy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-systemic",
+      "name": "Systemic Therapy",
+      "type": "method",
+      "cluster": "therapy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-emdr",
+      "name": "EMDR",
+      "type": "method",
+      "cluster": "therapy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-somatic",
+      "name": "Somatic Experiencing",
+      "type": "method",
+      "cluster": "therapy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-polyvagal",
+      "name": "Polyvagal Theory",
+      "type": "concept",
+      "cluster": "therapy",
+      "val": 15,
+      "time": 3
+    },
+    {
+      "id": "ent-attachment",
+      "name": "Attachment Theory",
+      "type": "concept",
+      "cluster": "therapy",
+      "val": 15,
+      "time": 3
+    },
+    {
+      "id": "ent-psychoanalysis",
+      "name": "Psychoanalysis",
+      "type": "tradition",
+      "cluster": "therapy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-psychodyn",
+      "name": "Psychodynamic Therapy",
+      "type": "tradition",
+      "cluster": "therapy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-trauma-field",
+      "name": "Trauma Therapy",
+      "type": "question_field",
+      "cluster": "therapy",
+      "val": 15,
+      "time": 3
+    },
+    {
+      "id": "ent-ns-reg",
+      "name": "Nervous System Regulation",
+      "type": "concept",
+      "cluster": "therapy",
+      "val": 15,
+      "time": 3
+    },
+    {
+      "id": "ent-platonism",
+      "name": "Platonism",
+      "type": "tradition",
+      "cluster": "philosophy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-aristotle-t",
+      "name": "Aristotelianism",
+      "type": "tradition",
+      "cluster": "philosophy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-stoicism",
+      "name": "Stoicism",
+      "type": "tradition",
+      "cluster": "philosophy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-phenomenology",
+      "name": "Phenomenology",
+      "type": "tradition",
+      "cluster": "philosophy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-existential",
+      "name": "Existential Philosophy",
+      "type": "tradition",
+      "cluster": "philosophy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-hermeneutics",
+      "name": "Hermeneutics",
+      "type": "tradition",
+      "cluster": "philosophy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-idealism",
+      "name": "German Idealism",
+      "type": "tradition",
+      "cluster": "philosophy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-process",
+      "name": "Process Philosophy",
+      "type": "tradition",
+      "cluster": "philosophy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-analytic",
+      "name": "Analytic Philosophy",
+      "type": "tradition",
+      "cluster": "philosophy",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-ontology",
+      "name": "Ontology",
+      "type": "question_field",
+      "cluster": "philosophy",
+      "val": 15,
+      "time": 3
+    },
+    {
+      "id": "ent-epistemology",
+      "name": "Epistemology",
+      "type": "question_field",
+      "cluster": "philosophy",
+      "val": 15,
+      "time": 3
+    },
+    {
+      "id": "ent-phil-mind",
+      "name": "Philosophy of Mind",
+      "type": "question_field",
+      "cluster": "philosophy",
+      "val": 15,
+      "time": 3
+    },
+    {
+      "id": "ent-nonduality",
+      "name": "Nonduality",
+      "type": "concept",
+      "cluster": "philosophy",
+      "val": 15,
+      "time": 3
+    },
+    {
+      "id": "ent-subj-obj",
+      "name": "Subject–Object Distinction",
+      "type": "axis",
+      "cluster": "philosophy",
       "val": 25,
-      "bio": "Begründer des Advaita Vedanta."
+      "time": 5
     },
     {
-      "id": "ramana",
-      "name": "Ramana Maharshi",
-      "type": "personality",
-      "role": "Lehrer",
-      "time": 3,
+      "id": "ent-id-diff",
+      "name": "Identity and Difference",
+      "type": "axis",
+      "cluster": "philosophy",
+      "val": 25,
+      "time": 5
+    },
+    {
+      "id": "ent-advaita",
+      "name": "Advaita Vedanta",
+      "type": "tradition",
+      "cluster": "spirituality",
       "val": 20,
-      "bio": "Lehrt Selbsterforschung."
+      "time": 1
     },
     {
-      "id": "vivekananda",
-      "name": "Vivekananda",
-      "type": "personality",
-      "role": "Botschafter",
-      "time": 4,
+      "id": "ent-buddhism",
+      "name": "Buddhism",
+      "type": "tradition",
+      "cluster": "spirituality",
       "val": 20,
-      "bio": "Bringt Vedanta in den Westen."
+      "time": 1
     },
     {
-      "id": "atman",
-      "name": "Atman (Self)",
-      "type": "bridge",
-      "time": 5,
+      "id": "ent-zen",
+      "name": "Zen",
+      "type": "tradition",
+      "cluster": "spirituality",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-daoism",
+      "name": "Daoism",
+      "type": "tradition",
+      "cluster": "spirituality",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-sufism",
+      "name": "Sufism",
+      "type": "tradition",
+      "cluster": "spirituality",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-chr-mystic",
+      "name": "Christian Mysticism",
+      "type": "tradition",
+      "cluster": "spirituality",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-kashmir",
+      "name": "Kashmir Shaivism",
+      "type": "tradition",
+      "cluster": "spirituality",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-yoga",
+      "name": "Yoga",
+      "type": "tradition",
+      "cluster": "spirituality",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-tantra",
+      "name": "Tantra",
+      "type": "tradition",
+      "cluster": "spirituality",
+      "val": 20,
+      "time": 1
+    },
+    {
+      "id": "ent-contemp",
+      "name": "Contemplative Practice",
+      "type": "concept",
+      "cluster": "spirituality",
       "val": 15,
-      "summary": "The true, pure self."
+      "time": 3
     },
     {
-      "id": "brahman",
-      "name": "Brahman (Reality)",
-      "type": "bridge",
-      "time": 5,
+      "id": "ent-awakening",
+      "name": "Awakening",
+      "type": "concept",
+      "cluster": "spirituality",
       "val": 15,
-      "summary": "The ultimate, unchanging reality."
+      "time": 3
     },
     {
-      "id": "purusha",
-      "name": "Purusha (Consciousness)",
-      "type": "bridge",
-      "time": 6,
+      "id": "ent-self-noself",
+      "name": "Self / No-Self",
+      "type": "axis",
+      "cluster": "spirituality",
+      "val": 25,
+      "time": 5
+    },
+    {
+      "id": "ent-unity-diff",
+      "name": "Unity / Difference",
+      "type": "axis",
+      "cluster": "spirituality",
+      "val": 25,
+      "time": 5
+    },
+    {
+      "id": "ent-trans-imm",
+      "name": "Transcendence / Immanence",
+      "type": "axis",
+      "cluster": "spirituality",
+      "val": 25,
+      "time": 5
+    },
+    {
+      "id": "ent-consciousness",
+      "name": "Consciousness",
+      "type": "concept",
+      "cluster": "philosophy",
       "val": 15,
-      "summary": "Pure consciousness in Yoga."
+      "time": 3
     },
     {
-      "id": "prakriti",
-      "name": "Prakriti (Nature)",
-      "type": "bridge",
-      "time": 6,
+      "id": "ent-self",
+      "name": "Self",
+      "type": "concept",
+      "cluster": "philosophy",
       "val": 15,
-      "summary": "The material nature."
+      "time": 3
     },
     {
-      "id": "advaita",
-      "name": "Advaita (Non-Duality)",
-      "type": "bridge",
-      "time": 7,
-      "val": 30,
-      "summary": "The concept that Atman and Brahman are one."
-    },
-    {
-      "id": "maya",
-      "name": "Maya (Illusion)",
-      "type": "bridge",
-      "time": 8,
+      "id": "ent-meaning",
+      "name": "Meaning",
+      "type": "concept",
+      "cluster": "philosophy",
       "val": 15,
-      "summary": "The cosmic illusion masking reality."
+      "time": 3
     },
     {
-      "id": "moksha",
-      "name": "Moksha (Liberation)",
-      "type": "bridge",
-      "time": 9,
+      "id": "ent-trauma",
+      "name": "Trauma",
+      "type": "concept",
+      "cluster": "therapy",
       "val": 15,
-      "summary": "Liberation from the cycle of rebirth."
+      "time": 3
     },
     {
-      "id": "tension_dualism",
-      "name": "Dualism vs Non-Dualism",
-      "type": "tension",
-      "time": 15,
-      "val": 10,
-      "tensionPoints": [
-        "Is reality one or two?",
-        "Yoga vs Vedanta"
-      ]
+      "id": "ent-attachment-c",
+      "name": "Attachment",
+      "type": "concept",
+      "cluster": "therapy",
+      "val": 15,
+      "time": 3
     },
     {
-      "id": "tension_action",
-      "name": "Action vs Renunciation",
-      "type": "tension",
-      "time": 16,
-      "val": 10,
-      "tensionPoints": [
-        "Should one act in the world or withdraw?",
-        "Karma vs Jnana"
-      ]
+      "id": "ent-regulation",
+      "name": "Regulation",
+      "type": "concept",
+      "cluster": "therapy",
+      "val": 15,
+      "time": 3
     },
     {
-      "id": "tension_illusion",
-      "name": "Reality of the World",
-      "type": "tension",
-      "time": 17,
-      "val": 10,
-      "tensionPoints": [
-        "Is the world completely illusory or a real manifestation?"
-      ]
+      "id": "ent-integration",
+      "name": "Integration",
+      "type": "concept",
+      "cluster": "therapy",
+      "val": 15,
+      "time": 3
+    },
+    {
+      "id": "ent-suffering",
+      "name": "Suffering",
+      "type": "concept",
+      "cluster": "spirituality",
+      "val": 15,
+      "time": 3
+    },
+    {
+      "id": "rel-t-01",
+      "name": "ent-schema",
+      "type": "derived_from",
+      "cluster": "ent-cbt",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-t-02",
+      "name": "ent-psychodyn",
+      "type": "derived_from",
+      "cluster": "ent-psychoanalysis",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-t-03",
+      "name": "ent-somatic",
+      "type": "part_of",
+      "cluster": "ent-trauma-field",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-t-04",
+      "name": "ent-emdr",
+      "type": "part_of",
+      "cluster": "ent-trauma-field",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-t-05",
+      "name": "ent-polyvagal",
+      "type": "derived_from",
+      "cluster": "ent-ns-reg",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-t-06",
+      "name": "ent-attachment",
+      "type": "partial_overlap",
+      "cluster": "ent-trauma-field",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-t-07",
+      "name": "ent-dbt",
+      "type": "derived_from",
+      "cluster": "ent-cbt",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-t-08",
+      "name": "ent-act",
+      "type": "contrast",
+      "cluster": "ent-cbt",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-p-01",
+      "name": "ent-platonism",
+      "type": "contrast",
+      "cluster": "ent-aristotle-t",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-p-02",
+      "name": "ent-phenomenology",
+      "type": "partial_overlap",
+      "cluster": "ent-existential",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-p-03",
+      "name": "ent-hermeneutics",
+      "type": "bridge",
+      "cluster": "ent-phenomenology",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-p-04",
+      "name": "ent-ontology",
+      "type": "partial_overlap",
+      "cluster": "ent-epistemology",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-p-05",
+      "name": "ent-phil-mind",
+      "type": "refers_to",
+      "cluster": "ent-consciousness",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-p-06",
+      "name": "ent-idealism",
+      "type": "bridge",
+      "cluster": "ent-process",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-p-07",
+      "name": "ent-analytic",
+      "type": "contrast",
+      "cluster": "ent-phenomenology",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-p-08",
+      "name": "ent-subj-obj",
+      "type": "refers_to",
+      "cluster": "ent-ontology",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-s-01",
+      "name": "ent-zen",
+      "type": "part_of",
+      "cluster": "ent-buddhism",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-s-02",
+      "name": "ent-advaita",
+      "type": "refers_to",
+      "cluster": "ent-nonduality",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-s-03",
+      "name": "ent-chr-mystic",
+      "type": "partial_overlap",
+      "cluster": "ent-sufism",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-s-04",
+      "name": "ent-yoga",
+      "type": "partial_overlap",
+      "cluster": "ent-tantra",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-s-05",
+      "name": "ent-self-noself",
+      "type": "partial_overlap",
+      "cluster": "ent-nonduality",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-s-06",
+      "name": "ent-kashmir",
+      "type": "refers_to",
+      "cluster": "ent-nonduality",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-s-07",
+      "name": "ent-contemp",
+      "type": "refers_to",
+      "cluster": "ent-awakening",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-s-08",
+      "name": "ent-unity-diff",
+      "type": "bridge",
+      "cluster": "ent-id-diff",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-x-01",
+      "name": "ent-trauma",
+      "type": "partial_overlap",
+      "cluster": "ent-regulation",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-x-02",
+      "name": "ent-consciousness",
+      "type": "bridge",
+      "cluster": "ent-nonduality",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-x-03",
+      "name": "ent-self",
+      "type": "bridge",
+      "cluster": "ent-self-noself",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-x-04",
+      "name": "ent-process",
+      "type": "bridge",
+      "cluster": "ent-daoism",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-x-05",
+      "name": "ent-integration",
+      "type": "refers_to",
+      "cluster": "ent-ifs",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-x-06",
+      "name": "ent-integration",
+      "type": "bridge",
+      "cluster": "ent-nonduality",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-x-07",
+      "name": "ent-existential",
+      "type": "bridge",
+      "cluster": "ent-suffering",
+      "val": 15,
+      "time": 2
+    },
+    {
+      "id": "rel-x-08",
+      "name": "ent-attachment-c",
+      "type": "bridge",
+      "cluster": "ent-self",
+      "val": 15,
+      "time": 2
     }
   ],
   "links": [
     {
-      "source": "yajnavalkya",
-      "target": "atman",
-      "type": "flow",
-      "time": 6
+      "source": "ent-schema",
+      "target": "ent-cbt",
+      "type": "derived_from",
+      "time": 3
     },
     {
-      "source": "yajnavalkya",
-      "target": "brahman",
-      "type": "flow",
-      "time": 6
+      "source": "ent-psychodyn",
+      "target": "ent-psychoanalysis",
+      "type": "derived_from",
+      "time": 3
     },
     {
-      "source": "shankara",
-      "target": "advaita",
-      "type": "flow",
-      "time": 8
+      "source": "ent-somatic",
+      "target": "ent-trauma-field",
+      "type": "part_of",
+      "time": 5
     },
     {
-      "source": "shankara",
-      "target": "maya",
-      "type": "flow",
-      "time": 9
+      "source": "ent-emdr",
+      "target": "ent-trauma-field",
+      "type": "part_of",
+      "time": 5
     },
     {
-      "source": "shankara",
-      "target": "moksha",
-      "type": "flow",
-      "time": 10
+      "source": "ent-polyvagal",
+      "target": "ent-ns-reg",
+      "type": "derived_from",
+      "time": 5
     },
     {
-      "source": "patanjali",
-      "target": "purusha",
-      "type": "flow",
-      "time": 8
+      "source": "ent-attachment",
+      "target": "ent-trauma-field",
+      "type": "partial_overlap",
+      "time": 5
     },
     {
-      "source": "patanjali",
-      "target": "prakriti",
-      "type": "flow",
-      "time": 8
+      "source": "ent-dbt",
+      "target": "ent-cbt",
+      "type": "derived_from",
+      "time": 3
     },
     {
-      "source": "patanjali",
-      "target": "moksha",
-      "type": "flow",
-      "time": 10
+      "source": "ent-act",
+      "target": "ent-cbt",
+      "type": "contrast",
+      "time": 3
     },
     {
-      "source": "ramana",
-      "target": "atman",
-      "type": "flow",
-      "time": 11
+      "source": "ent-platonism",
+      "target": "ent-aristotle-t",
+      "type": "contrast",
+      "time": 3
     },
     {
-      "source": "ramana",
-      "target": "advaita",
-      "type": "flow",
-      "time": 12
+      "source": "ent-phenomenology",
+      "target": "ent-existential",
+      "type": "partial_overlap",
+      "time": 3
     },
     {
-      "source": "vivekananda",
-      "target": "advaita",
-      "type": "flow",
-      "time": 13
-    },
-    {
-      "source": "atman",
-      "target": "brahman",
+      "source": "ent-hermeneutics",
+      "target": "ent-phenomenology",
       "type": "bridge",
-      "time": 14
+      "time": 3
     },
     {
-      "source": "purusha",
-      "target": "atman",
+      "source": "ent-ontology",
+      "target": "ent-epistemology",
+      "type": "partial_overlap",
+      "time": 5
+    },
+    {
+      "source": "ent-phil-mind",
+      "target": "ent-consciousness",
+      "type": "refers_to",
+      "time": 5
+    },
+    {
+      "source": "ent-idealism",
+      "target": "ent-process",
       "type": "bridge",
-      "time": 14
+      "time": 3
     },
     {
-      "source": "maya",
-      "target": "prakriti",
+      "source": "ent-analytic",
+      "target": "ent-phenomenology",
+      "type": "contrast",
+      "time": 3
+    },
+    {
+      "source": "ent-subj-obj",
+      "target": "ent-ontology",
+      "type": "refers_to",
+      "time": 7
+    },
+    {
+      "source": "ent-zen",
+      "target": "ent-buddhism",
+      "type": "part_of",
+      "time": 3
+    },
+    {
+      "source": "ent-advaita",
+      "target": "ent-nonduality",
+      "type": "refers_to",
+      "time": 5
+    },
+    {
+      "source": "ent-chr-mystic",
+      "target": "ent-sufism",
+      "type": "partial_overlap",
+      "time": 3
+    },
+    {
+      "source": "ent-yoga",
+      "target": "ent-tantra",
+      "type": "partial_overlap",
+      "time": 3
+    },
+    {
+      "source": "ent-self-noself",
+      "target": "ent-nonduality",
+      "type": "partial_overlap",
+      "time": 7
+    },
+    {
+      "source": "ent-kashmir",
+      "target": "ent-nonduality",
+      "type": "refers_to",
+      "time": 5
+    },
+    {
+      "source": "ent-contemp",
+      "target": "ent-awakening",
+      "type": "refers_to",
+      "time": 5
+    },
+    {
+      "source": "ent-unity-diff",
+      "target": "ent-id-diff",
       "type": "bridge",
-      "time": 14
+      "time": 7
     },
     {
-      "source": "advaita",
-      "target": "atman",
+      "source": "ent-trauma",
+      "target": "ent-regulation",
+      "type": "partial_overlap",
+      "time": 5
+    },
+    {
+      "source": "ent-consciousness",
+      "target": "ent-nonduality",
       "type": "bridge",
-      "time": 14
+      "time": 5
     },
     {
-      "source": "advaita",
-      "target": "brahman",
+      "source": "ent-self",
+      "target": "ent-self-noself",
       "type": "bridge",
-      "time": 14
+      "time": 7
     },
     {
-      "source": "patanjali",
-      "target": "tension_dualism",
-      "type": "tension",
-      "time": 18
+      "source": "ent-process",
+      "target": "ent-daoism",
+      "type": "bridge",
+      "time": 3
     },
     {
-      "source": "shankara",
-      "target": "tension_dualism",
-      "type": "tension",
-      "time": 18
+      "source": "ent-integration",
+      "target": "ent-ifs",
+      "type": "refers_to",
+      "time": 5
     },
     {
-      "source": "advaita",
-      "target": "tension_dualism",
-      "type": "tension",
-      "time": 18
+      "source": "ent-integration",
+      "target": "ent-nonduality",
+      "type": "bridge",
+      "time": 5
     },
     {
-      "source": "vivekananda",
-      "target": "tension_action",
-      "type": "tension",
-      "time": 19
+      "source": "ent-existential",
+      "target": "ent-suffering",
+      "type": "bridge",
+      "time": 5
     },
     {
-      "source": "ramana",
-      "target": "tension_action",
-      "type": "tension",
-      "time": 19
-    },
-    {
-      "source": "maya",
-      "target": "tension_illusion",
-      "type": "tension",
-      "time": 20
-    },
-    {
-      "source": "shankara",
-      "target": "tension_illusion",
-      "type": "tension",
-      "time": 20
-    },
-    {
-      "source": "ramana",
-      "target": "tension_illusion",
-      "type": "tension",
-      "time": 20
+      "source": "ent-attachment-c",
+      "target": "ent-self",
+      "type": "bridge",
+      "time": 5
     }
   ]
 }

@@ -74,20 +74,38 @@ export default function Graph() {
         graphData={filteredData}
         nodeThreeObject={node => {
           const sprite = new SpriteText(node.name);
-          sprite.color = node.type === 'personality' ? '#fff' : (node.type === 'bridge' ? '#00ffcc' : '#ff3366');
+          
+          // Mapping based on Spiral Mind 'entity_kind'
+          let color = '#fff';
+          let bgColor = 'rgba(185, 155, 93, 0.2)'; // default tradition/method
+          
+          if (node.type === 'concept' || node.type === 'question_field') {
+            color = '#00ffcc'; // bridge-like
+            bgColor = 'transparent';
+          } else if (node.type === 'axis') {
+            color = '#ff3366'; // tension-like
+            bgColor = 'transparent';
+          }
+          
+          sprite.color = color;
           sprite.textHeight = node.val ? node.val / 3 : 5;
-          sprite.backgroundColor = node.type === 'personality' ? 'rgba(185, 155, 93, 0.2)' : 'transparent';
+          sprite.backgroundColor = bgColor;
           sprite.padding = 2;
           sprite.borderRadius = 4;
           return sprite;
         }}
-        linkWidth={link => link.type === 'tension' ? 2 : 1}
-        linkColor={link => link.type === 'tension' ? '#ff3366' : (link.type === 'bridge' ? '#00ffcc' : '#445577')}
+        linkWidth={link => (link.type === 'contrast' || link.type === 'contradiction' || link.type === 'bridge') ? 2 : 1}
+        linkColor={link => {
+          if (link.type === 'contrast' || link.type === 'contradiction') return '#ff3366';
+          if (link.type === 'bridge' || link.type === 'partial_overlap') return '#00ffcc';
+          if (link.type === 'derived_from' || link.type === 'part_of') return '#b99b5d';
+          return '#445577';
+        }}
         linkOpacity={0.4}
-        linkDirectionalParticles={link => link.type === 'tension' ? 4 : 2}
-        linkDirectionalParticleSpeed={link => link.type === 'tension' ? 0.01 : 0.005}
+        linkDirectionalParticles={link => (link.type === 'derived_from' || link.type === 'part_of' || link.type === 'refers_to') ? 2 : 0}
+        linkDirectionalParticleSpeed={0.005}
         linkDirectionalParticleWidth={2}
-        linkDirectionalParticleColor={link => link.type === 'tension' ? '#ff3366' : '#00ffcc'}
+        linkDirectionalParticleColor={link => '#00ffcc'}
         onNodeHover={setHoverNode}
         onNodeClick={handleNodeClick}
         backgroundColor="#050508"
