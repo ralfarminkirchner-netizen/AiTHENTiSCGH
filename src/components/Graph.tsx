@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 import ForceGraph3D from 'react-force-graph-3d';
+import SpriteText from 'three-spritetext';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Graph() {
@@ -10,7 +11,7 @@ export default function Graph() {
   const fgRef = useRef();
 
   // Timeline State
-  const [maxTime, setMaxTime] = useState(100);
+  const [maxTime, setMaxTime] = useState(25);
   const [currentTime, setCurrentTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
 
@@ -71,17 +72,22 @@ export default function Graph() {
       <ForceGraph3D
         ref={fgRef}
         graphData={filteredData}
-        nodeLabel="name"
-        nodeColor={node => node.type === 'bridge' ? '#aaaaaa' : '#b99b5d'}
-        nodeRelSize={6}
-        nodeResolution={16}
+        nodeThreeObject={node => {
+          const sprite = new SpriteText(node.name);
+          sprite.color = node.type === 'personality' ? '#fff' : (node.type === 'bridge' ? '#00ffcc' : '#ff3366');
+          sprite.textHeight = node.val ? node.val / 3 : 5;
+          sprite.backgroundColor = node.type === 'personality' ? 'rgba(185, 155, 93, 0.2)' : 'transparent';
+          sprite.padding = 2;
+          sprite.borderRadius = 4;
+          return sprite;
+        }}
         linkWidth={link => link.type === 'tension' ? 2 : 1}
         linkColor={link => link.type === 'tension' ? '#ff3366' : (link.type === 'bridge' ? '#00ffcc' : '#445577')}
-        linkOpacity={0.6}
-        linkDirectionalParticles={link => link.type === 'tension' ? 4 : 0}
-        linkDirectionalParticleSpeed={link => link.type === 'tension' ? 0.01 : 0}
-        linkDirectionalParticleWidth={3}
-        linkDirectionalParticleColor={() => '#ff3366'}
+        linkOpacity={0.4}
+        linkDirectionalParticles={link => link.type === 'tension' ? 4 : 2}
+        linkDirectionalParticleSpeed={link => link.type === 'tension' ? 0.01 : 0.005}
+        linkDirectionalParticleWidth={2}
+        linkDirectionalParticleColor={link => link.type === 'tension' ? '#ff3366' : '#00ffcc'}
         onNodeHover={setHoverNode}
         onNodeClick={handleNodeClick}
         backgroundColor="#050508"
