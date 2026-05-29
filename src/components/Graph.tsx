@@ -85,7 +85,7 @@ export default function Graph() {
       </AnimatePresence>
       
       <div className="absolute top-10 left-10 pointer-events-none">
-         <h1 className="text-4xl font-serif font-bold text-white tracking-widest drop-shadow-lg">MyCeL</h1>
+         <h1 className="text-4xl font-serif font-bold text-white tracking-widest drop-shadow-lg">AiTHENTiSCGH</h1>
          <p className="text-gray-400 tracking-[0.3em] text-xs mt-2 uppercase">Knowledge Core Visualizer</p>
       </div>
     </div>
