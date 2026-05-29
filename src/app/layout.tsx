@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AiTHENTiSCGH",
-  description: "Knowledge Core Visualizer",
+  title: "MiNDCEL",
+  description: "Das mycelartige, lebendige Tensor-Netzwerk des ADHSOS-Systems",
 };
 
 export default function RootLayout({
