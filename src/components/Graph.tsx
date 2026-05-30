@@ -4,10 +4,12 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import ForceGraph3D from 'react-force-graph-3d';
 import SpriteText from 'three-spritetext';
 import { motion, AnimatePresence } from 'framer-motion';
+import * as THREE from 'three';
 
 export default function Graph() {
   const [data, setData] = useState({ nodes: [], links: [] });
   const [hoverNode, setHoverNode] = useState(null);
+  const [selectedNode, setSelectedNode] = useState(null);
   const fgRef = useRef();
 
   // Timeline State
@@ -20,12 +22,11 @@ export default function Graph() {
       .then(res => res.json())
       .then(fetchedData => {
         setData(fetchedData);
-        // Calculate max time based on the new injected time properties
         let maxT = 0;
         fetchedData.nodes.forEach(n => { if (n.time > maxT) maxT = n.time; });
         fetchedData.links.forEach(l => { if (l.time > maxT) maxT = l.time; });
         setMaxTime(maxT);
-        setCurrentTime(0); // Start empty
+        setCurrentTime(0);
       });
   }, []);
 
@@ -35,13 +36,10 @@ export default function Graph() {
     if (isPlaying && currentTime < maxTime) {
       interval = setInterval(() => {
         setCurrentTime(prev => {
-          if (prev >= maxTime) {
-            setIsPlaying(false);
-            return maxTime;
-          }
+          if (prev >= maxTime) { setIsPlaying(false); return maxTime; }
           return prev + 1;
         });
-      }, 400); // 400ms per step for organic growth speed
+      }, 500);
     } else if (currentTime >= maxTime) {
       setIsPlaying(false);
     }
@@ -49,14 +47,14 @@ export default function Graph() {
   }, [isPlaying, currentTime, maxTime]);
 
   const handleNodeClick = useCallback(node => {
+    setSelectedNode(node);
     if (fgRef.current) {
-      const distance = 40;
-      const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
-
+      const distance = 60;
+      const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
       fgRef.current.cameraPosition(
         { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio },
-        node, 
-        3000
+        node,
+        2000
       );
     }
   }, [fgRef]);
@@ -64,8 +62,10 @@ export default function Graph() {
   // Filter data based on timeline
   const filteredData = {
     nodes: data.nodes.filter(n => n.time <= currentTime),
-    links: data.links.filter(l => l.time <= currentTime)
+    links: data.links.filter(l => l.time <= currentTime),
   };
+
+  const activeNode = selectedNode || hoverNode;
 
   return (
     <div className="relative w-full h-screen bg-[#050508] overflow-hidden">
@@ -73,86 +73,104 @@ export default function Graph() {
         ref={fgRef}
         graphData={filteredData}
         nodeThreeObject={node => {
-          const sprite = new SpriteText(node.name);
-          
-          // Mapping based on Spiral Mind 'entity_kind'
-          let color = '#fff';
-          let bgColor = 'rgba(185, 155, 93, 0.2)'; // default tradition/method
-          
-          if (node.type === 'concept' || node.type === 'question_field') {
-            color = '#00ffcc'; // bridge-like
-            bgColor = 'transparent';
-          } else if (node.type === 'axis') {
-            color = '#ff3366'; // tension-like
-            bgColor = 'transparent';
+          // Small glowing sphere for every node - much faster than sprites at 1055 nodes
+          const geometry = new THREE.SphereGeometry(node.val ? Math.min(node.val / 3, 6) : 3, 10, 10);
+          const material = new THREE.MeshBasicMaterial({
+            color: node.color || '#94a3b8',
+            transparent: true,
+            opacity: node === hoverNode ? 1.0 : 0.85,
+          });
+          const sphere = new THREE.Mesh(geometry, material);
+
+          // Only render text label for hovered/selected node (performance)
+          if (node === hoverNode || node === selectedNode) {
+            const sprite = new SpriteText(node.name);
+            sprite.color = '#ffffff';
+            sprite.textHeight = 5;
+            sprite.backgroundColor = 'rgba(0,0,0,0.7)';
+            sprite.padding = 3;
+            sprite.borderRadius = 4;
+            sprite.position.y = (node.val ? Math.min(node.val / 3, 6) : 3) + 4;
+            sphere.add(sprite);
           }
-          
-          sprite.color = color;
-          sprite.textHeight = node.val ? node.val / 3 : 5;
-          sprite.backgroundColor = bgColor;
-          sprite.padding = 2;
-          sprite.borderRadius = 4;
-          return sprite;
+          return sphere;
         }}
-        linkWidth={link => (link.type === 'contrast' || link.type === 'contradiction' || link.type === 'bridge') ? 2 : 1}
-        linkColor={link => {
-          if (link.type === 'contrast' || link.type === 'contradiction') return '#ff3366';
-          if (link.type === 'bridge' || link.type === 'partial_overlap') return '#00ffcc';
-          if (link.type === 'derived_from' || link.type === 'part_of') return '#b99b5d';
-          return '#445577';
-        }}
-        linkOpacity={0.4}
-        linkDirectionalParticles={link => (link.type === 'derived_from' || link.type === 'part_of' || link.type === 'refers_to') ? 2 : 0}
-        linkDirectionalParticleSpeed={0.005}
-        linkDirectionalParticleWidth={2}
-        linkDirectionalParticleColor={link => '#00ffcc'}
+        nodeThreeObjectExtend={false}
+        linkWidth={link => link.type === 'bridge' ? 1.5 : 0.5}
+        linkColor={link => link.type === 'bridge' ? '#00ffcc' : '#1e3a5f'}
+        linkOpacity={0.3}
+        linkDirectionalParticles={link => link.type === 'bridge' ? 2 : 0}
+        linkDirectionalParticleSpeed={0.004}
+        linkDirectionalParticleWidth={1.5}
+        linkDirectionalParticleColor={() => '#00ffcc'}
         onNodeHover={setHoverNode}
         onNodeClick={handleNodeClick}
         backgroundColor="#050508"
         enableNodeDrag={false}
       />
 
+      {/* Node Info Panel */}
       <AnimatePresence>
-        {hoverNode && (
+        {activeNode && (
           <motion.div
+            key={activeNode.id}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
-            className="absolute top-10 right-10 w-80 p-6 bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl text-white shadow-2xl"
+            className="absolute top-10 right-10 w-80 bg-black/60 backdrop-blur-2xl border border-white/10 rounded-3xl text-white shadow-2xl overflow-hidden"
           >
-            {hoverNode.type === 'personality' && hoverNode.portraitUrl && (
-              <img src={hoverNode.portraitUrl} alt={hoverNode.name} className="w-full h-40 object-cover rounded-xl mb-4 border border-white/20" />
+            {/* Portrait */}
+            {activeNode.image && (
+              <img
+                src={activeNode.image}
+                alt={activeNode.name}
+                className="w-full h-44 object-cover"
+                onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
+              />
             )}
-            <h2 className="text-2xl font-serif font-bold text-[#b99b5d] mb-2">{hoverNode.name}</h2>
-            {hoverNode.role && <p className="text-sm text-gray-400 mb-4">{hoverNode.role}</p>}
-            {hoverNode.bio && <p className="text-sm leading-relaxed">{hoverNode.bio}</p>}
-            
-            {hoverNode.type === 'bridge' && (
-              <div className="space-y-4">
-                <p className="text-sm leading-relaxed">{hoverNode.summary}</p>
-                {hoverNode.tensionPoints && hoverNode.tensionPoints.length > 0 && (
-                  <div className="bg-red-500/10 border border-red-500/20 p-3 rounded-lg">
-                    <h3 className="text-red-400 text-xs font-bold uppercase tracking-wider mb-2">Tension Points</h3>
-                    <ul className="text-xs space-y-1 list-disc pl-4 text-red-200">
-                      {hoverNode.tensionPoints.map((tp, i) => <li key={i}>{tp}</li>)}
-                    </ul>
-                  </div>
-                )}
+            <div className="p-5">
+              <div
+                className="inline-block text-[10px] uppercase tracking-widest px-2 py-0.5 rounded-full mb-3 font-semibold"
+                style={{ backgroundColor: activeNode.color + '33', color: activeNode.color }}
+              >
+                {activeNode.cluster?.replace(/_/g, ' ')}
               </div>
-            )}
+              <h2 className="text-xl font-serif font-bold text-white mb-1">{activeNode.name}</h2>
+              {activeNode.year && (
+                <p className="text-sm text-gray-400">* {activeNode.year}</p>
+              )}
+              {activeNode.wordCount > 0 && (
+                <p className="text-xs text-gray-600 mt-2">{activeNode.wordCount} Wörter im Monograph</p>
+              )}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
-      
+
+      {/* Legend */}
       <div className="absolute top-10 left-10 pointer-events-none max-w-sm">
-         <h1 className="text-5xl font-serif font-bold text-white tracking-widest drop-shadow-2xl">MiNDCEL</h1>
-         <p className="text-[#b99b5d] tracking-[0.2em] text-xs mt-3 uppercase font-semibold">Das lebendige Tensor-Netzwerk</p>
-         <p className="text-gray-400 text-xs mt-2 leading-relaxed opacity-80">Das persistente, wellenerhaltende Gedächtnis der Resonanzen und Verbindungen.</p>
+        <h1 className="text-5xl font-serif font-bold text-white tracking-widest drop-shadow-2xl">MiNDCEL</h1>
+        <p className="text-[#b99b5d] tracking-[0.2em] text-xs mt-3 uppercase font-semibold">Das lebendige Tensor-Netzwerk</p>
+        <p className="text-gray-400 text-xs mt-2 leading-relaxed opacity-80">{filteredData.nodes.length} / 1055 Tensoren sichtbar</p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {[
+            { label: 'Philosophie', color: '#93c5fd' },
+            { label: 'Psychologie', color: '#fbbf24' },
+            { label: 'Spiritualität', color: '#c084fc' },
+            { label: 'Wissenschaft', color: '#60a5fa' },
+            { label: 'Synthesen', color: '#00ffcc' },
+          ].map(c => (
+            <span key={c.label} className="flex items-center gap-1 text-[10px]" style={{ color: c.color }}>
+              <span className="w-2 h-2 rounded-full" style={{ backgroundColor: c.color }} />
+              {c.label}
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* Timeline Controls */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-full max-w-2xl px-8 py-5 bg-black/40 backdrop-blur-2xl border border-white/10 rounded-3xl flex items-center gap-8 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
-        <button 
+        <button
           onClick={() => setIsPlaying(!isPlaying)}
           className="w-14 h-14 flex items-center justify-center rounded-full bg-[#b99b5d]/10 text-[#b99b5d] hover:bg-[#b99b5d]/30 hover:scale-105 transition-all border border-[#b99b5d]/40 shadow-lg"
         >
@@ -162,27 +180,31 @@ export default function Graph() {
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
           )}
         </button>
-        
+
         <div className="flex-1 flex flex-col gap-3">
           <div className="flex justify-between text-[10px] uppercase tracking-widest text-[#b99b5d] font-mono">
             <span>Genesis</span>
-            <span className="text-white">Zeit-Tensor {currentTime} / {maxTime}</span>
+            <span className="text-white">{filteredData.nodes.length} Tensoren aktiv</span>
             <span>Jetzt</span>
           </div>
-          <input 
-            type="range" 
-            min="0" 
-            max={maxTime} 
+          <input
+            type="range"
+            min="0"
+            max={maxTime}
             value={currentTime}
-            onChange={(e) => {
-              setCurrentTime(parseInt(e.target.value));
-              setIsPlaying(false);
-            }}
+            onChange={e => { setCurrentTime(parseInt(e.target.value)); setIsPlaying(false); }}
             className="w-full h-1 bg-white/10 rounded-lg appearance-none cursor-pointer accent-[#b99b5d] focus:outline-none"
           />
         </div>
       </div>
 
+      {/* Close detail panel on click outside */}
+      {selectedNode && (
+        <button
+          className="absolute inset-0 z-0"
+          onClick={() => setSelectedNode(null)}
+        />
+      )}
     </div>
   );
 }
