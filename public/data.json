@@ -28,7 +28,7 @@
     },
     {
       "id": "Bronislaw_Malinowski_monographie",
-      "name": "Bronisław Malinowski",
+      "name": "Bronis\u0142aw Malinowski",
       "type": "Anthropologie",
       "cluster": "Anthropologie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Bronislawmalinowski.jpg",
@@ -226,7 +226,7 @@
       "name": "Mary Douglas",
       "type": "Anthropologie",
       "cluster": "Anthropologie",
-      "image": "/images/Mary_Douglas_(1921–2007).jpg",
+      "image": "/images/Mary_Douglas_(1921\u20132007).jpg",
       "hasImage": true,
       "year": 1921,
       "wordCount": 1576,
@@ -314,7 +314,7 @@
     },
     {
       "id": "anthropologie_spiel_homo_ludens_monographie",
-      "name": "Anthropologie des Spiels – Homo Ludens",
+      "name": "Anthropologie des Spiels \u2013 Homo Ludens",
       "type": "Anthropologie",
       "cluster": "Anthropologie",
       "image": "/images/Christoph_Menke_(2).JPG",
@@ -327,7 +327,7 @@
     },
     {
       "id": "claude_levi_strauss_monographie",
-      "name": "Claude Lévi-Strauss",
+      "name": "Claude L\u00e9vi-Strauss",
       "type": "Anthropologie",
       "cluster": "Anthropologie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/8/80/Levi-strauss_260_%28cropped2%29.jpg",
@@ -366,16 +366,16 @@
     },
     {
       "id": "Antonio_Damasio_monographie",
-      "name": "Antonio Damasio und die Rolle von Emotionen im Bewusstsein",
-      "type": "Bewusstseinsforschung",
-      "cluster": "Bewusstseinsforschung",
-      "image": "/images/António_Damásio_no_Fronteiras_do_Pensamento_Porto_Alegre_2013_cropped.png",
+      "name": "Antonio Damasio",
+      "type": "Neurologie",
+      "cluster": "Neurologie",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Ant%C3%B3nio_Dam%C3%A1sio_no_Fronteiras_do_Pensamento_Porto_Alegre_2013_cropped.png",
       "hasImage": true,
-      "year": 1994,
-      "wordCount": 662,
+      "year": 1944,
+      "wordCount": 2041,
       "val": 12,
-      "time": 8,
-      "color": "#e879f9"
+      "time": 7,
+      "color": "#fb923c"
     },
     {
       "id": "Bernard_Baars_monographie",
@@ -393,16 +393,16 @@
     },
     {
       "id": "Christof_Koch_monographie",
-      "name": "Christof Koch und die Neurobiologie des Bewusstseins",
-      "type": "Bewusstseinsforschung",
-      "cluster": "Bewusstseinsforschung",
-      "image": "/images/Koch_TASC2008.JPG",
+      "name": "Christof Koch",
+      "type": "Neurologie",
+      "cluster": "Neurologie",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Koch_TASC2008.JPG",
       "hasImage": true,
-      "year": 9999,
-      "wordCount": 732,
+      "year": 1956,
+      "wordCount": 1278,
       "val": 12,
-      "time": 8,
-      "color": "#e879f9"
+      "time": 7,
+      "color": "#fb923c"
     },
     {
       "id": "David_Chalmers_monographie",
@@ -458,16 +458,16 @@
     },
     {
       "id": "Karl_Friston_monographie",
-      "name": "Karl Friston und das Prinzip der Freien Energie",
-      "type": "Bewusstseinsforschung",
-      "cluster": "Bewusstseinsforschung",
-      "image": "/images/800px-Flammarion_Woodcut_1888.jpg",
-      "hasImage": false,
-      "year": 9999,
-      "wordCount": 708,
-      "val": 8,
-      "time": 8,
-      "color": "#e879f9"
+      "name": "Karl Friston",
+      "type": "Neurologie",
+      "cluster": "Neurologie",
+      "image": "/images/Karl_Friston.jpg",
+      "hasImage": true,
+      "year": 1959,
+      "wordCount": 1654,
+      "val": 12,
+      "time": 7,
+      "color": "#fb923c"
     },
     {
       "id": "Ken_Wilber_monographie",
@@ -745,10 +745,10 @@
     },
     {
       "id": "Carl_von_Linne_monographie",
-      "name": "Carl von Linné",
+      "name": "Carl von Linn\u00e9",
       "type": "Biologie_und_Evolution",
       "cluster": "Biologie_und_Evolution",
-      "image": "/images/330px-Carl_von_Linné.png",
+      "image": "/images/330px-Carl_von_Linn\u00e9.png",
       "hasImage": true,
       "year": 1753,
       "wordCount": 867,
@@ -1226,7 +1226,7 @@
     },
     {
       "id": "Kuenstliche_Neuronale_Netze_monographie",
-      "name": "Künstliche Neuronale Netze",
+      "name": "K\u00fcnstliche Neuronale Netze",
       "type": "Informatik_und_KI",
       "cluster": "Informatik_und_KI",
       "image": "/images/CoDi_CA_signaling.png",
@@ -1385,7 +1385,7 @@
       "name": "Neuronale Netze und Deep Learning",
       "type": "Informatik_und_KI",
       "cluster": "Informatik_und_KI",
-      "image": "/images/Klaus-Robert_Müller_Oberwolfach_2026.jpg",
+      "image": "/images/Klaus-Robert_M\u00fcller_Oberwolfach_2026.jpg",
       "hasImage": true,
       "year": 2017,
       "wordCount": 487,
@@ -1424,7 +1424,7 @@
       "name": "Berechenbarkeit und ihre absoluten Grenzen",
       "type": "Informatik_und_KI",
       "cluster": "Informatik_und_KI",
-      "image": "/images/Flag_of_Germany_(1935–1945).svg",
+      "image": "/images/Flag_of_Germany_(1935\u20131945).svg",
       "hasImage": true,
       "year": 1931,
       "wordCount": 600,
@@ -1538,7 +1538,7 @@
     },
     {
       "id": "Gabriel_Garcia_Marquez_monographie",
-      "name": "Gabriel García Márquez",
+      "name": "Gabriel Garc\u00eda M\u00e1rquez",
       "type": "Kunst_und_Literatur",
       "cluster": "Kunst_und_Literatur",
       "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Gabriel_Garcia_Marquez.jpg",
@@ -1645,7 +1645,7 @@
       "name": "Michelangelo Buonarroti",
       "type": "Kunst_und_Literatur",
       "cluster": "Kunst_und_Literatur",
-      "image": "/images/330px-Miguel_Ángel,_por_Daniele_da_Volterra_(detalle).jpg",
+      "image": "/images/330px-Miguel_\u00c1ngel,_por_Daniele_da_Volterra_(detalle).jpg",
       "hasImage": true,
       "year": 1475,
       "wordCount": 801,
@@ -1707,7 +1707,7 @@
     },
     {
       "id": "hyperrealitaet_monographie",
-      "name": "Hyperrealität",
+      "name": "Hyperrealit\u00e4t",
       "type": "Kunst_und_Literatur",
       "cluster": "Kunst_und_Literatur",
       "image": "/images/Hyperreality_Simulation.jpg",
@@ -1720,7 +1720,7 @@
     },
     {
       "id": "intertextualitaet_monographie",
-      "name": "Intertextualität",
+      "name": "Intertextualit\u00e4t",
       "type": "Kunst_und_Literatur",
       "cluster": "Kunst_und_Literatur",
       "image": "/images/Intertextuality.jpg",
@@ -1902,7 +1902,7 @@
     },
     {
       "id": "ki_in_der_scifi_monographie",
-      "name": "Künstliche Intelligenz in der Sci-Fi",
+      "name": "K\u00fcnstliche Intelligenz in der Sci-Fi",
       "type": "Kunst_und_Literatur",
       "cluster": "Kunst_und_Literatur",
       "image": "/images/Artificial_Intelligence_SciFi.jpg",
@@ -2032,7 +2032,7 @@
     },
     {
       "id": "andre_breton_monographie",
-      "name": "André Breton",
+      "name": "Andr\u00e9 Breton",
       "type": "Kunst_und_Literatur",
       "cluster": "Kunst_und_Literatur",
       "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Andr%C3%A9_Breton.JPG",
@@ -2045,7 +2045,7 @@
     },
     {
       "id": "salvador_dali_monographie",
-      "name": "Salvador Dalí",
+      "name": "Salvador Dal\u00ed",
       "type": "Kunst_und_Literatur",
       "cluster": "Kunst_und_Literatur",
       "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Salvador_Dal%C3%AD_1939.jpg",
@@ -2162,7 +2162,7 @@
     },
     {
       "id": "kunst_des_schreibens_kafka_woolf_rilke_monographie",
-      "name": "Die Kunst des Schreibens – Eine Reflexion",
+      "name": "Die Kunst des Schreibens \u2013 Eine Reflexion",
       "type": "Kunst_und_Literatur",
       "cluster": "Kunst_und_Literatur",
       "image": "/images/Hjortheil.jpg",
@@ -2213,8 +2213,8 @@
       "color": "#2dd4bf"
     },
     {
-      "id": "Gotthard_Günther_monographie",
-      "name": "Gotthard Günther",
+      "id": "Gotthard_G\u00fcnther_monographie",
+      "name": "Gotthard G\u00fcnther",
       "type": "Kybernetik",
       "cluster": "Kybernetik",
       "image": "/images/800px-Cybernetics.jpg",
@@ -2448,7 +2448,7 @@
     },
     {
       "id": "gregory_bateson_vertiefung",
-      "name": "Gregory Bateson – Vertiefung",
+      "name": "Gregory Bateson \u2013 Vertiefung",
       "type": "Kybernetik",
       "cluster": "Kybernetik",
       "image": "/images/330px-Arnhein_and_Bateson.jpg",
@@ -2603,19 +2603,6 @@
       "color": "#fb923c"
     },
     {
-      "id": "Karl_Friston_monographie",
-      "name": "Karl Friston",
-      "type": "Neurologie",
-      "cluster": "Neurologie",
-      "image": "/images/Karl_Friston.jpg",
-      "hasImage": true,
-      "year": 1959,
-      "wordCount": 1654,
-      "val": 12,
-      "time": 7,
-      "color": "#fb923c"
-    },
-    {
       "id": "Korbinian_Brodmann_monographie",
       "name": "Korbinian Brodmann",
       "type": "Neurologie",
@@ -2689,32 +2676,6 @@
       "hasImage": true,
       "year": 1947,
       "wordCount": 2731,
-      "val": 12,
-      "time": 7,
-      "color": "#fb923c"
-    },
-    {
-      "id": "Antonio_Damasio_monographie",
-      "name": "Antonio Damasio",
-      "type": "Neurologie",
-      "cluster": "Neurologie",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Ant%C3%B3nio_Dam%C3%A1sio_no_Fronteiras_do_Pensamento_Porto_Alegre_2013_cropped.png",
-      "hasImage": true,
-      "year": 1944,
-      "wordCount": 2041,
-      "val": 12,
-      "time": 7,
-      "color": "#fb923c"
-    },
-    {
-      "id": "Christof_Koch_monographie",
-      "name": "Christof Koch",
-      "type": "Neurologie",
-      "cluster": "Neurologie",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Koch_TASC2008.JPG",
-      "hasImage": true,
-      "year": 1956,
-      "wordCount": 1278,
       "val": 12,
       "time": 7,
       "color": "#fb923c"
@@ -2916,7 +2877,7 @@
     },
     {
       "id": "Santiago_Ramon_y_Cajal_monographie",
-      "name": "Santiago Ramón y Cajal",
+      "name": "Santiago Ram\u00f3n y Cajal",
       "type": "Neurologie",
       "cluster": "Neurologie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Santiago_Ram%C3%B3n_y_Cajal_%281852-1934%29_portrait_%28restored%29.jpg",
@@ -2994,10 +2955,10 @@
     },
     {
       "id": "Alva_Noe_Action_in_Perception_monographie",
-      "name": "Alva Noë und der enaktive Ansatz der Wahrnehmung",
+      "name": "Alva No\u00eb und der enaktive Ansatz der Wahrnehmung",
       "type": "Neurowissenschaften_und_Bewusstsein",
       "cluster": "Neurowissenschaften_und_Bewusstsein",
-      "image": "/images/Alva_Noë_(3419836383).jpg",
+      "image": "/images/Alva_No\u00eb_(3419836383).jpg",
       "hasImage": true,
       "year": 2004,
       "wordCount": 658,
@@ -3072,10 +3033,10 @@
     },
     {
       "id": "Eric_Kandel_Molecular_Basis_of_Memory_monographie",
-      "name": "Eric Kandel und die molekularen Grundlagen des Gedächtnisses",
+      "name": "Eric Kandel und die molekularen Grundlagen des Ged\u00e4chtnisses",
       "type": "Neurowissenschaften_und_Bewusstsein",
       "cluster": "Neurowissenschaften_und_Bewusstsein",
-      "image": "/images/Wie_funktioniert_unser_Gedächtnis.webm",
+      "image": "/images/Wie_funktioniert_unser_Ged\u00e4chtnis.webm",
       "hasImage": true,
       "year": 9999,
       "wordCount": 618,
@@ -3098,7 +3059,7 @@
     },
     {
       "id": "Gyorgy_Buzsaki_Brain_Rhythms_monographie",
-      "name": "György Buzsáki, Gehirnrhythmen und neuronale Syntax",
+      "name": "Gy\u00f6rgy Buzs\u00e1ki, Gehirnrhythmen und neuronale Syntax",
       "type": "Neurowissenschaften_und_Bewusstsein",
       "cluster": "Neurowissenschaften_und_Bewusstsein",
       "image": "/images/800px-Hubble_Ultra_Deep_Field_part_d.jpg",
@@ -3176,7 +3137,7 @@
     },
     {
       "id": "Roger_Sperry_Hemispheric_Specialization_monographie",
-      "name": "Roger Sperry und die funktionelle Asymmetrie der Hemisphären",
+      "name": "Roger Sperry und die funktionelle Asymmetrie der Hemisph\u00e4ren",
       "type": "Neurowissenschaften_und_Bewusstsein",
       "cluster": "Neurowissenschaften_und_Bewusstsein",
       "image": "/images/Roger_Wolcott_Sperry.jpg",
@@ -3189,10 +3150,10 @@
     },
     {
       "id": "Santiago_Ramon_y_Cajal_Neuronentheorie_monographie",
-      "name": "Santiago Ramón y Cajal und die Neuronentheorie",
+      "name": "Santiago Ram\u00f3n y Cajal und die Neuronentheorie",
       "type": "Neurowissenschaften_und_Bewusstsein",
       "cluster": "Neurowissenschaften_und_Bewusstsein",
-      "image": "/images/Santiago_Ramón_y_Cajal_(1852-1934)_portrait_(restored).jpg",
+      "image": "/images/Santiago_Ram\u00f3n_y_Cajal_(1852-1934)_portrait_(restored).jpg",
       "hasImage": true,
       "year": 1852,
       "wordCount": 571,
@@ -3231,7 +3192,7 @@
       "name": "Wilder Penfield und der kortikale Homunkulus",
       "type": "Neurowissenschaften_und_Bewusstsein",
       "cluster": "Neurowissenschaften_und_Bewusstsein",
-      "image": "/images/Homunculus-Landesmuseum-Württemberg-1rhb-cr.jpg",
+      "image": "/images/Homunculus-Landesmuseum-W\u00fcrttemberg-1rhb-cr.jpg",
       "hasImage": true,
       "year": 1891,
       "wordCount": 596,
@@ -3254,7 +3215,7 @@
     },
     {
       "id": "iain_mcgilchrist_vertiefung",
-      "name": "Iain McGilchrist – Vertiefung",
+      "name": "Iain McGilchrist \u2013 Vertiefung",
       "type": "Neurowissenschaften_und_Bewusstsein",
       "cluster": "Neurowissenschaften_und_Bewusstsein",
       "image": "/images/Iain_McGilchrist.png",
@@ -3267,7 +3228,7 @@
     },
     {
       "id": "interoception_koerper_sinnesorgan_monographie",
-      "name": "Interoception – Der Körper als inneres Sinnesorgan",
+      "name": "Interoception \u2013 Der K\u00f6rper als inneres Sinnesorgan",
       "type": "Neurowissenschaften_und_Bewusstsein",
       "cluster": "Neurowissenschaften_und_Bewusstsein",
       "image": "/images/Interoception_and_the_body.png",
@@ -3306,16 +3267,16 @@
     },
     {
       "id": "stephen_porges_monographie",
-      "name": "Stephen W. Porges",
-      "type": "Neurowissenschaften_und_Bewusstsein",
-      "cluster": "Neurowissenschaften_und_Bewusstsein",
-      "image": "/images/Steve_Porges.jpg",
+      "name": "Stephen Porges",
+      "type": "Psychologie",
+      "cluster": "Psychologie",
+      "image": "https://upload.wikimedia.org/wikipedia/en/6/6b/Steve_Porges.jpg",
       "hasImage": true,
-      "year": 9999,
-      "wordCount": 448,
+      "year": 1944,
+      "wordCount": 1490,
       "val": 12,
-      "time": 7,
-      "color": "#fb923c"
+      "time": 6,
+      "color": "#fbbf24"
     },
     {
       "id": "Bertrand_Russell_monographie",
@@ -3355,7 +3316,7 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Ludwig Wittgenstein (1889–1951) is widely considered the most important philosopher of the 20th century, who not once but twice — in the early Tractatus Logico-Philosophicus (1921) and the late Philosophical Investigations (published posthumously 1953) — fundamentally changed the direction of analytic philosophy. Born in Vienna to one of Europe\\"
+      "description": "Ludwig Wittgenstein (1889\u20131951) is widely considered the most important philosopher of the 20th century, who not once but twice \u2014 in the early Tractatus Logico-Philosophicus (1921) and the late Philosophical Investigations (published posthumously 1953) \u2014 fundamentally changed the direction of analytic philosophy. Born in Vienna to one of Europe\\"
     },
     {
       "id": "Thomas_Kuhn_monographie",
@@ -3383,7 +3344,8 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Begruendet Logik, Tugendethik und eine formale Ordnung des Wissens.",
-      "role": "Systematiker"
+      "role": "Systematiker",
+      "bio": "Begruendet Logik, Tugendethik und eine formale Ordnung des Wissens."
     },
     {
       "id": "Epikur_monographie",
@@ -3411,7 +3373,8 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Denkt Wandel, Spannung und den Logos als Grundfigur der Wirklichkeit.",
-      "role": "Philosoph des Werdens"
+      "role": "Philosoph des Werdens",
+      "bio": "Denkt Wandel, Spannung und den Logos als Grundfigur der Wirklichkeit."
     },
     {
       "id": "Marcus_Aurelius_monographie",
@@ -3425,7 +3388,7 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Marcus Aurelius (121–180 CE) was Roman Emperor from 161 to 180 CE and the last of the \\"
+      "description": "Marcus Aurelius (121\u2013180 CE) was Roman Emperor from 161 to 180 CE and the last of the \\"
     },
     {
       "id": "Platon_monographie",
@@ -3440,7 +3403,8 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Gruendet die Akademie und entwickelt Ideenlehre, Paideia und politische Philosophie.",
-      "role": "Ideenphilosoph"
+      "role": "Ideenphilosoph",
+      "bio": "Gruendet die Akademie und entwickelt Ideenlehre, Paideia und politische Philosophie."
     },
     {
       "id": "Sokrates_monographie",
@@ -3455,7 +3419,8 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Philosophiert ueber Pruefung, Gewissen und dialogische Selbsterkenntnis.",
-      "role": "Begruender der Fragekunst"
+      "role": "Begruender der Fragekunst",
+      "bio": "Philosophiert ueber Pruefung, Gewissen und dialogische Selbsterkenntnis."
     },
     {
       "id": "diogenes_von_sinope_monographie",
@@ -3482,8 +3447,9 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Pythagoras of Samos (c. 570–495 BCE) is one of the most mysterious and influential figures in the history of Western thought — a philosopher, mathematician, and religious leader whose community at Croton (Southern Italy) combined rigorous mathematical investigation with mystical practice and a strict way of life (vegetarianism, silence, communal property, reincarnation belief). He wrote nothing, and all accounts of his teaching are mediated through later sources, yet his influence on Plato, Neoplatonism, and the Western intellectual tradition is incalculable. The Pythagorean theorem, though not discovered by him (it was known in Babylonian and Egyptian mathematics earlier), represents the tradition that bears his name and the insight that mathematical relations govern physical reality.\n\nPythagoras\\\n\nVerbindet Zahl, Kosmos und Lebensform in einer philosophischen Gemeinschaft.",
-      "role": "Mathematiker und Mystiker"
+      "description": "Pythagoras of Samos (c. 570\u2013495 BCE) is one of the most mysterious and influential figures in the history of Western thought \u2014 a philosopher, mathematician, and religious leader whose community at Croton (Southern Italy) combined rigorous mathematical investigation with mystical practice and a strict way of life (vegetarianism, silence, communal property, reincarnation belief). He wrote nothing, and all accounts of his teaching are mediated through later sources, yet his influence on Plato, Neoplatonism, and the Western intellectual tradition is incalculable. The Pythagorean theorem, though not discovered by him (it was known in Babylonian and Egyptian mathematics earlier), represents the tradition that bears his name and the insight that mathematical relations govern physical reality.\n\nPythagoras\\\n\nVerbindet Zahl, Kosmos und Lebensform in einer philosophischen Gemeinschaft.",
+      "role": "Mathematiker und Mystiker",
+      "bio": "Verbindet Zahl, Kosmos und Lebensform in einer philosophischen Gemeinschaft."
     },
     {
       "id": "Baruch_de_Spinoza_monographie",
@@ -3497,7 +3463,7 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Baruch (Benedictus de) Spinoza (1632–1677) is the most systematically rigorous and philosophically radical thinker of the 17th century — excommunicated from the Amsterdam Jewish community at age 23 for reasons still debated by scholars, he spent his life as a lens-grinder, in correspondence with leading European intellectuals, and composing philosophical works of extraordinary depth and compression. His Ethics (Ethica Ordine Geometrico Demonstrata, published posthumously in 1677) is written in the deductive form of Euclidean geometry: definitions, axioms, propositions, demonstrations, and corollaries — as if the nature of God, mind, and human freedom could be logically derived from self-evident starting points. This formal audacity reflects Spinoza\\"
+      "description": "Baruch (Benedictus de) Spinoza (1632\u20131677) is the most systematically rigorous and philosophically radical thinker of the 17th century \u2014 excommunicated from the Amsterdam Jewish community at age 23 for reasons still debated by scholars, he spent his life as a lens-grinder, in correspondence with leading European intellectuals, and composing philosophical works of extraordinary depth and compression. His Ethics (Ethica Ordine Geometrico Demonstrata, published posthumously in 1677) is written in the deductive form of Euclidean geometry: definitions, axioms, propositions, demonstrations, and corollaries \u2014 as if the nature of God, mind, and human freedom could be logically derived from self-evident starting points. This formal audacity reflects Spinoza\\"
     },
     {
       "id": "David_Hume_monographie",
@@ -3525,11 +3491,12 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Untersucht die Bedingungen von Erkenntnis, Freiheit und Urteilskraft.",
-      "role": "Kritiker der Vernunft"
+      "role": "Kritiker der Vernunft",
+      "bio": "Untersucht die Bedingungen von Erkenntnis, Freiheit und Urteilskraft."
     },
     {
       "id": "Rene_Descartes_monographie",
-      "name": "René Descartes",
+      "name": "Ren\u00e9 Descartes",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg",
@@ -3540,7 +3507,8 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Begruendet den methodischen Zweifel und verschiebt Gewissheit in das denkende Ich.",
-      "role": "Methodischer Neubeginn"
+      "role": "Methodischer Neubeginn",
+      "bio": "Begruendet den methodischen Zweifel und verschiebt Gewissheit in das denkende Ich."
     },
     {
       "id": "Jean_Paul_Sartre_monographie",
@@ -3554,7 +3522,7 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Jean-Paul Sartre (1905–1980) is the defining figure of French existentialism and one of the last great European public intellectuals, whose work simultaneously transformed academic philosophy, literature, political theory, and cultural life. His 1000-page Being and Nothingness (1943), written partly while a prisoner of war and in German-occupied Paris, is the comprehensive statement of his existentialist ontology. The fundamental ontological distinction is between being-in-itself (être-en-soi) — the dense, self-identical being of objects, which simply \\"
+      "description": "Jean-Paul Sartre (1905\u20131980) is the defining figure of French existentialism and one of the last great European public intellectuals, whose work simultaneously transformed academic philosophy, literature, political theory, and cultural life. His 1000-page Being and Nothingness (1943), written partly while a prisoner of war and in German-occupied Paris, is the comprehensive statement of his existentialist ontology. The fundamental ontological distinction is between being-in-itself (\u00eatre-en-soi) \u2014 the dense, self-identical being of objects, which simply \\"
     },
     {
       "id": "albert_camus_monographie",
@@ -3569,7 +3537,8 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Verbindet Sinnkrise, Revolte und Haltung ohne metaphysische Absicherung.",
-      "role": "Denker des Absurden"
+      "role": "Denker des Absurden",
+      "bio": "Verbindet Sinnkrise, Revolte und Haltung ohne metaphysische Absicherung."
     },
     {
       "id": "simone_de_beauvoir_monographie",
@@ -3585,8 +3554,8 @@
       "color": "#93c5fd"
     },
     {
-      "id": "søren_kierkegaard_monographie",
-      "name": "Søren Kierkegaard",
+      "id": "s\u00f8ren_kierkegaard_monographie",
+      "name": "S\u00f8ren Kierkegaard",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/S%C3%B8ren_Kierkegaard_%281813-1855%29_-_%28cropped%29.jpg",
@@ -3596,7 +3565,7 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Søren Kierkegaard (1813–1855) is the founding figure of existentialism and one of the most original and psychologically penetrating thinkers in the history of philosophy. Born in Copenhagen to a wealthy, deeply religious father whose personal guilt and spiritual crisis profoundly marked his son, Kierkegaard lived his entire short life (42 years) in Denmark, producing an enormous output of philosophical, theological, and psychological works under various pseudonyms as well as under his own name. His broken engagement to Regine Olsen — which he felt incapable of maintaining, perhaps due to the burden of his father\\"
+      "description": "S\u00f8ren Kierkegaard (1813\u20131855) is the founding figure of existentialism and one of the most original and psychologically penetrating thinkers in the history of philosophy. Born in Copenhagen to a wealthy, deeply religious father whose personal guilt and spiritual crisis profoundly marked his son, Kierkegaard lived his entire short life (42 years) in Denmark, producing an enormous output of philosophical, theological, and psychological works under various pseudonyms as well as under his own name. His broken engagement to Regine Olsen \u2014 which he felt incapable of maintaining, perhaps due to the burden of his father\\"
     },
     {
       "id": "Gottfried_Wilhelm_Leibniz",
@@ -3715,7 +3684,8 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Schueler Plotins und Herausgeber der Enneaden. Vermittelt Neuplatonismus in systematischer Form.",
-      "role": "Editor der Enneaden"
+      "role": "Editor der Enneaden",
+      "bio": "Schueler Plotins und Herausgeber der Enneaden. Vermittelt Neuplatonismus in systematischer Form."
     },
     {
       "id": "proklos_monographie",
@@ -3730,7 +3700,8 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Verfeinert die gestufte Ontologie des Neuplatonismus und die Vermittlungslogik zwischen Ebenen.",
-      "role": "Neuplatonischer Systematiker"
+      "role": "Neuplatonischer Systematiker",
+      "bio": "Verfeinert die gestufte Ontologie des Neuplatonismus und die Vermittlungslogik zwischen Ebenen."
     },
     {
       "id": "pseudo_dionysius_areopagita_monographie",
@@ -3758,7 +3729,8 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Entfaltet das Eine, den Nous und die Rueckkehr der Seele als gestufte Ontologie.",
-      "role": "Neuplatoniker"
+      "role": "Neuplatoniker",
+      "bio": "Entfaltet das Eine, den Nous und die Rueckkehr der Seele als gestufte Ontologie."
     },
     {
       "id": "Friedrich_Nietzsche_monographie",
@@ -3772,8 +3744,9 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Friedrich Nietzsche (1844–1900) is the most explosive and influential philosopher of the 19th century, whose radical critique of European morality, religion, and metaphysics fundamentally shaped the 20th century in philosophy, literature, psychology, and politics. Born in Röcken, Saxony, to a Lutheran pastor\\\n\nSchneidet die Herkunft moralischer Werte auf und verschiebt Denken in Kritik und Umwertung.",
-      "role": "Genealoge der Werte"
+      "description": "Friedrich Nietzsche (1844\u20131900) is the most explosive and influential philosopher of the 19th century, whose radical critique of European morality, religion, and metaphysics fundamentally shaped the 20th century in philosophy, literature, psychology, and politics. Born in R\u00f6cken, Saxony, to a Lutheran pastor\\\n\nSchneidet die Herkunft moralischer Werte auf und verschiebt Denken in Kritik und Umwertung.",
+      "role": "Genealoge der Werte",
+      "bio": "Schneidet die Herkunft moralischer Werte auf und verschiebt Denken in Kritik und Umwertung."
     },
     {
       "id": "bodhidharma_monographie",
@@ -3787,21 +3760,21 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Bodhidharma (c. 5th–6th century CE) is the semi-legendary figure credited with transmitting Chan (Zen) Buddhism from India to China and is venerated as the First Patriarch of Chan. Historical sources are sparse and conflicting; the most credible early biography dates him to arriving in China around 520 CE, during the reign of Emperor Wu of Liang. The famous anecdote of Emperor Wu asking about the merit of his Buddhist activities — \\"
+      "description": "Bodhidharma (c. 5th\u20136th century CE) is the semi-legendary figure credited with transmitting Chan (Zen) Buddhism from India to China and is venerated as the First Patriarch of Chan. Historical sources are sparse and conflicting; the most credible early biography dates him to arriving in China around 520 CE, during the reign of Emperor Wu of Liang. The famous anecdote of Emperor Wu asking about the merit of his Buddhist activities \u2014 \\"
     },
     {
       "id": "dogen_zenji_monographie",
-      "name": "Dōgen Zenji",
-      "type": "Philosophie",
-      "cluster": "Philosophie",
-      "image": "/images/Dogen_zenji.jpg",
+      "name": "Dogen Zenji",
+      "type": "Religion_und_Spiritualitaet",
+      "cluster": "Religion_und_Spiritualitaet",
+      "image": "/images/Dogen_Zenji.jpg",
       "hasImage": true,
       "year": 1200,
-      "wordCount": 956,
+      "wordCount": 2037,
       "val": 12,
-      "time": 3,
-      "color": "#93c5fd",
-      "description": "Dogen Zenji (1200–1253) is the founder of the Soto school of Zen in Japan and the most philosophically original religious thinker in Japanese history. Born into an aristocratic family, orphaned young, and deeply moved by the Buddhist question of why we must practice if Buddha-nature is already complete, he traveled to China in 1223 to study with the Chan master Rujing, under whom he achieved profound awakening through the instruction \\"
+      "time": 1,
+      "color": "#c084fc",
+      "description": "Dogen Zenji (1200\u20131253) is the founder of the Soto school of Zen in Japan and the most philosophically original religious thinker in Japanese history. Born into an aristocratic family, orphaned young, and deeply moved by the Buddhist question of why we must practice if Buddha-nature is already complete, he traveled to China in 1223 to study with the Chan master Rujing, under whom he achieved profound awakening through the instruction \\"
     },
     {
       "id": "nagarjuna_monographie",
@@ -3815,8 +3788,9 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Nagarjuna (c. 150–250 CE) is the most important Buddhist philosopher after the Buddha himself, founder of the Madhyamaka (Middle Way) school and the systematic expositor of sunyata (emptiness) as the central insight of the Mahayana. His principal work, the Mulamadhyamakakarika (Fundamental Verses on the Middle Way), systematically demonstrates through rigorous logical analysis that no dharma (phenomenon) — whether matter, mind, causality, time, space, or even the Buddha and Nirvana — possesses svabhava (inherent existence, own-being). Everything arises dependently (pratityasamutpada), which means everything is empty of intrinsic nature. This is not nihilism: Nagarjuna famously argues that emptiness itself is empty — to reify sunyata into a positive metaphysical claim is to misunderstand it.\n\nNagarjuna employed the technique of prasanga (reductio ad absurdum) with extraordinary sophistication, showing that any philosophical position that asserts inherent existence leads to internal contradictions. His targets included not only Hindu Nyaya-Vaisheshika metaphysics but also Abhidharma Buddhist positions that had reified dharmas into ultimate building-blocks of reality. The revolutionary move is the equation of sunyata with pratityasamutpada with the Middle Way itself: to say that things are empty is to say they arise dependently, which is to say they have conventional but not ultimate reality. This allows Nagarjuna to maintain the conventional validity of Buddhist ethics, practice, and the path while insisting that no entity, including the practitioner, the path, or liberation, has ultimate ontological standing.\n\nMadhyamaka spread throughout Asia in two major branches: Prasangika (Buddhapalita, Chandrakirti), which pushed the reductio method to its logical limits without any positive counter-thesis; and Svatantrika (Bhavaviveka, Kamalashila), which employed independent syllogistic reasoning alongside the reductio. In Tibet, the debate between these schools became central to the Gelug curriculum, with Tsongkhapa arguing that Chandrakirti\\\n\nBegruendet die Madhyamaka-Schule und entwickelt die Philosophie der Leerheit.",
-      "role": "Philosoph der Leere"
+      "description": "Nagarjuna (c. 150\u2013250 CE) is the most important Buddhist philosopher after the Buddha himself, founder of the Madhyamaka (Middle Way) school and the systematic expositor of sunyata (emptiness) as the central insight of the Mahayana. His principal work, the Mulamadhyamakakarika (Fundamental Verses on the Middle Way), systematically demonstrates through rigorous logical analysis that no dharma (phenomenon) \u2014 whether matter, mind, causality, time, space, or even the Buddha and Nirvana \u2014 possesses svabhava (inherent existence, own-being). Everything arises dependently (pratityasamutpada), which means everything is empty of intrinsic nature. This is not nihilism: Nagarjuna famously argues that emptiness itself is empty \u2014 to reify sunyata into a positive metaphysical claim is to misunderstand it.\n\nNagarjuna employed the technique of prasanga (reductio ad absurdum) with extraordinary sophistication, showing that any philosophical position that asserts inherent existence leads to internal contradictions. His targets included not only Hindu Nyaya-Vaisheshika metaphysics but also Abhidharma Buddhist positions that had reified dharmas into ultimate building-blocks of reality. The revolutionary move is the equation of sunyata with pratityasamutpada with the Middle Way itself: to say that things are empty is to say they arise dependently, which is to say they have conventional but not ultimate reality. This allows Nagarjuna to maintain the conventional validity of Buddhist ethics, practice, and the path while insisting that no entity, including the practitioner, the path, or liberation, has ultimate ontological standing.\n\nMadhyamaka spread throughout Asia in two major branches: Prasangika (Buddhapalita, Chandrakirti), which pushed the reductio method to its logical limits without any positive counter-thesis; and Svatantrika (Bhavaviveka, Kamalashila), which employed independent syllogistic reasoning alongside the reductio. In Tibet, the debate between these schools became central to the Gelug curriculum, with Tsongkhapa arguing that Chandrakirti\\\n\nBegruendet die Madhyamaka-Schule und entwickelt die Philosophie der Leerheit.",
+      "role": "Philosoph der Leere",
+      "bio": "Begruendet die Madhyamaka-Schule und entwickelt die Philosophie der Leerheit."
     },
     {
       "id": "paramahansa_yogananda_monographie",
@@ -3844,22 +3818,23 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Patanjali is the author of the Yoga Sutras, the most authoritative and systematic text on classical yoga, traditionally dated to between 400 BCE and 400 CE (most scholars favor c. 400 CE). Virtually nothing is known of him historically; tradition conflates him with the grammarian Patanjali who wrote the Mahabhashya commentary on Panini\\\n\nVerfasser der Yoga Sutras. Systematisiert den achtgliedrigen Pfad des Yoga.",
-      "role": "Systematiker des Yoga"
+      "role": "Systematiker des Yoga",
+      "bio": "Verfasser der Yoga Sutras. Systematisiert den achtgliedrigen Pfad des Yoga."
     },
     {
       "id": "ramana_maharshi_monographie",
-      "name": "Sri Ramana Maharshi",
-      "type": "Philosophie",
-      "cluster": "Philosophie",
-      "image": "/images/Ramana_Maharshi.jpg",
+      "name": "Ramana Maharshi",
+      "type": "Religion_und_Spiritualitaet",
+      "cluster": "Religion_und_Spiritualitaet",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sri_Ramana_Maharshi_-_Portrait_-_G._G_Welling_-_1948.jpg",
       "hasImage": true,
       "year": 1879,
-      "wordCount": 960,
+      "wordCount": 2336,
       "val": 12,
-      "time": 3,
-      "color": "#93c5fd",
-      "description": "Ramana Maharshi (1879–1950) is one of the most influential Hindu spiritual figures of the 20th century and a towering representative of the Advaita Vedanta tradition — remarkable for the combination of intellectual simplicity, radical directness, and profound inner authority of his teaching. Born Venkataraman Iyer in Tiruchuzhi, Tamil Nadu, he underwent a spontaneous and complete spiritual transformation at age sixteen without any teacher, scripture, or formal practice: overcome by what felt like an approaching death, he lay down, held himself completely rigid, imagined himself dead, and discovered with absolute certainty that the \\\n\nLehrt Selbsterforschung durch die Frage \"Wer bin ich?\" ohne Ritual und Systemzwang.",
-      "role": "Advaita-Lehrer"
+      "time": 1,
+      "color": "#c084fc",
+      "description": "Ramana Maharshi (1879\u20131950) is one of the most influential Hindu spiritual figures of the 20th century and a towering representative of the Advaita Vedanta tradition \u2014 remarkable for the combination of intellectual simplicity, radical directness, and profound inner authority of his teaching. Born Venkataraman Iyer in Tiruchuzhi, Tamil Nadu, he underwent a spontaneous and complete spiritual transformation at age sixteen without any teacher, scripture, or formal practice: overcome by what felt like an approaching death, he lay down, held himself completely rigid, imagined himself dead, and discovered with absolute certainty that the \\",
+      "bio": "Lehrt Selbsterforschung durch die Frage \"Wer bin ich?\" ohne Ritual und Systemzwang."
     },
     {
       "id": "rumi_monographie",
@@ -3876,18 +3851,18 @@
     },
     {
       "id": "thich_nhat_hanh_monographie",
-      "name": "Thich Nhat Hanh",
-      "type": "Philosophie",
-      "cluster": "Philosophie",
-      "image": "/images/Thich_Nhat_Hanh_2014.jpg",
+      "name": "Th\u00edch Nh\u1ea5t H\u1ea1nh",
+      "type": "Tradition",
+      "cluster": "Tradition",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/%E4%B8%80%E8%A1%8C%E7%A6%AA%E5%B8%AB_%E8%B6%8A%E5%8D%97%E4%BD%9B%E6%95%99%E8%87%A8%E6%BF%9F%E5%AE%97%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%8C%E4%BB%A3%E6%B3%95%E5%97%A3.jpg",
       "hasImage": true,
       "year": 1926,
-      "wordCount": 2117,
+      "wordCount": 825,
       "val": 12,
-      "time": 3,
-      "color": "#93c5fd",
-      "description": "Thich Nhat Hanh (1926–2022) is the most influential Buddhist teacher of the 20th century after the Dalai Lama, the founder of \\\n\nBegruendet einen engagierten Buddhismus und popularisiert Achtsamkeit als Lebenskunst.",
-      "role": "Zen-Meister"
+      "time": 2,
+      "color": "#a78bfa",
+      "description": "Thich Nhat Hanh (1926\u20132022) is the most influential Buddhist teacher of the 20th century after the Dalai Lama, the founder of \\",
+      "bio": "Begruendet einen engagierten Buddhismus und popularisiert Achtsamkeit als Lebenskunst."
     },
     {
       "id": "edmund_husserl_monographie",
@@ -3914,7 +3889,7 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Martin Heidegger (1889–1976) is the most influential and most controversial philosopher of the 20th century, whose Being and Time (1927) fundamentally transformed Western philosophy by reorienting the \\"
+      "description": "Martin Heidegger (1889\u20131976) is the most influential and most controversial philosopher of the 20th century, whose Being and Time (1927) fundamentally transformed Western philosophy by reorienting the \\"
     },
     {
       "id": "Gilles_Deleuze_monographie",
@@ -3983,7 +3958,7 @@
     },
     {
       "id": "juergen_habermas_monographie",
-      "name": "Jürgen Habermas",
+      "name": "J\u00fcrgen Habermas",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/JuergenHabermas_crop1.jpg",
@@ -4061,11 +4036,11 @@
       "color": "#93c5fd"
     },
     {
-      "id": "prosochē_monographie",
-      "name": "Prosochē",
+      "id": "prosoch\u0113_monographie",
+      "name": "Prosoch\u0113",
       "type": "Philosophie",
       "cluster": "Philosophie",
-      "image": "/images/Prosochē.jpg",
+      "image": "/images/Prosoch\u0113.jpg",
       "hasImage": true,
       "year": 9999,
       "wordCount": 799,
@@ -4099,7 +4074,8 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Gruendet die Schule in der Stoa Poikile in Athen.",
-      "role": "Begruender der Stoa"
+      "role": "Begruender der Stoa",
+      "bio": "Gruendet die Schule in der Stoa Poikile in Athen."
     },
     {
       "id": "epiktet_monographie",
@@ -4114,22 +4090,23 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Lehrt innere Freiheit durch die Unterscheidung dessen, was in unserer Macht steht und was nicht.",
-      "role": "Stoischer Lehrer"
+      "role": "Stoischer Lehrer",
+      "bio": "Lehrt innere Freiheit durch die Unterscheidung dessen, was in unserer Macht steht und was nicht."
     },
     {
       "id": "seneca_monographie",
-      "name": "Seneca",
+      "name": "Lucius Annaeus Seneca",
       "type": "Philosophie",
       "cluster": "Philosophie",
-      "image": "/images/Duble_herma_of_Socrates_and_Seneca_Antikensammlung_Berlin_07.jpg",
+      "image": "/images/Pseudo-Seneca_Museo_Nazionale_Napoli_inv5616_n2.jpg",
       "hasImage": true,
       "year": 9999,
-      "wordCount": 806,
+      "wordCount": 188,
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Lucius Annaeus Seneca (c. 4 BCE – 65 CE) is the most literary and psychologically sophisticated of the Roman Stoics, a paradoxical figure who combined the most demanding philosophical ideals with a life of enormous wealth, political intrigue, and moral compromise. Born in Corduba (Roman Spain) to a prosperous family, he became Rome\\\n\nVerbindet stoische Lebenskunst mit politischer Verantwortung und Selbstpruefung.",
-      "role": "Stoischer Staatsmann"
+      "description": "Lucius Annaeus Seneca (c. 4 BCE \u2013 65 CE) is the most literary and psychologically sophisticated of the Roman Stoics, a paradoxical figure who combined the most demanding philosophical ideals with a life of enormous wealth, political intrigue, and moral compromise. Born in Corduba (Roman Spain) to a prosperous family, he became Rome\\",
+      "bio": "Verbindet stoische Lebenskunst mit politischer Verantwortung und Selbstpruefung."
     },
     {
       "id": "das_simulakrum_monographie",
@@ -4185,7 +4162,7 @@
     },
     {
       "id": "ueberwachungskapitalismus_monographie",
-      "name": "Überwachungskapitalismus",
+      "name": "\u00dcberwachungskapitalismus",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "/images/Ueberwachungskapitalismus.jpg",
@@ -4224,7 +4201,7 @@
     },
     {
       "id": "adorno_horkheimer_dialektik_masterclass",
-      "name": "Dialektik der Aufklärung",
+      "name": "Dialektik der Aufkl\u00e4rung",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "/images/Adorno-horkheimer.jpg",
@@ -4273,7 +4250,7 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Alan Watts (1915–1973) is the most influential interpreter of Asian philosophy to Western audiences in the 20th century, a brilliantly gifted communicator whose books, lectures, and broadcasts introduced millions of Americans and Europeans to Zen Buddhism, Daoism, Hinduism, and Vedanta at a time when these traditions were almost unknown in the West. Born in Chislehurst, England, he developed a passion for Oriental philosophy as a teenager through the Buddhist Lodge in London, moved to the United States in 1938, was ordained as an Episcopal priest (1945–1950) before leaving the ministry, and eventually settled in the San Francisco Bay Area where he became a central figure in the countercultural spiritual milieu of the 1950s–70s. His Friday evening seminars at the American Academy of Asian Studies, his radio broadcasts on KPFA, and later his recorded talks (thousands of hours of which are freely available online) reached audiences of extraordinary breadth.\n\nWatts\\"
+      "description": "Alan Watts (1915\u20131973) is the most influential interpreter of Asian philosophy to Western audiences in the 20th century, a brilliantly gifted communicator whose books, lectures, and broadcasts introduced millions of Americans and Europeans to Zen Buddhism, Daoism, Hinduism, and Vedanta at a time when these traditions were almost unknown in the West. Born in Chislehurst, England, he developed a passion for Oriental philosophy as a teenager through the Buddhist Lodge in London, moved to the United States in 1938, was ordained as an Episcopal priest (1945\u20131950) before leaving the ministry, and eventually settled in the San Francisco Bay Area where he became a central figure in the countercultural spiritual milieu of the 1950s\u201370s. His Friday evening seminars at the American Academy of Asian Studies, his radio broadcasts on KPFA, and later his recorded talks (thousands of hours of which are freely available online) reached audiences of extraordinary breadth.\n\nWatts\\"
     },
     {
       "id": "alfred_schuler_monographie",
@@ -4290,7 +4267,7 @@
     },
     {
       "id": "alva_noe_monographie",
-      "name": "Alva Noë",
+      "name": "Alva No\u00eb",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Alva_No%C3%AB_%283419836383%29.jpg",
@@ -4332,7 +4309,7 @@
       "name": "Ambrosius Moibanus",
       "type": "Philosophie",
       "cluster": "Philosophie",
-      "image": "/images/598598_Wrocław_Katedra_Marii_Magdaleny,_epitafia_09.JPG",
+      "image": "/images/598598_Wroc\u0142aw_Katedra_Marii_Magdaleny,_epitafia_09.JPG",
       "hasImage": true,
       "year": 1494,
       "wordCount": 405,
@@ -4446,7 +4423,7 @@
     },
     {
       "id": "andreas_knoepken_monographie",
-      "name": "Andreas Knöpken",
+      "name": "Andreas Kn\u00f6pken",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "/images/Riga_Peter_church.jpg",
@@ -4524,7 +4501,7 @@
     },
     {
       "id": "andrzej_towianski_monographie",
-      "name": "Andrzej Towiański",
+      "name": "Andrzej Towia\u0144ski",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Wa%C5%84kowicz_Andrzej_Towia%C5%84ski.png",
@@ -4835,8 +4812,8 @@
       "color": "#93c5fd"
     },
     {
-      "id": "existentialismus_und_phänomenologie",
-      "name": "Existentialismus und Phänomenologie",
+      "id": "existentialismus_und_ph\u00e4nomenologie",
+      "name": "Existentialismus und Ph\u00e4nomenologie",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "/images/Jean-Paul_Sartre_FP.JPG",
@@ -4849,7 +4826,7 @@
     },
     {
       "id": "felix_guattari_monographie",
-      "name": "Félix Guattari",
+      "name": "F\u00e9lix Guattari",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/%E3%83%95%E3%82%A7%E3%83%AA%E3%83%83%E3%82%AF%E3%82%B9%E3%83%BB%E3%82%AC%E3%82%BF%E3%83%AA.jpg",
@@ -4875,7 +4852,7 @@
     },
     {
       "id": "foucault_gouvernementalitaet_selbst_vertiefung",
-      "name": "Michel Foucault – Vertiefung",
+      "name": "Michel Foucault \u2013 Vertiefung",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "/images/Photo_of_Michel_Foucault_on_1970_dustjacket_of_The_Order_of_Things.jpg",
@@ -4992,7 +4969,7 @@
     },
     {
       "id": "hannah_arendt_vertiefung",
-      "name": "Hannah Arendt – Vertiefung",
+      "name": "Hannah Arendt \u2013 Vertiefung",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "/images/Hannah_Arendt_auf_dem_1._Kulturkritikerkongress,_Barbara_Niggl_Radloff,_FM-2019-1-5-9-16_(cropped).jpg",
@@ -5016,11 +4993,12 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Denkt Geschichte, Begriff und Widerspruch als sich entfaltenden Prozess.",
-      "role": "Dialektiker"
+      "role": "Dialektiker",
+      "bio": "Denkt Geschichte, Begriff und Widerspruch als sich entfaltenden Prozess."
     },
     {
-      "id": "hegel_phaenomenologie_primärquelle",
-      "name": "Primärquelle",
+      "id": "hegel_phaenomenologie_prim\u00e4rquelle",
+      "name": "Prim\u00e4rquelle",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "/images/HasekuraBookItalian.jpg",
@@ -5072,7 +5050,7 @@
     },
     {
       "id": "jean_francois_lyotard_monographie",
-      "name": "Jean-François Lyotard",
+      "name": "Jean-Fran\u00e7ois Lyotard",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Jean-Francois_Lyotard_cropped.jpg",
@@ -5174,7 +5152,8 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Verbindet Menschlichkeit, Ritual und Selbstformung als Grundlage guter Ordnung.",
-      "role": "Lehrer der Kultivierung"
+      "role": "Lehrer der Kultivierung",
+      "bio": "Verbindet Menschlichkeit, Ritual und Selbstformung als Grundlage guter Ordnung."
     },
     {
       "id": "laozi_monographie",
@@ -5188,12 +5167,13 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Laozi (Lao Tzu, \\\n\nLegendärer Verfasser des Daodejing. Lehrt Wu Wei und Rueckkehr zum Natuerlichen.",
-      "role": "Begruender des Daoismus"
+      "description": "Laozi (Lao Tzu, \\\n\nLegend\u00e4rer Verfasser des Daodejing. Lehrt Wu Wei und Rueckkehr zum Natuerlichen.",
+      "role": "Begruender des Daoismus",
+      "bio": "Legend\u00e4rer Verfasser des Daodejing. Lehrt Wu Wei und Rueckkehr zum Natuerlichen."
     },
     {
       "id": "machiavelli_der_fuerst_masterclass",
-      "name": "Niccolò Machiavelli",
+      "name": "Niccol\u00f2 Machiavelli",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg",
@@ -5217,7 +5197,8 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Die Selbstbetrachtungen verdichten stoische Regierung des Selbst unter den Bedingungen der Macht.",
-      "role": "Philosophenkaiser"
+      "role": "Philosophenkaiser",
+      "bio": "Die Selbstbetrachtungen verdichten stoische Regierung des Selbst unter den Bedingungen der Macht."
     },
     {
       "id": "mark_aurel_monographie",
@@ -5270,7 +5251,7 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Martin Buber (1878–1965) is one of the most important Jewish thinkers of the 20th century, best known for his 1923 philosophical masterpiece I and Thou (Ich und Du), which introduced a fundamental distinction that has influenced philosophy, theology, psychology, and education worldwide. Born in Vienna and raised partly by his grandfather Solomon Buber (a renowned Midrash scholar) in Galicia after his parents\\"
+      "description": "Martin Buber (1878\u20131965) is one of the most important Jewish thinkers of the 20th century, best known for his 1923 philosophical masterpiece I and Thou (Ich und Du), which introduced a fundamental distinction that has influenced philosophy, theology, psychology, and education worldwide. Born in Vienna and raised partly by his grandfather Solomon Buber (a renowned Midrash scholar) in Galicia after his parents\\"
     },
     {
       "id": "maurice_merleau_ponty_monographie",
@@ -5310,8 +5291,9 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Meister Eckhart (c. 1260–1328) is the most philosophically radical and intellectually demanding of the Christian mystics, a Dominican friar whose Latin scholastic works and German vernacular sermons pushed the boundaries of orthodox Christian thought with an apophatic and non-dualist boldness that earned posthumous papal condemnation. Born in Hochheim (Thuringia), he held the prestigious Chair of Theology at the University of Paris (twice, an unusual distinction) and served as prior provincial of Saxony and vicar general of Bohemia. His Latin works — the Opus Tripartitum — deploy the full apparatus of scholastic philosophy in service of mystical insight; his German sermons translate this into a vernacular register that shaped the development of philosophical German prose.\n\nEckhart\\\n\nLehrt Gelassenheit als Loslassen aller Bilder, selbst der Bilder von Gott.",
-      "role": "Mystiker und Theologe"
+      "description": "Meister Eckhart (c. 1260\u20131328) is the most philosophically radical and intellectually demanding of the Christian mystics, a Dominican friar whose Latin scholastic works and German vernacular sermons pushed the boundaries of orthodox Christian thought with an apophatic and non-dualist boldness that earned posthumous papal condemnation. Born in Hochheim (Thuringia), he held the prestigious Chair of Theology at the University of Paris (twice, an unusual distinction) and served as prior provincial of Saxony and vicar general of Bohemia. His Latin works \u2014 the Opus Tripartitum \u2014 deploy the full apparatus of scholastic philosophy in service of mystical insight; his German sermons translate this into a vernacular register that shaped the development of philosophical German prose.\n\nEckhart\\\n\nLehrt Gelassenheit als Loslassen aller Bilder, selbst der Bilder von Gott.",
+      "role": "Mystiker und Theologe",
+      "bio": "Lehrt Gelassenheit als Loslassen aller Bilder, selbst der Bilder von Gott."
     },
     {
       "id": "michel_serres_monographie",
@@ -5354,7 +5336,7 @@
     },
     {
       "id": "nietzsche_ewige_wiederkehr_amor_fati_vertiefung",
-      "name": "Nietzsche – Vertiefung",
+      "name": "Nietzsche \u2013 Vertiefung",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "/images/David_-_The_Death_of_Socrates.jpg",
@@ -5391,7 +5373,8 @@
       "time": 3,
       "color": "#93c5fd",
       "description": "Stellt dem Wandel die These eines unveraenderlichen Seins entgegen.",
-      "role": "Philosoph des Seins"
+      "role": "Philosoph des Seins",
+      "bio": "Stellt dem Wandel die These eines unveraenderlichen Seins entgegen."
     },
     {
       "id": "paul_b_preciado_monographie",
@@ -5459,20 +5442,6 @@
       "color": "#93c5fd"
     },
     {
-      "id": "seneca_monographie",
-      "name": "Lucius Annaeus Seneca",
-      "type": "Philosophie",
-      "cluster": "Philosophie",
-      "image": "/images/Pseudo-Seneca_Museo_Nazionale_Napoli_inv5616_n2.jpg",
-      "hasImage": true,
-      "year": 9999,
-      "wordCount": 188,
-      "val": 12,
-      "time": 3,
-      "color": "#93c5fd",
-      "description": "Lucius Annaeus Seneca (c. 4 BCE – 65 CE) is the most literary and psychologically sophisticated of the Roman Stoics, a paradoxical figure who combined the most demanding philosophical ideals with a life of enormous wealth, political intrigue, and moral compromise. Born in Corduba (Roman Spain) to a prosperous family, he became Rome\\"
-    },
-    {
       "id": "simone_weil_monographie",
       "name": "Simone Weil",
       "type": "Philosophie",
@@ -5484,11 +5453,11 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Simone Weil (1909–1943) is one of the most singular spiritual and philosophical figures of the 20th century — a French philosopher, mystic, political activist, and saint manquée who died of self-imposed starvation (refusing to eat more than the wartime ration of occupied France) in a sanatorium in Ashford, England, at age 34. Brilliant, uncompromising, and physically fragile, she graduated first in her class at the École Normale Supérieure (ahead of Simone de Beauvoir), worked in factories to understand the condition of the working class from the inside, fought briefly in the Spanish Civil War, and underwent a series of mystical experiences that transformed her philosophical vision without leading her to formal conversion to Christianity — she declined baptism throughout her life, refusing to enter the Church while millions outside it suffered.\n\nWeil\\"
+      "description": "Simone Weil (1909\u20131943) is one of the most singular spiritual and philosophical figures of the 20th century \u2014 a French philosopher, mystic, political activist, and saint manqu\u00e9e who died of self-imposed starvation (refusing to eat more than the wartime ration of occupied France) in a sanatorium in Ashford, England, at age 34. Brilliant, uncompromising, and physically fragile, she graduated first in her class at the \u00c9cole Normale Sup\u00e9rieure (ahead of Simone de Beauvoir), worked in factories to understand the condition of the working class from the inside, fought briefly in the Spanish Civil War, and underwent a series of mystical experiences that transformed her philosophical vision without leading her to formal conversion to Christianity \u2014 she declined baptism throughout her life, refusing to enter the Church while millions outside it suffered.\n\nWeil\\"
     },
     {
       "id": "simone_weil_vertiefung",
-      "name": "Simone Weil – Vertiefung",
+      "name": "Simone Weil \u2013 Vertiefung",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "/images/Simone_Weil_04_(cropped).png",
@@ -5501,7 +5470,7 @@
     },
     {
       "id": "slavoj_zizek_monographie",
-      "name": "Slavoj Žižek",
+      "name": "Slavoj \u017di\u017eek",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Slavoj_%C5%BDi%C5%BEek_2015_%28closeup%29.jpg",
@@ -5514,7 +5483,7 @@
     },
     {
       "id": "stoizismus_marc_aurel_epiktet_monographie",
-      "name": "Stoizismus – Die Kunst des guten Lebens",
+      "name": "Stoizismus \u2013 Die Kunst des guten Lebens",
       "type": "Philosophie",
       "cluster": "Philosophie",
       "image": "/images/David_-_The_Death_of_Socrates.jpg",
@@ -5628,8 +5597,9 @@
       "val": 12,
       "time": 3,
       "color": "#93c5fd",
-      "description": "Zhuangzi (Zhuang Zhou, c. 369–286 BCE) is the second great Daoist sage and, in the judgment of many scholars, one of the greatest philosophers and literary artists in world history. A contemporary of Mencius, he reportedly served briefly as a minor official before withdrawing from public life. The text bearing his name (the Zhuangzi, or Nanhua jing) is traditionally divided into Inner Chapters (attributed to Zhuangzi himself), Outer Chapters, and Miscellaneous Chapters (later compilations). The Inner Chapters — seven essays of extraordinary philosophical depth and literary inventiveness — are among the most remarkable texts in any tradition.\n\nWhere Laozi\\\n\nMeister der Paradoxie und der Relativierung aller Standpunkte.",
-      "role": "Daoistischer Philosoph"
+      "description": "Zhuangzi (Zhuang Zhou, c. 369\u2013286 BCE) is the second great Daoist sage and, in the judgment of many scholars, one of the greatest philosophers and literary artists in world history. A contemporary of Mencius, he reportedly served briefly as a minor official before withdrawing from public life. The text bearing his name (the Zhuangzi, or Nanhua jing) is traditionally divided into Inner Chapters (attributed to Zhuangzi himself), Outer Chapters, and Miscellaneous Chapters (later compilations). The Inner Chapters \u2014 seven essays of extraordinary philosophical depth and literary inventiveness \u2014 are among the most remarkable texts in any tradition.\n\nWhere Laozi\\\n\nMeister der Paradoxie und der Relativierung aller Standpunkte.",
+      "role": "Daoistischer Philosoph",
+      "bio": "Meister der Paradoxie und der Relativierung aller Standpunkte."
     },
     {
       "id": "Bruno_Latour_monographie",
@@ -5789,7 +5759,7 @@
     },
     {
       "id": "Carl_Friedrich_Gauss_monographie",
-      "name": "Carl Friedrich Gauß",
+      "name": "Carl Friedrich Gau\u00df",
       "type": "Physik_und_Mathematik",
       "cluster": "Physik_und_Mathematik",
       "image": "/images/330px-Carl_Friedrich_Gauss.jpg",
@@ -5841,7 +5811,7 @@
     },
     {
       "id": "Henri_Poincare_monographie",
-      "name": "Henri Poincaré",
+      "name": "Henri Poincar\u00e9",
       "type": "Physik_und_Mathematik",
       "cluster": "Physik_und_Mathematik",
       "image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/PSM_V82_D416_Henri_Poincare.png",
@@ -5906,7 +5876,7 @@
     },
     {
       "id": "relativitaetstheorie_monographie",
-      "name": "Relativitätstheorie",
+      "name": "Relativit\u00e4tstheorie",
       "type": "Physik_und_Mathematik",
       "cluster": "Physik_und_Mathematik",
       "image": "/images/BBH_gravitational_lensing_of_gw150914.webm",
@@ -5919,7 +5889,7 @@
     },
     {
       "id": "unschaerferelation_monographie",
-      "name": "Unschärferelation",
+      "name": "Unsch\u00e4rferelation",
       "type": "Physik_und_Mathematik",
       "cluster": "Physik_und_Mathematik",
       "image": "/images/Uncertainty_Principle.jpg",
@@ -5945,7 +5915,7 @@
     },
     {
       "id": "kurt_goedel_monographie",
-      "name": "Kurt Gödel",
+      "name": "Kurt G\u00f6del",
       "type": "Physik_und_Mathematik",
       "cluster": "Physik_und_Mathematik",
       "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Kurt_g%C3%B6del.jpg",
@@ -6010,7 +5980,7 @@
     },
     {
       "id": "erwin_schroedinger_monographie",
-      "name": "Erwin Schrödinger",
+      "name": "Erwin Schr\u00f6dinger",
       "type": "Physik_und_Mathematik",
       "cluster": "Physik_und_Mathematik",
       "image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Erwin_Schr%C3%B6dinger_-_Narodowe_Archiwum_Cyfrowe_%281-E-939%29.jpg",
@@ -6114,16 +6084,16 @@
     },
     {
       "id": "benoit_mandelbrot_monographie",
-      "name": "Benoit Mandelbrot",
-      "type": "Physik_und_Mathematik",
-      "cluster": "Physik_und_Mathematik",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Benoit_Mandelbrot%2C_TED_2010_%283x4_cropped%29.jpg",
+      "name": "Beno\u00eet Mandelbrot",
+      "type": "Wissenschaft",
+      "cluster": "Wissenschaft",
+      "image": "/images/Benoit_Mandelbrot_mg_1804.jpg",
       "hasImage": true,
       "year": 1924,
-      "wordCount": 527,
+      "wordCount": 866,
       "val": 12,
-      "time": 9,
-      "color": "#38bdf8"
+      "time": 11,
+      "color": "#60a5fa"
     },
     {
       "id": "david_bohm_monographie",
@@ -6166,7 +6136,7 @@
     },
     {
       "id": "mandelbrot_monographie",
-      "name": "Benoît B. Mandelbrot",
+      "name": "Beno\u00eet B. Mandelbrot",
       "type": "Physik_und_Mathematik",
       "cluster": "Physik_und_Mathematik",
       "image": "/images/Benoit_Mandelbrot,_TED_2010_(3x4_cropped).jpg",
@@ -6374,10 +6344,10 @@
     },
     {
       "id": "alfried_laengle_monographie",
-      "name": "Alfried Längle",
+      "name": "Alfried L\u00e4ngle",
       "type": "Psychologie",
       "cluster": "Psychologie",
-      "image": "/images/Alfried_Längle.jpg",
+      "image": "/images/Alfried_L\u00e4ngle.jpg",
       "hasImage": true,
       "year": 1951,
       "wordCount": 819,
@@ -6621,7 +6591,7 @@
     },
     {
       "id": "gabor_mate_monographie",
-      "name": "Gabor Maté",
+      "name": "Gabor Mat\u00e9",
       "type": "Psychologie",
       "cluster": "Psychologie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Gabor_Mat%C3%A9_-_01_%28cropped%29.jpeg",
@@ -6647,29 +6617,16 @@
     },
     {
       "id": "peter_levine_monographie",
-      "name": "Peter Levine",
-      "type": "Psychologie",
-      "cluster": "Psychologie",
-      "image": "/images/Peter_Levine_Psychologist.jpg",
-      "hasImage": true,
+      "name": "Peter A. Levine",
+      "type": "Traumaforschung",
+      "cluster": "Traumaforschung",
+      "image": "/images/800px-The_Scream.jpg",
+      "hasImage": false,
       "year": 1997,
-      "wordCount": 663,
-      "val": 12,
+      "wordCount": 400,
+      "val": 8,
       "time": 6,
-      "color": "#fbbf24"
-    },
-    {
-      "id": "stephen_porges_monographie",
-      "name": "Stephen Porges",
-      "type": "Psychologie",
-      "cluster": "Psychologie",
-      "image": "https://upload.wikimedia.org/wikipedia/en/6/6b/Steve_Porges.jpg",
-      "hasImage": true,
-      "year": 1944,
-      "wordCount": 1490,
-      "val": 12,
-      "time": 6,
-      "color": "#fbbf24"
+      "color": "#f87171"
     },
     {
       "id": "francine_shapiro_monographie",
@@ -6738,10 +6695,10 @@
     },
     {
       "id": "alois_buerli_monographie",
-      "name": "Alois Bürli",
+      "name": "Alois B\u00fcrli",
       "type": "Psychologie",
       "cluster": "Psychologie",
-      "image": "/images/Alois_Bürli.jpg",
+      "image": "/images/Alois_B\u00fcrli.jpg",
       "hasImage": true,
       "year": 1939,
       "wordCount": 375,
@@ -6754,7 +6711,7 @@
       "name": "Aloys Butzkamm",
       "type": "Psychologie",
       "cluster": "Psychologie",
-      "image": "/images/Bernwardstür.jpg",
+      "image": "/images/Bernwardst\u00fcr.jpg",
       "hasImage": true,
       "year": 9999,
       "wordCount": 435,
@@ -6803,7 +6760,7 @@
     },
     {
       "id": "andre_beauducel_monographie",
-      "name": "André Beauducel",
+      "name": "Andr\u00e9 Beauducel",
       "type": "Psychologie",
       "cluster": "Psychologie",
       "image": "/images/Prof._em._Dr._Werner_W._Wittmann.jpg",
@@ -6894,7 +6851,7 @@
     },
     {
       "id": "angelina_boric_monographie",
-      "name": "Angelina Borić",
+      "name": "Angelina Bori\u0107",
       "type": "Psychologie",
       "cluster": "Psychologie",
       "image": "/images/Angelina_Jolie-643531_(cropped).jpg",
@@ -6936,7 +6893,7 @@
       "name": "Anna Buchheim",
       "type": "Psychologie",
       "cluster": "Psychologie",
-      "image": "/images/Portret_van_graaf_Erwin_Frederik_Karel_van_Schönborn-Buchheim,_RP-F-2001-7-1546-33.jpg",
+      "image": "/images/Portret_van_graaf_Erwin_Frederik_Karel_van_Sch\u00f6nborn-Buchheim,_RP-F-2001-7-1546-33.jpg",
       "hasImage": true,
       "year": 1964,
       "wordCount": 448,
@@ -6972,7 +6929,7 @@
     },
     {
       "id": "anne_ancelin_schuetzenberger_monographie",
-      "name": "Anne Ancelin Schützenberger",
+      "name": "Anne Ancelin Sch\u00fctzenberger",
       "type": "Psychologie",
       "cluster": "Psychologie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Anne_Sch%C3%BCtzenberger_%28cropped%29.jpg",
@@ -6985,7 +6942,7 @@
     },
     {
       "id": "anne_boeckler_raettig_monographie",
-      "name": "Anne Böckler-Raettig",
+      "name": "Anne B\u00f6ckler-Raettig",
       "type": "Psychologie",
       "cluster": "Psychologie",
       "image": "/images/Eye_contact.jpg",
@@ -7027,7 +6984,7 @@
       "name": "Annemarie Buchholz-Kaiser",
       "type": "Psychologie",
       "cluster": "Psychologie",
-      "image": "/images/Zurich_Grossmünster.jpg",
+      "image": "/images/Zurich_Grossm\u00fcnster.jpg",
       "hasImage": true,
       "year": 1939,
       "wordCount": 401,
@@ -7089,7 +7046,7 @@
     },
     {
       "id": "arndt_broeder_monographie",
-      "name": "Arndt Bröder",
+      "name": "Arndt Br\u00f6der",
       "type": "Psychologie",
       "cluster": "Psychologie",
       "image": "/images/Cognitive_science_heptagram.svg",
@@ -7131,7 +7088,7 @@
       "name": "Arthur Aron",
       "type": "Psychologie",
       "cluster": "Psychologie",
-      "image": "/images/Heart_corazón.svg",
+      "image": "/images/Heart_coraz\u00f3n.svg",
       "hasImage": false,
       "year": 1945,
       "wordCount": 443,
@@ -7336,7 +7293,7 @@
     },
     {
       "id": "karlfried_graf_durckheim_monographie",
-      "name": "Karlfried Graf Dürckheim",
+      "name": "Karlfried Graf D\u00fcrckheim",
       "type": "Psychologie",
       "cluster": "Psychologie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Prabhupada_on_a_morning_walk_with_Baron_von_Durkheim_in_Frankfurt.jpg",
@@ -7388,7 +7345,7 @@
     },
     {
       "id": "mihaly_csikszentmihalyi_monographie",
-      "name": "Mihály Csíkszentmihályi",
+      "name": "Mih\u00e1ly Cs\u00edkszentmih\u00e1lyi",
       "type": "Psychologie",
       "cluster": "Psychologie",
       "image": "/images/Mihaly_Csikszentmihalyi.jpg",
@@ -7450,7 +7407,7 @@
       "val": 12,
       "time": 6,
       "color": "#fbbf24",
-      "description": "Ram Dass (born Richard Alpert, 1931–2019) is one of the most influential figures in the transmission of Eastern spirituality to the Western world, whose life trajectory — Harvard psychology professor, colleague of Timothy Leary in psychedelic research, spiritual seeker in India, and eventually teacher and author — traced the arc of the American spiritual counterculture from the 1960s to the 21st century. Born in Boston to a wealthy Jewish family, he received his PhD in psychology from Stanford and was appointed to Harvard\\"
+      "description": "Ram Dass (born Richard Alpert, 1931\u20132019) is one of the most influential figures in the transmission of Eastern spirituality to the Western world, whose life trajectory \u2014 Harvard psychology professor, colleague of Timothy Leary in psychedelic research, spiritual seeker in India, and eventually teacher and author \u2014 traced the arc of the American spiritual counterculture from the 1960s to the 21st century. Born in Boston to a wealthy Jewish family, he received his PhD in psychology from Stanford and was appointed to Harvard\\"
     },
     {
       "id": "steve_de_shazer_monographie",
@@ -7571,7 +7528,7 @@
     },
     {
       "id": "Georges_Lemaitre_monographie",
-      "name": "Georges Lemaître",
+      "name": "Georges Lema\u00eetre",
       "type": "Quantenphysik_und_Kosmologie",
       "cluster": "Quantenphysik_und_Kosmologie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/GLemaitre30.jpg",
@@ -7636,7 +7593,7 @@
     },
     {
       "id": "Quantenverschraenkung_monographie",
-      "name": "Quantenverschränkung",
+      "name": "Quantenverschr\u00e4nkung",
       "type": "Quantenphysik_und_Kosmologie",
       "cluster": "Quantenphysik_und_Kosmologie",
       "image": "/images/800px-Hubble_Ultra_Deep_Field_part_d.jpg",
@@ -7740,7 +7697,7 @@
     },
     {
       "id": "quantenverschraenkung_nichtlokalitaet_bohm_monographie",
-      "name": "Quantenverschränkung und Nichtlokalität",
+      "name": "Quantenverschr\u00e4nkung und Nichtlokalit\u00e4t",
       "type": "Quantenphysik_und_Kosmologie",
       "cluster": "Quantenphysik_und_Kosmologie",
       "image": "/images/David_Bohm.jpg",
@@ -7753,7 +7710,7 @@
     },
     {
       "id": "schroedingers_katze_kopenhagener_deutung_monographie",
-      "name": "Schrödingers Katze und das Messproblem",
+      "name": "Schr\u00f6dingers Katze und das Messproblem",
       "type": "Quantenphysik_und_Kosmologie",
       "cluster": "Quantenphysik_und_Kosmologie",
       "image": "/images/Schrodingers_cat.svg",
@@ -7778,8 +7735,8 @@
       "color": "#c084fc"
     },
     {
-      "id": "chögyam_trungpa_monographie",
-      "name": "Chögyam Trungpa",
+      "id": "ch\u00f6gyam_trungpa_monographie",
+      "name": "Ch\u00f6gyam Trungpa",
       "type": "Religion_und_Spiritualitaet",
       "cluster": "Religion_und_Spiritualitaet",
       "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Chogyam_Trungpa_Rinpoche.jpg",
@@ -7802,7 +7759,7 @@
       "val": 12,
       "time": 1,
       "color": "#c084fc",
-      "description": "Milarepa (c. 1052–1135) is the defining saint and most beloved figure of Tibetan Buddhism, whose extraordinary life story — from black magician who killed his enemies to one of the greatest yogis Tibet has produced — embodies the tradition\\"
+      "description": "Milarepa (c. 1052\u20131135) is the defining saint and most beloved figure of Tibetan Buddhism, whose extraordinary life story \u2014 from black magician who killed his enemies to one of the greatest yogis Tibet has produced \u2014 embodies the tradition\\"
     },
     {
       "id": "padmasambhava_monographie",
@@ -7816,20 +7773,6 @@
       "val": 12,
       "time": 1,
       "color": "#c084fc"
-    },
-    {
-      "id": "dogen_zenji_monographie",
-      "name": "Dogen Zenji",
-      "type": "Religion_und_Spiritualitaet",
-      "cluster": "Religion_und_Spiritualitaet",
-      "image": "/images/Dogen_Zenji.jpg",
-      "hasImage": true,
-      "year": 1200,
-      "wordCount": 2037,
-      "val": 12,
-      "time": 1,
-      "color": "#c084fc",
-      "description": "Dogen Zenji (1200–1253) is the founder of the Soto school of Zen in Japan and the most philosophically original religious thinker in Japanese history. Born into an aristocratic family, orphaned young, and deeply moved by the Buddhist question of why we must practice if Buddha-nature is already complete, he traveled to China in 1223 to study with the Chan master Rujing, under whom he achieved profound awakening through the instruction \\"
     },
     {
       "id": "linji_yixuan_monographie",
@@ -7859,7 +7802,7 @@
     },
     {
       "id": "bankei_yotaku_monographie",
-      "name": "Bankei Yōtaku",
+      "name": "Bankei Y\u014dtaku",
       "type": "Religion_und_Spiritualitaet",
       "cluster": "Religion_und_Spiritualitaet",
       "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/BankeiYotaku.jpg",
@@ -7908,7 +7851,7 @@
       "val": 12,
       "time": 1,
       "color": "#c084fc",
-      "description": "Hui Neng (638–713 CE) is the Sixth Patriarch of Chan Buddhism and the figure whose teachings established the Southern School of sudden awakening that became the fountainhead of virtually all subsequent Zen Buddhism in China, Korea, Japan, and Vietnam. His story — an illiterate woodcutter who achieved enlightenment upon hearing a single verse of the Diamond Sutra — became the paradigmatic Chan story of immediate, unconditional awakening: Buddha-nature is not achieved through study, intellectual cultivation, or gradual practice but is recognized directly and completely in a single moment of clear seeing. The contest between his enlightenment verse (\\"
+      "description": "Hui Neng (638\u2013713 CE) is the Sixth Patriarch of Chan Buddhism and the figure whose teachings established the Southern School of sudden awakening that became the fountainhead of virtually all subsequent Zen Buddhism in China, Korea, Japan, and Vietnam. His story \u2014 an illiterate woodcutter who achieved enlightenment upon hearing a single verse of the Diamond Sutra \u2014 became the paradigmatic Chan story of immediate, unconditional awakening: Buddha-nature is not achieved through study, intellectual cultivation, or gradual practice but is recognized directly and completely in a single moment of clear seeing. The contest between his enlightenment verse (\\"
     },
     {
       "id": "heinrich_seuse_monographie",
@@ -7935,15 +7878,16 @@
       "val": 12,
       "time": 1,
       "color": "#c084fc",
-      "description": "Hildegard of Bingen (1098–1179) is one of the most extraordinary figures of the medieval period: Benedictine abbess, visionary mystic, composer, natural philosopher, physician, poet, and prophet. She experienced visions from childhood but kept them secret until age 42, when a divine command (and the encouragement of her confessor) led her to write them down in the Scivias (Know the Ways), her first major visionary work. Hildegard described her visions as the \\\n\nVerbindet Mystik, Musik, Naturbeobachtung und kosmische Bildwelten.",
-      "role": "Visionaerin"
+      "description": "Hildegard of Bingen (1098\u20131179) is one of the most extraordinary figures of the medieval period: Benedictine abbess, visionary mystic, composer, natural philosopher, physician, poet, and prophet. She experienced visions from childhood but kept them secret until age 42, when a divine command (and the encouragement of her confessor) led her to write them down in the Scivias (Know the Ways), her first major visionary work. Hildegard described her visions as the \\\n\nVerbindet Mystik, Musik, Naturbeobachtung und kosmische Bildwelten.",
+      "role": "Visionaerin",
+      "bio": "Verbindet Mystik, Musik, Naturbeobachtung und kosmische Bildwelten."
     },
     {
       "id": "jacob_boehme_monographie",
-      "name": "Jacob Böhme",
+      "name": "Jacob B\u00f6hme",
       "type": "Religion_und_Spiritualitaet",
       "cluster": "Religion_und_Spiritualitaet",
-      "image": "/images/Jakob_Böhme.jpg",
+      "image": "/images/Jakob_B\u00f6hme.jpg",
       "hasImage": true,
       "year": 1575,
       "wordCount": 271,
@@ -7992,7 +7936,7 @@
     },
     {
       "id": "teresa_von_avila_monographie",
-      "name": "Teresa von Ávila",
+      "name": "Teresa von \u00c1vila",
       "type": "Religion_und_Spiritualitaet",
       "cluster": "Religion_und_Spiritualitaet",
       "image": "/images/Teresa_de_Avila.jpg",
@@ -8002,11 +7946,11 @@
       "val": 12,
       "time": 1,
       "color": "#c084fc",
-      "description": "Teresa of Ávila (1515–1582) is the most practically precise and psychologically sophisticated guide to Christian contemplative prayer in the Western tradition — a Doctor of the Church (so designated in 1970, one of the first women to receive this title), a reformer of the Carmelite order, and a mystic who combined extraordinary spiritual depth with formidable organizational and literary gifts. Born Teresa Sánchez de Cepeda y Ahumada in Ávila, Spain, to a converso (Jewish-convert) family, she entered the Carmelite convent of the Incarnation at age 20 but spent twenty years in spiritual mediocrity — distracted by social life in the parlor, neglecting contemplative prayer — before her \\"
+      "description": "Teresa of \u00c1vila (1515\u20131582) is the most practically precise and psychologically sophisticated guide to Christian contemplative prayer in the Western tradition \u2014 a Doctor of the Church (so designated in 1970, one of the first women to receive this title), a reformer of the Carmelite order, and a mystic who combined extraordinary spiritual depth with formidable organizational and literary gifts. Born Teresa S\u00e1nchez de Cepeda y Ahumada in \u00c1vila, Spain, to a converso (Jewish-convert) family, she entered the Carmelite convent of the Incarnation at age 20 but spent twenty years in spiritual mediocrity \u2014 distracted by social life in the parlor, neglecting contemplative prayer \u2014 before her \\"
     },
     {
       "id": "willigis_jaeger_monographie",
-      "name": "Willigis Jäger",
+      "name": "Willigis J\u00e4ger",
       "type": "Religion_und_Spiritualitaet",
       "cluster": "Religion_und_Spiritualitaet",
       "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Willigis_J%C3%A4ger_B.G..jpg",
@@ -8185,8 +8129,9 @@
       "val": 12,
       "time": 1,
       "color": "#c084fc",
-      "description": "Adi Shankara (c. 788–820 CE) is the most influential theologian and philosopher in the history of Hinduism, whose systematic elaboration of Advaita Vedanta shaped the entire subsequent development of Indian philosophical discourse. Born in Kalady, Kerala, he was, according to tradition, a child prodigy who renounced the world at age eight and sought out his teacher Govindapada. Within a remarkably short life — tradition holds he died at 32 — he composed commentaries on the ten principal Upanishads, the Brahma Sutras, and the Bhagavad Gita, as well as independent works such as the Vivekachudamani (Crest Jewel of Discrimination) and Upadesa Sahasri (Thousand Teachings). He also founded four monastic centers (mathas) at the four cardinal points of India — Sringeri, Dwarka, Puri, and Badrinath — which continue to function today.\n\nShankara\\\n\nBegruender des Advaita Vedanta. Lehrt Nicht-Zweiheit von Atman und Brahman.",
-      "role": "Philosoph des Advaita"
+      "description": "Adi Shankara (c. 788\u2013820 CE) is the most influential theologian and philosopher in the history of Hinduism, whose systematic elaboration of Advaita Vedanta shaped the entire subsequent development of Indian philosophical discourse. Born in Kalady, Kerala, he was, according to tradition, a child prodigy who renounced the world at age eight and sought out his teacher Govindapada. Within a remarkably short life \u2014 tradition holds he died at 32 \u2014 he composed commentaries on the ten principal Upanishads, the Brahma Sutras, and the Bhagavad Gita, as well as independent works such as the Vivekachudamani (Crest Jewel of Discrimination) and Upadesa Sahasri (Thousand Teachings). He also founded four monastic centers (mathas) at the four cardinal points of India \u2014 Sringeri, Dwarka, Puri, and Badrinath \u2014 which continue to function today.\n\nShankara\\\n\nBegruender des Advaita Vedanta. Lehrt Nicht-Zweiheit von Atman und Brahman.",
+      "role": "Philosoph des Advaita",
+      "bio": "Begruender des Advaita Vedanta. Lehrt Nicht-Zweiheit von Atman und Brahman."
     },
     {
       "id": "nisargadatta_maharaj_monographie",
@@ -8202,20 +8147,6 @@
       "color": "#c084fc"
     },
     {
-      "id": "ramana_maharshi_monographie",
-      "name": "Ramana Maharshi",
-      "type": "Religion_und_Spiritualitaet",
-      "cluster": "Religion_und_Spiritualitaet",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Sri_Ramana_Maharshi_-_Portrait_-_G._G_Welling_-_1948.jpg",
-      "hasImage": true,
-      "year": 1879,
-      "wordCount": 2336,
-      "val": 12,
-      "time": 1,
-      "color": "#c084fc",
-      "description": "Ramana Maharshi (1879–1950) is one of the most influential Hindu spiritual figures of the 20th century and a towering representative of the Advaita Vedanta tradition — remarkable for the combination of intellectual simplicity, radical directness, and profound inner authority of his teaching. Born Venkataraman Iyer in Tiruchuzhi, Tamil Nadu, he underwent a spontaneous and complete spiritual transformation at age sixteen without any teacher, scripture, or formal practice: overcome by what felt like an approaching death, he lay down, held himself completely rigid, imagined himself dead, and discovered with absolute certainty that the \\"
-    },
-    {
       "id": "swami_vivekananda_monographie",
       "name": "Swami Vivekananda",
       "type": "Religion_und_Spiritualitaet",
@@ -8227,8 +8158,9 @@
       "val": 12,
       "time": 1,
       "color": "#c084fc",
-      "description": "Swami Vivekananda (born Narendranath Datta, 1863–1902) is one of the most transformative figures in the modern history of Hinduism and in the global spread of Indian philosophy — the person who, perhaps more than any other individual, introduced Vedanta and yoga to Western audiences and gave Hinduism a modern, systematic, and universalistic face. Born in Calcutta to a prosperous and progressive family, he encountered the mystic Ramakrishna Paramahamsa when he was 17, an encounter that transformed his life: Ramakrishna, who had direct mystical experience of the unity underlying all religions, transmitted to Vivekananda a living realization of the non-dual truth and trained him as his primary disciple. After Ramakrishna\\\n\nBringt Vedanta auf das Weltparlament der Religionen und oeffnet ihn fuer den globalen Dialog.",
-      "role": "Botschafter des Vedanta"
+      "description": "Swami Vivekananda (born Narendranath Datta, 1863\u20131902) is one of the most transformative figures in the modern history of Hinduism and in the global spread of Indian philosophy \u2014 the person who, perhaps more than any other individual, introduced Vedanta and yoga to Western audiences and gave Hinduism a modern, systematic, and universalistic face. Born in Calcutta to a prosperous and progressive family, he encountered the mystic Ramakrishna Paramahamsa when he was 17, an encounter that transformed his life: Ramakrishna, who had direct mystical experience of the unity underlying all religions, transmitted to Vivekananda a living realization of the non-dual truth and trained him as his primary disciple. After Ramakrishna\\\n\nBringt Vedanta auf das Weltparlament der Religionen und oeffnet ihn fuer den globalen Dialog.",
+      "role": "Botschafter des Vedanta",
+      "bio": "Bringt Vedanta auf das Weltparlament der Religionen und oeffnet ihn fuer den globalen Dialog."
     },
     {
       "id": "anandamayi_ma_monographie",
@@ -8245,13 +8177,13 @@
     },
     {
       "id": "ramakrishna_monographie",
-      "name": "Ramakrishna",
+      "name": "Ramakrishna Paramahamsa",
       "type": "Religion_und_Spiritualitaet",
       "cluster": "Religion_und_Spiritualitaet",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Ramakrishna.jpg",
+      "image": "/images/Ramakrishna_Paramhansa.jpg",
       "hasImage": true,
       "year": 1836,
-      "wordCount": 895,
+      "wordCount": 493,
       "val": 12,
       "time": 1,
       "color": "#c084fc"
@@ -8268,7 +8200,7 @@
       "val": 12,
       "time": 1,
       "color": "#c084fc",
-      "description": "Sri Aurobindo (1872–1950) is one of the most original thinkers in modern Indian philosophy — a revolutionary nationalist turned spiritual visionary who developed Integral Yoga as a path for the evolution of consciousness in matter. Educated entirely in England from age seven, he returned to India in 1893 deeply formed by Western thought (he knew Greek, Latin, French, German, Italian, and Spanish fluently) yet without connection to his Hindu heritage, which he subsequently recovered with extraordinary depth. As a leader of the Bengali Extremist faction of the Indian National Congress, he was the most radical voice for complete Indian independence before Gandhi, advocating mass civil disobedience and passive resistance. His arrest in 1908 on sedition charges and his year of solitary confinement in Alipore Jail became his spiritual turning point; he practiced yoga intensively in prison and experienced a series of profound realizations, including a sustained vision of the cosmic consciousness that he later called the Overmind.\n\nAurobindo withdrew entirely from politics in 1910, moving to Pondicherry (then French territory) where he spent the remaining forty years of his life in intensive spiritual practice, writing, and the development of Integral Yoga. His vision — most fully expressed in The Life Divine — is evolutionary: consciousness is not a late product of matter but the very ground from which matter descended, and evolution is the process by which Spirit, having involved itself in matter, progressively recovers itself through increasingly complex forms — life, mind, and beyond mind, the Supermind. Human beings stand at the cusp of a new evolutionary emergence; the purpose of Integral Yoga is to accelerate this process in the individual and thereby contribute to the transformation of the collective. This is not merely personal liberation (moksha) but the transformation of the Earth.\n\nThe Sri Aurobindo Ashram, co-led by Aurobindo and the French-born Mirra Alfassa (known as \\"
+      "description": "Sri Aurobindo (1872\u20131950) is one of the most original thinkers in modern Indian philosophy \u2014 a revolutionary nationalist turned spiritual visionary who developed Integral Yoga as a path for the evolution of consciousness in matter. Educated entirely in England from age seven, he returned to India in 1893 deeply formed by Western thought (he knew Greek, Latin, French, German, Italian, and Spanish fluently) yet without connection to his Hindu heritage, which he subsequently recovered with extraordinary depth. As a leader of the Bengali Extremist faction of the Indian National Congress, he was the most radical voice for complete Indian independence before Gandhi, advocating mass civil disobedience and passive resistance. His arrest in 1908 on sedition charges and his year of solitary confinement in Alipore Jail became his spiritual turning point; he practiced yoga intensively in prison and experienced a series of profound realizations, including a sustained vision of the cosmic consciousness that he later called the Overmind.\n\nAurobindo withdrew entirely from politics in 1910, moving to Pondicherry (then French territory) where he spent the remaining forty years of his life in intensive spiritual practice, writing, and the development of Integral Yoga. His vision \u2014 most fully expressed in The Life Divine \u2014 is evolutionary: consciousness is not a late product of matter but the very ground from which matter descended, and evolution is the process by which Spirit, having involved itself in matter, progressively recovers itself through increasingly complex forms \u2014 life, mind, and beyond mind, the Supermind. Human beings stand at the cusp of a new evolutionary emergence; the purpose of Integral Yoga is to accelerate this process in the individual and thereby contribute to the transformation of the collective. This is not merely personal liberation (moksha) but the transformation of the Earth.\n\nThe Sri Aurobindo Ashram, co-led by Aurobindo and the French-born Mirra Alfassa (known as \\"
     },
     {
       "id": "ashtavakra_monographie",
@@ -8422,19 +8354,6 @@
       "hasImage": true,
       "year": 1910,
       "wordCount": 219,
-      "val": 12,
-      "time": 1,
-      "color": "#c084fc"
-    },
-    {
-      "id": "ramakrishna_monographie",
-      "name": "Ramakrishna Paramahamsa",
-      "type": "Religion_und_Spiritualitaet",
-      "cluster": "Religion_und_Spiritualitaet",
-      "image": "/images/Ramakrishna_Paramhansa.jpg",
-      "hasImage": true,
-      "year": 1836,
-      "wordCount": 493,
       "val": 12,
       "time": 1,
       "color": "#c084fc"
@@ -8607,7 +8526,7 @@
       "val": 12,
       "time": 1,
       "color": "#c084fc",
-      "description": "Muhyiddin Ibn Arabi (1165–1240) is the most systematically profound and metaphysically ambitious mystic in Islamic history, honored as al-Shaykh al-Akbar (the Greatest Master) by the Sufi tradition. Born in Murcia, Andalusia, he traveled extensively across the Islamic world — North Africa, the Middle East, Anatolia — and settled in Damascus, where he died. His output is staggering: over 350 works, of which the two greatest are the Futuhat al-Makkiyya (The Meccan Openings), a 37-volume encyclopedia of mystical knowledge received during his circumambulation of the Kaaba, and the Fusus al-Hikam (Bezels of Wisdom), a compact masterpiece presenting the unique spiritual station of each of twenty-seven prophets from Adam to Muhammad as the facet (bezel) of a divine name.\n\nThe central concept of Ibn Arabi\\"
+      "description": "Muhyiddin Ibn Arabi (1165\u20131240) is the most systematically profound and metaphysically ambitious mystic in Islamic history, honored as al-Shaykh al-Akbar (the Greatest Master) by the Sufi tradition. Born in Murcia, Andalusia, he traveled extensively across the Islamic world \u2014 North Africa, the Middle East, Anatolia \u2014 and settled in Damascus, where he died. His output is staggering: over 350 works, of which the two greatest are the Futuhat al-Makkiyya (The Meccan Openings), a 37-volume encyclopedia of mystical knowledge received during his circumambulation of the Kaaba, and the Fusus al-Hikam (Bezels of Wisdom), a compact masterpiece presenting the unique spiritual station of each of twenty-seven prophets from Adam to Muhammad as the facet (bezel) of a divine name.\n\nThe central concept of Ibn Arabi\\"
     },
     {
       "id": "al_ghazali_monographie",
@@ -8621,7 +8540,7 @@
       "val": 12,
       "time": 1,
       "color": "#c084fc",
-      "description": "Abu Hamid Muhammad ibn Muhammad al-Ghazali (1058–1111) is one of the greatest theologians, philosophers, and mystics in Islamic history, sometimes called \\"
+      "description": "Abu Hamid Muhammad ibn Muhammad al-Ghazali (1058\u20131111) is one of the greatest theologians, philosophers, and mystics in Islamic history, sometimes called \\"
     },
     {
       "id": "Jesus_von_Nazaret_monographie",
@@ -8811,7 +8730,7 @@
       "name": "Maria Sabina",
       "type": "Religion_und_Spiritualitaet",
       "cluster": "Religion_und_Spiritualitaet",
-      "image": "/images/María_Sabina.jpg",
+      "image": "/images/Mar\u00eda_Sabina.jpg",
       "hasImage": true,
       "year": 1894,
       "wordCount": 285,
@@ -8844,7 +8763,7 @@
       "val": 12,
       "time": 1,
       "color": "#c084fc",
-      "description": "Jalal al-Din Muhammad Rumi (1207–1273) is the most widely read poet in the world today and the supreme literary figure of the Sufi tradition. Born in Balkh (in present-day Afghanistan), he fled westward with his family to escape the Mongol invasions, eventually settling in Konya (in present-day Turkey), where he spent most of his adult life. His early education was in Islamic jurisprudence and theology, but his encounter with the wandering mystic Shams-i-Tabrizi in 1244 transformed him absolutely. The two formed an extraordinary spiritual friendship that lasted three years before Shams mysteriously disappeared (perhaps murdered by jealous disciples). Rumi\\"
+      "description": "Jalal al-Din Muhammad Rumi (1207\u20131273) is the most widely read poet in the world today and the supreme literary figure of the Sufi tradition. Born in Balkh (in present-day Afghanistan), he fled westward with his family to escape the Mongol invasions, eventually settling in Konya (in present-day Turkey), where he spent most of his adult life. His early education was in Islamic jurisprudence and theology, but his encounter with the wandering mystic Shams-i-Tabrizi in 1244 transformed him absolutely. The two formed an extraordinary spiritual friendship that lasted three years before Shams mysteriously disappeared (perhaps murdered by jealous disciples). Rumi\\"
     },
     {
       "id": "kabir_monographie",
@@ -8938,8 +8857,8 @@
       "color": "#c084fc"
     },
     {
-      "id": "jakob_böhme_monographie",
-      "name": "Jakob Böhme",
+      "id": "jakob_b\u00f6hme_monographie",
+      "name": "Jakob B\u00f6hme",
       "type": "Religion_und_Spiritualitaet",
       "cluster": "Religion_und_Spiritualitaet",
       "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Jacob-B%C3%B6hme.jpg",
@@ -9001,7 +8920,7 @@
       "val": 12,
       "time": 1,
       "color": "#c084fc",
-      "description": "Advaita Vedanta is the most influential school of Hindu philosophy, tracing its classical formulation to Adi Shankara (788–820 CE), who systematized the insights scattered across the Upanishads into a rigorous non-dualist metaphysics. The word \\"
+      "description": "Advaita Vedanta is the most influential school of Hindu philosophy, tracing its classical formulation to Adi Shankara (788\u2013820 CE), who systematized the insights scattered across the Upanishads into a rigorous non-dualist metaphysics. The word \\"
     },
     {
       "id": "schamanismus_monographie",
@@ -9029,7 +8948,8 @@
       "time": 1,
       "color": "#c084fc",
       "description": "Begruender des Buddhismus. Lehrt den Mittleren Weg zwischen Askese und Genuss.",
-      "role": "Der Buddha"
+      "role": "Der Buddha",
+      "bio": "Begruender des Buddhismus. Lehrt den Mittleren Weg zwischen Askese und Genuss."
     },
     {
       "id": "david_graeber_monographie",
@@ -9059,7 +8979,7 @@
     },
     {
       "id": "rene_girard_monographie",
-      "name": "René Girard",
+      "name": "Ren\u00e9 Girard",
       "type": "Soziologie",
       "cluster": "Soziologie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Ren%C3%A9_Girard.jpg",
@@ -9176,7 +9096,7 @@
     },
     {
       "id": "vilem_flusser_monographie",
-      "name": "Vilém Flusser",
+      "name": "Vil\u00e9m Flusser",
       "type": "Soziologie",
       "cluster": "Soziologie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Vilem_Flusser_1940.jpg",
@@ -9215,7 +9135,7 @@
     },
     {
       "id": "small_world_phaenomen_monographie",
-      "name": "Small-World-Phänomen",
+      "name": "Small-World-Ph\u00e4nomen",
       "type": "Soziologie",
       "cluster": "Soziologie",
       "image": "/images/Small-World.jpg",
@@ -9241,7 +9161,7 @@
     },
     {
       "id": "staerke_schwacher_bindungen_monographie",
-      "name": "Die Stärke schwacher Bindungen",
+      "name": "Die St\u00e4rke schwacher Bindungen",
       "type": "Soziologie",
       "cluster": "Soziologie",
       "image": "/images/Weak_Ties.jpg",
@@ -9254,7 +9174,7 @@
     },
     {
       "id": "albert_laszlo_barabasi_monographie",
-      "name": "Albert-László Barabási",
+      "name": "Albert-L\u00e1szl\u00f3 Barab\u00e1si",
       "type": "Soziologie",
       "cluster": "Soziologie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Albert-Laszlo_Barabasi_-_Annual_Meeting_of_the_New_Champions_2012.jpg",
@@ -9361,7 +9281,7 @@
       "name": "Alfred Richter",
       "type": "Soziologie",
       "cluster": "Soziologie",
-      "image": "/images/Bundesarchiv_Bild_102-04062A,_Nürnberg,_Reichsparteitag,_SA-_und_SS-Appell.jpg",
+      "image": "/images/Bundesarchiv_Bild_102-04062A,_N\u00fcrnberg,_Reichsparteitag,_SA-_und_SS-Appell.jpg",
       "hasImage": true,
       "year": 9999,
       "wordCount": 732,
@@ -9371,10 +9291,10 @@
     },
     {
       "id": "aly_mazaheri_monographie",
-      "name": "Aly Mazahéri",
+      "name": "Aly Mazah\u00e9ri",
       "type": "Soziologie",
       "cluster": "Soziologie",
-      "image": "/images/Opening_page_from_the_manuscript_of_\"Hikmat_al-ʿIshraq\"_by_al-Suhrawardi.jpg",
+      "image": "/images/Opening_page_from_the_manuscript_of_\"Hikmat_al-\u02bfIshraq\"_by_al-Suhrawardi.jpg",
       "hasImage": true,
       "year": 1914,
       "wordCount": 417,
@@ -9397,7 +9317,7 @@
     },
     {
       "id": "anahi_durand_monographie",
-      "name": "Anahí Durand",
+      "name": "Anah\u00ed Durand",
       "type": "Soziologie",
       "cluster": "Soziologie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ceremonia_de_juramentaci%C3%B3n_del_Gabinete_Ministerial_19-49_screenshot_%28cropped%29.png",
@@ -9410,10 +9330,10 @@
     },
     {
       "id": "andre_bleicher_monographie",
-      "name": "André Bleicher",
+      "name": "Andr\u00e9 Bleicher",
       "type": "Soziologie",
       "cluster": "Soziologie",
-      "image": "/images/Hochschule_Biberach_-_Gebäude_B.jpg",
+      "image": "/images/Hochschule_Biberach_-_Geb\u00e4ude_B.jpg",
       "hasImage": true,
       "year": 1963,
       "wordCount": 380,
@@ -9423,7 +9343,7 @@
     },
     {
       "id": "andre_gunder_frank_monographie",
-      "name": "André Gunder Frank",
+      "name": "Andr\u00e9 Gunder Frank",
       "type": "Soziologie",
       "cluster": "Soziologie",
       "image": "/images/Dependency_theory.svg",
@@ -9439,7 +9359,7 @@
       "name": "Andreas Kranebitter",
       "type": "Soziologie",
       "cluster": "Soziologie",
-      "image": "/images/Andreas_Kranebitter_DÖW_2026_BHO-7494.jpg",
+      "image": "/images/Andreas_Kranebitter_D\u00d6W_2026_BHO-7494.jpg",
       "hasImage": true,
       "year": 1982,
       "wordCount": 427,
@@ -9465,7 +9385,7 @@
       "name": "Angelika Ebbinghaus",
       "type": "Soziologie",
       "cluster": "Soziologie",
-      "image": "/images/Doctors'_trial,_Nuremberg,_1946–1947.jpg",
+      "image": "/images/Doctors'_trial,_Nuremberg,_1946\u20131947.jpg",
       "hasImage": false,
       "year": 1945,
       "wordCount": 444,
@@ -9491,7 +9411,7 @@
       "name": "Annette Spellerberg",
       "type": "Soziologie",
       "cluster": "Soziologie",
-      "image": "/images/RPTU_Kaiserslautern_Gebäude_42.jpg",
+      "image": "/images/RPTU_Kaiserslautern_Geb\u00e4ude_42.jpg",
       "hasImage": true,
       "year": 9999,
       "wordCount": 392,
@@ -9553,7 +9473,7 @@
     },
     {
       "id": "emile_durkheim_monographie",
-      "name": "Émile Durkheim",
+      "name": "\u00c9mile Durkheim",
       "type": "Soziologie",
       "cluster": "Soziologie",
       "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/%C3%89mile_Durkheim.jpg",
@@ -9699,7 +9619,7 @@
       "name": "Stuart Hall",
       "type": "Soziologie",
       "cluster": "Soziologie",
-      "image": "/images/Stuart_Hall_(1932–2014).jpg",
+      "image": "/images/Stuart_Hall_(1932\u20132014).jpg",
       "hasImage": true,
       "year": 1932,
       "wordCount": 1606,
@@ -9838,8 +9758,8 @@
       "color": "#f472b6"
     },
     {
-      "id": "Karl_Bühler_monographie",
-      "name": "Karl Bühler",
+      "id": "Karl_B\u00fchler_monographie",
+      "name": "Karl B\u00fchler",
       "type": "Sprachwissenschaft_und_Semiotik",
       "cluster": "Sprachwissenschaft_und_Semiotik",
       "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Karl_B%C3%BChler_%281879%E2%80%931963%29_1927_%C2%A9_Georg_Fayer_%281891%E2%80%931950%29_OeNB_12993104.jpg",
@@ -9907,7 +9827,7 @@
       "name": "Paul Grice",
       "type": "Sprachwissenschaft_und_Semiotik",
       "cluster": "Sprachwissenschaft_und_Semiotik",
-      "image": "/images/Herbert_Paul_Grice,_philosopher,_(1913_–_1988)_photograph.jpg",
+      "image": "/images/Herbert_Paul_Grice,_philosopher,_(1913_\u2013_1988)_photograph.jpg",
       "hasImage": true,
       "year": 1913,
       "wordCount": 784,
@@ -9943,7 +9863,7 @@
     },
     {
       "id": "marshall_mcluhan_vertiefung",
-      "name": "Marshall McLuhan – Vertiefung",
+      "name": "Marshall McLuhan \u2013 Vertiefung",
       "type": "Sprachwissenschaft_und_Semiotik",
       "cluster": "Sprachwissenschaft_und_Semiotik",
       "image": "/images/Marshall_McLuhan.jpg",
@@ -9982,7 +9902,7 @@
     },
     {
       "id": "achtsamkeit_neurowissenschaft_synthese",
-      "name": "Achtsamkeit und ihre wissenschaftliche Grundlage – Eine Synthese",
+      "name": "Achtsamkeit und ihre wissenschaftliche Grundlage \u2013 Eine Synthese",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Alchemical_scroll_by_George_Ripley_(Wellcome).jpg",
@@ -10047,7 +9967,7 @@
     },
     {
       "id": "anthropologie_ritual_uebergang_liminalitaet_synthese",
-      "name": "Anthropologie der Rituale und Übergänge",
+      "name": "Anthropologie der Rituale und \u00dcberg\u00e4nge",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Alchemical_scroll_by_George_Ripley_(Wellcome).jpg",
@@ -10060,7 +9980,7 @@
     },
     {
       "id": "aufmerksamkeitsoekonomie_digitale_psychologie_synthese",
-      "name": "Aufmerksamkeitsökonomie – Die wertvollste Ressource des 21. Jahrhunderts",
+      "name": "Aufmerksamkeits\u00f6konomie \u2013 Die wertvollste Ressource des 21. Jahrhunderts",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Alchemical_scroll_by_George_Ripley_(Wellcome).jpg",
@@ -10073,7 +9993,7 @@
     },
     {
       "id": "bindungstheorie_synthese",
-      "name": "Bindungstheorie – Von Bowlby bis zur Neurobiologie",
+      "name": "Bindungstheorie \u2013 Von Bowlby bis zur Neurobiologie",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Alchemical_scroll_by_George_Ripley_(Wellcome).jpg",
@@ -10099,7 +10019,7 @@
     },
     {
       "id": "das_heilige_und_das_profane_religionsphilosophie_synthese",
-      "name": "Das Heilige und das Profane – Religion als anthropologisches Phänomen",
+      "name": "Das Heilige und das Profane \u2013 Religion als anthropologisches Ph\u00e4nomen",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Religious_syms.svg",
@@ -10112,7 +10032,7 @@
     },
     {
       "id": "das_selbst_konstrukt_illusion_wirklichkeit_synthese",
-      "name": "Das Selbst – Konstrukt, Illusion oder Wirklichkeit?",
+      "name": "Das Selbst \u2013 Konstrukt, Illusion oder Wirklichkeit?",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Alchemical_scroll_by_George_Ripley_(Wellcome).jpg",
@@ -10125,7 +10045,7 @@
     },
     {
       "id": "empathie_mitgefuehl_neurobiologie_synthese",
-      "name": "Empathie und Mitgefühl – Die Neurobiologie der menschlichen Verbindung",
+      "name": "Empathie und Mitgef\u00fchl \u2013 Die Neurobiologie der menschlichen Verbindung",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Long-tailed_macaques_feeding.jpg",
@@ -10151,7 +10071,7 @@
     },
     {
       "id": "ervin_laszlo_monographie",
-      "name": "Ervin László",
+      "name": "Ervin L\u00e1szl\u00f3",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/A_Szint%C3%A9zis_Szabadegyetem_eln%C3%B6ks%C3%A9ge.jpg",
@@ -10164,7 +10084,7 @@
     },
     {
       "id": "ethik_kuenstliche_intelligenz_alignment_wuerde_synthese",
-      "name": "Ethik der Künstlichen Intelligenz",
+      "name": "Ethik der K\u00fcnstlichen Intelligenz",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Mark_Coeckelbergh_2024.jpg",
@@ -10177,7 +10097,7 @@
     },
     {
       "id": "evolutionaere_psychologie_tiefe_geschichte_geist_synthese",
-      "name": "Evolutionäre Psychologie und die tiefe Geschichte des Geistes",
+      "name": "Evolution\u00e4re Psychologie und die tiefe Geschichte des Geistes",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Julian_Huxley_1964.jpg",
@@ -10203,7 +10123,7 @@
     },
     {
       "id": "frieden_und_gewalt_politische_psychologie_synthese",
-      "name": "Frieden und Gewalt – Eine politische Psychologie",
+      "name": "Frieden und Gewalt \u2013 Eine politische Psychologie",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Alchemical_scroll_by_George_Ripley_(Wellcome).jpg",
@@ -10216,7 +10136,7 @@
     },
     {
       "id": "geschichtsphilosophie_sinn_fortschritt_richtung_synthese",
-      "name": "Geschichtsphilosophie – Hat die Geschichte eine Richtung?",
+      "name": "Geschichtsphilosophie \u2013 Hat die Geschichte eine Richtung?",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Bundesarchiv_Bild_183-R06610,_Oswald_Spengler.jpg",
@@ -10229,7 +10149,7 @@
     },
     {
       "id": "hard_problem_of_consciousness_synthese",
-      "name": "Das Hard Problem of Consciousness – Philosophie des Geistes",
+      "name": "Das Hard Problem of Consciousness \u2013 Philosophie des Geistes",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/RudolfOtto.jpg",
@@ -10242,7 +10162,7 @@
     },
     {
       "id": "heilende_gemeinschaft_kollektives_trauma_synthese",
-      "name": "Der leidende Körper und die heilende Gemeinschaft",
+      "name": "Der leidende K\u00f6rper und die heilende Gemeinschaft",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Alchemical_scroll_by_George_Ripley_(Wellcome).jpg",
@@ -10255,7 +10175,7 @@
     },
     {
       "id": "informationstheorie_komplexitaet_bedeutung_synthese",
-      "name": "Informationstheorie, Komplexität und Bedeutung",
+      "name": "Informationstheorie, Komplexit\u00e4t und Bedeutung",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Alchemical_scroll_by_George_Ripley_(Wellcome).jpg",
@@ -10268,7 +10188,7 @@
     },
     {
       "id": "integrierte_entwicklung_piaget_kohlberg_wilber_synthese",
-      "name": "Integrierte Entwicklung – Von Piaget über Kohlberg zu Wilbers AQAL",
+      "name": "Integrierte Entwicklung \u2013 Von Piaget \u00fcber Kohlberg zu Wilbers AQAL",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Ken_Wilber_10.JPG",
@@ -10281,7 +10201,7 @@
     },
     {
       "id": "koerper_als_wissen_leibphilosophie_synthese",
-      "name": "Der Körper als Wissen – Leibphilosophie und Somaforschung",
+      "name": "Der K\u00f6rper als Wissen \u2013 Leibphilosophie und Somaforschung",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Alchemical_scroll_by_George_Ripley_(Wellcome).jpg",
@@ -10294,7 +10214,7 @@
     },
     {
       "id": "koerper_geist_integration_synthese",
-      "name": "Körper-Geist-Integration – Eine Synthese",
+      "name": "K\u00f6rper-Geist-Integration \u2013 Eine Synthese",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Vrksasana.jpg",
@@ -10307,7 +10227,7 @@
     },
     {
       "id": "kreativitaet_und_schoepfung_synthese",
-      "name": "Kreativität und Schöpfung – Eine Synthese",
+      "name": "Kreativit\u00e4t und Sch\u00f6pfung \u2013 Eine Synthese",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Alchemical_scroll_by_George_Ripley_(Wellcome).jpg",
@@ -10333,7 +10253,7 @@
     },
     {
       "id": "macht_diskurs_subjektivierung_synthese",
-      "name": "Macht, Diskurs und Subjektivierung – Foucault, Bourdieu, Butler",
+      "name": "Macht, Diskurs und Subjektivierung \u2013 Foucault, Bourdieu, Butler",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Michel_Foucault_1974_Brasil.jpg",
@@ -10346,7 +10266,7 @@
     },
     {
       "id": "mathematik_und_aesthetik_schoenheit_struktur_synthese",
-      "name": "Mathematik und Ästhetik – Die Schönheit der Struktur",
+      "name": "Mathematik und \u00c4sthetik \u2013 Die Sch\u00f6nheit der Struktur",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Alchemical_scroll_by_George_Ripley_(Wellcome).jpg",
@@ -10373,7 +10293,7 @@
     },
     {
       "id": "mystik_und_neurowissenschaft_synthese",
-      "name": "Mystik und Neurowissenschaft – Brücken zur Einheit",
+      "name": "Mystik und Neurowissenschaft \u2013 Br\u00fccken zur Einheit",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/VisioBrigittaSchwedenDetail.jpg",
@@ -10386,7 +10306,7 @@
     },
     {
       "id": "natur_der_zeit_physikalisch_phaenomenologisch_mystisch_synthese",
-      "name": "Die Natur der Zeit – Eine Synthese",
+      "name": "Die Natur der Zeit \u2013 Eine Synthese",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Bombyx_mori1.jpg",
@@ -10399,7 +10319,7 @@
     },
     {
       "id": "oekologie_und_bewusstsein_synthese",
-      "name": "Ökologie und Bewusstsein – Die grüne Wende nach innen",
+      "name": "\u00d6kologie und Bewusstsein \u2013 Die gr\u00fcne Wende nach innen",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/European_honey_bee_extracts_nectar.jpg",
@@ -10412,7 +10332,7 @@
     },
     {
       "id": "oestliche_westliche_metaphysik_vergleich_synthese",
-      "name": "Östliche und Westliche Metaphysik – Ein großer Vergleich",
+      "name": "\u00d6stliche und Westliche Metaphysik \u2013 Ein gro\u00dfer Vergleich",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Immanuel_Kant_-_Gemaelde_1.jpg",
@@ -10425,7 +10345,7 @@
     },
     {
       "id": "philosophie_des_geistes_hard_problem_synthese",
-      "name": "Philosophie des Geistes – Das Leib-Seele-Problem",
+      "name": "Philosophie des Geistes \u2013 Das Leib-Seele-Problem",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Thomas_Metzinger_2023_free.jpg",
@@ -10438,7 +10358,7 @@
     },
     {
       "id": "polyvagal_theorie_vertiefung_integration",
-      "name": "Die Polyvagal-Theorie – Vertiefung und Integration",
+      "name": "Die Polyvagal-Theorie \u2013 Vertiefung und Integration",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Polyvagal_Theory.jpg",
@@ -10451,7 +10371,7 @@
     },
     {
       "id": "postkoloniale_theorie_fanon_said_spivak_synthese",
-      "name": "Postkoloniale Theorie – Erbe des Kolonialismus und Wege der Befreiung",
+      "name": "Postkoloniale Theorie \u2013 Erbe des Kolonialismus und Wege der Befreiung",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Nikita_Dhawan_-_2018.jpg",
@@ -10477,7 +10397,7 @@
     },
     {
       "id": "quantenphysik_nichtlokalitaet_verschraenktes_universum_synthese",
-      "name": "Quantenphysik, Nichtlokalität und das verschränkte Universum",
+      "name": "Quantenphysik, Nichtlokalit\u00e4t und das verschr\u00e4nkte Universum",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/David_Bohm.jpg",
@@ -10490,7 +10410,7 @@
     },
     {
       "id": "quantenphysik_und_bewusstsein_synthese",
-      "name": "Quantenphysik und Bewusstsein – Eine Synthese",
+      "name": "Quantenphysik und Bewusstsein \u2013 Eine Synthese",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Amit_Goswami,_November_2013.jpg",
@@ -10503,7 +10423,7 @@
     },
     {
       "id": "resilienz_wissenschaft_der_widerstandskraft_synthese",
-      "name": "Resilienz – Die Wissenschaft der Widerstandskraft",
+      "name": "Resilienz \u2013 Die Wissenschaft der Widerstandskraft",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Coat_of_arms_of_the_European_Union_Military_Staff.svg",
@@ -10516,7 +10436,7 @@
     },
     {
       "id": "scham_und_wuerde_psychologie_synthese",
-      "name": "Scham und Würde – Eine psychologische und kulturelle Synthese",
+      "name": "Scham und W\u00fcrde \u2013 Eine psychologische und kulturelle Synthese",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Sigmund_Freud,_by_Max_Halberstadt_(cropped).jpg",
@@ -10529,7 +10449,7 @@
     },
     {
       "id": "schlaf_traeume_unbewusstes_gehirn_synthese",
-      "name": "Schlaf, Träume und das unbewusste Gehirn",
+      "name": "Schlaf, Tr\u00e4ume und das unbewusste Gehirn",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/A_child_sleeping.jpg",
@@ -10555,7 +10475,7 @@
     },
     {
       "id": "spirale_der_bewusstseinsentwicklung_synthese",
-      "name": "Die Spirale der Bewusstseinsentwicklung – Eine Synthese",
+      "name": "Die Spirale der Bewusstseinsentwicklung \u2013 Eine Synthese",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Ken_Wilber_10.JPG",
@@ -10568,7 +10488,7 @@
     },
     {
       "id": "sprache_und_wirklichkeit_synthese",
-      "name": "Sprache und Wirklichkeit – Eine Synthese",
+      "name": "Sprache und Wirklichkeit \u2013 Eine Synthese",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Italie_-800.png",
@@ -10581,10 +10501,10 @@
     },
     {
       "id": "sprachphilosophie_wittgenstein_austin_metapher_synthese",
-      "name": "Sprachphilosophie – Die Wirklichkeit der Worte",
+      "name": "Sprachphilosophie \u2013 Die Wirklichkeit der Worte",
       "type": "Synthesen",
       "cluster": "Synthesen",
-      "image": "/images/Bundesarchiv_Bild_183-31492-0004,_Berlin,_Tierpark-Eröffnung_,_mit_Wilhelm_Pieck.jpg",
+      "image": "/images/Bundesarchiv_Bild_183-31492-0004,_Berlin,_Tierpark-Er\u00f6ffnung_,_mit_Wilhelm_Pieck.jpg",
       "hasImage": true,
       "year": 9999,
       "wordCount": 549,
@@ -10607,10 +10527,10 @@
     },
     {
       "id": "transpersonale_psychologie_synthese",
-      "name": "Transpersonale Psychologie – Geschichte und Synthese",
+      "name": "Transpersonale Psychologie \u2013 Geschichte und Synthese",
       "type": "Synthesen",
       "cluster": "Synthesen",
-      "image": "/images/Einfache_Bedürfnishierarchie_nach_Maslow.svg",
+      "image": "/images/Einfache_Bed\u00fcrfnishierarchie_nach_Maslow.svg",
       "hasImage": true,
       "year": 1908,
       "wordCount": 680,
@@ -10620,7 +10540,7 @@
     },
     {
       "id": "trauma_und_systemtheorie_synthese",
-      "name": "Trauma und Systemtheorie – Eine Synthese",
+      "name": "Trauma und Systemtheorie \u2013 Eine Synthese",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Jacques_Lacan.jpg",
@@ -10633,7 +10553,7 @@
     },
     {
       "id": "unbewusstes_als_feld_kollektiv_synthese",
-      "name": "Das Unbewusste als Feld – Kollektive und morphische Dimensionen",
+      "name": "Das Unbewusste als Feld \u2013 Kollektive und morphische Dimensionen",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Alchemical_scroll_by_George_Ripley_(Wellcome).jpg",
@@ -10646,7 +10566,7 @@
     },
     {
       "id": "wirtschaft_und_bewusstsein_synthese",
-      "name": "Wirtschaft und Bewusstsein – Eine Synthese",
+      "name": "Wirtschaft und Bewusstsein \u2013 Eine Synthese",
       "type": "Synthesen",
       "cluster": "Synthesen",
       "image": "/images/Frankfurt_Main_August_2020_1.jpg",
@@ -10682,21 +10602,7 @@
       "val": 12,
       "time": 2,
       "color": "#a78bfa",
-      "description": "Daisetz Teitaro Suzuki (1870–1966) is the scholar most responsible for introducing Zen Buddhism to Western audiences in the 20th century — a Japanese lay Buddhist who wrote prolifically in English, lived and taught for extended periods in the United States, and became one of the most widely read interpreters of Asian thought in the Western world. Born in Kanazawa, Japan, he studied Zen under Shaku Soyen and Imagita Kosen, achieving kensho (the initial awakening experience) through intensive koan practice. He accompanied Shaku Soyen to the 1893 Parliament of World\\"
-    },
-    {
-      "id": "thich_nhat_hanh_monographie",
-      "name": "Thích Nhất Hạnh",
-      "type": "Tradition",
-      "cluster": "Tradition",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/%E4%B8%80%E8%A1%8C%E7%A6%AA%E5%B8%AB_%E8%B6%8A%E5%8D%97%E4%BD%9B%E6%95%99%E8%87%A8%E6%BF%9F%E5%AE%97%E7%AC%AC%E5%9B%9B%E5%8D%81%E4%BA%8C%E4%BB%A3%E6%B3%95%E5%97%A3.jpg",
-      "hasImage": true,
-      "year": 1926,
-      "wordCount": 825,
-      "val": 12,
-      "time": 2,
-      "color": "#a78bfa",
-      "description": "Thich Nhat Hanh (1926–2022) is the most influential Buddhist teacher of the 20th century after the Dalai Lama, the founder of \\"
+      "description": "Daisetz Teitaro Suzuki (1870\u20131966) is the scholar most responsible for introducing Zen Buddhism to Western audiences in the 20th century \u2014 a Japanese lay Buddhist who wrote prolifically in English, lived and taught for extended periods in the United States, and became one of the most widely read interpreters of Asian thought in the Western world. Born in Kanazawa, Japan, he studied Zen under Shaku Soyen and Imagita Kosen, achieving kensho (the initial awakening experience) through intensive koan practice. He accompanied Shaku Soyen to the 1893 Parliament of World\\"
     },
     {
       "id": "Siddharta_Gautama_monographie",
@@ -10729,7 +10635,7 @@
       "name": "Alexander von Abonuteichos",
       "type": "Tradition",
       "cluster": "Tradition",
-      "image": "/images/Abonuteichos_-_Münzkabinett,_Berlin_-_5501599.jpg",
+      "image": "/images/Abonuteichos_-_M\u00fcnzkabinett,_Berlin_-_5501599.jpg",
       "hasImage": true,
       "year": 9999,
       "wordCount": 431,
@@ -10820,7 +10726,7 @@
       "name": "Amadeo da Silva Menezes",
       "type": "Tradition",
       "cluster": "Tradition",
-      "image": "/images/Amedeo_da_Sylva_(Convento_dell’Annunciata,_Piancogno).png",
+      "image": "/images/Amedeo_da_Sylva_(Convento_dell\u2019Annunciata,_Piancogno).png",
       "hasImage": true,
       "year": 9999,
       "wordCount": 446,
@@ -10843,10 +10749,10 @@
     },
     {
       "id": "andreas_eossi_monographie",
-      "name": "Andreas Eössi",
+      "name": "Andreas E\u00f6ssi",
       "type": "Tradition",
       "cluster": "Tradition",
-      "image": "/images/Biserica_Unitariană_din_Cluj.jpg",
+      "image": "/images/Biserica_Unitarian\u0103_din_Cluj.jpg",
       "hasImage": false,
       "year": 9999,
       "wordCount": 419,
@@ -10895,7 +10801,7 @@
     },
     {
       "id": "anna_schaeffer_monographie",
-      "name": "Anna Schäffer",
+      "name": "Anna Sch\u00e4ffer",
       "type": "Tradition",
       "cluster": "Tradition",
       "image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Anna_Sch%C3%A4ffer.jpg",
@@ -10934,7 +10840,7 @@
     },
     {
       "id": "anne_madeleine_remusat_monographie",
-      "name": "Anne-Madeleine Rémusat",
+      "name": "Anne-Madeleine R\u00e9musat",
       "type": "Tradition",
       "cluster": "Tradition",
       "image": "/images/Anne_Madeleine_Remuzat.jpg",
@@ -10950,7 +10856,7 @@
       "name": "Antoine de Chandieu",
       "type": "Tradition",
       "cluster": "Tradition",
-      "image": "/images/Portrait_d'Antoine_de_La_Roche_Chandieu_(1534-1591),_théologien_protestant_français,_reçu_bourgeois_de_Genève_en_1589.jpg",
+      "image": "/images/Portrait_d'Antoine_de_La_Roche_Chandieu_(1534-1591),_th\u00e9ologien_protestant_fran\u00e7ais,_re\u00e7u_bourgeois_de_Gen\u00e8ve_en_1589.jpg",
       "hasImage": true,
       "year": 1534,
       "wordCount": 416,
@@ -11064,7 +10970,7 @@
     },
     {
       "id": "antonie_raedler_monographie",
-      "name": "Antonie Rädler",
+      "name": "Antonie R\u00e4dler",
       "type": "Tradition",
       "cluster": "Tradition",
       "image": "/images/Wigratzbad_1.jpg",
@@ -11119,7 +11025,7 @@
       "name": "Arsacius Seehofer",
       "type": "Tradition",
       "cluster": "Tradition",
-      "image": "/images/Hohe_Schule_Ingolstadt_(ehem_Landesuniversität).jpg",
+      "image": "/images/Hohe_Schule_Ingolstadt_(ehem_Landesuniversit\u00e4t).jpg",
       "hasImage": true,
       "year": 1523,
       "wordCount": 435,
@@ -11142,7 +11048,7 @@
     },
     {
       "id": "ateshbaz_i_veli_monographie",
-      "name": "Ateshbaz-ı Veli",
+      "name": "Ateshbaz-\u0131 Veli",
       "type": "Tradition",
       "cluster": "Tradition",
       "image": "/images/800px-Mevlana_Museum,_Konya.jpg",
@@ -11171,7 +11077,7 @@
       "name": "Augustin Gschmus",
       "type": "Tradition",
       "cluster": "Tradition",
-      "image": "/images/Temple_Saint-Étienne_(Mulhouse).jpg",
+      "image": "/images/Temple_Saint-\u00c9tienne_(Mulhouse).jpg",
       "hasImage": false,
       "year": 9999,
       "wordCount": 437,
@@ -11230,7 +11136,7 @@
       "val": 12,
       "time": 2,
       "color": "#a78bfa",
-      "description": "Siddhartha Gautama, the historical Buddha (c. 563–483 BCE or c. 480–400 BCE according to revised scholarly chronology), was born a prince of the Shakya clan in Lumbini (present-day Nepal). The traditional biography describes his protected upbringing, his encounter with the \\"
+      "description": "Siddhartha Gautama, the historical Buddha (c. 563\u2013483 BCE or c. 480\u2013400 BCE according to revised scholarly chronology), was born a prince of the Shakya clan in Lumbini (present-day Nepal). The traditional biography describes his protected upbringing, his encounter with the \\"
     },
     {
       "id": "buddhismus",
@@ -11312,7 +11218,7 @@
     },
     {
       "id": "kabbala_verborgene_dimension_monographie",
-      "name": "Kabbala – Die verborgene Dimension der Torah",
+      "name": "Kabbala \u2013 Die verborgene Dimension der Torah",
       "type": "Tradition",
       "cluster": "Tradition",
       "image": "/images/Zohar.png",
@@ -11325,7 +11231,7 @@
     },
     {
       "id": "konfuzianismus_harmonie_tugend_beziehungen_monographie",
-      "name": "Konfuzianismus – Die Philosophie der Beziehungen",
+      "name": "Konfuzianismus \u2013 Die Philosophie der Beziehungen",
       "type": "Tradition",
       "cluster": "Tradition",
       "image": "/images/Confucius_temple_Kaohsiung_amk.jpg",
@@ -11354,7 +11260,7 @@
       "name": "Suhrawardi",
       "type": "Tradition",
       "cluster": "Tradition",
-      "image": "/images/Opening_page_from_the_manuscript_of_\"Hikmat_al-ʿIshraq\"_by_al-Suhrawardi.jpg",
+      "image": "/images/Opening_page_from_the_manuscript_of_\"Hikmat_al-\u02bfIshraq\"_by_al-Suhrawardi.jpg",
       "hasImage": true,
       "year": 1154,
       "wordCount": 327,
@@ -11364,7 +11270,7 @@
     },
     {
       "id": "sufismus_weg_des_herzens_monographie",
-      "name": "Sufismus – Der Weg des Herzens",
+      "name": "Sufismus \u2013 Der Weg des Herzens",
       "type": "Tradition",
       "cluster": "Tradition",
       "image": "/images/Dervish_def.jpg",
@@ -11468,7 +11374,7 @@
     },
     {
       "id": "Komplexe_Posttraumatische_Belastungsstoerung_monographie",
-      "name": "Komplexe Posttraumatische Belastungsstörung",
+      "name": "Komplexe Posttraumatische Belastungsst\u00f6rung",
       "type": "Traumaforschung",
       "cluster": "Traumaforschung",
       "image": "/images/800px-The_Scream.jpg",
@@ -11766,19 +11672,6 @@
       "color": "#f87171"
     },
     {
-      "id": "peter_levine_monographie",
-      "name": "Peter A. Levine",
-      "type": "Traumaforschung",
-      "cluster": "Traumaforschung",
-      "image": "/images/800px-The_Scream.jpg",
-      "hasImage": false,
-      "year": 1997,
-      "wordCount": 400,
-      "val": 8,
-      "time": 6,
-      "color": "#f87171"
-    },
-    {
       "id": "satya_marchand_monographie",
       "name": "Satya Marchand",
       "type": "Traumaforschung",
@@ -11806,7 +11699,7 @@
     },
     {
       "id": "thomas_huebl_monographie",
-      "name": "Thomas Hübl",
+      "name": "Thomas H\u00fcbl",
       "type": "Traumaforschung",
       "cluster": "Traumaforschung",
       "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Thomas_Hubl.png",
@@ -11858,7 +11751,7 @@
     },
     {
       "id": "schoepferische_zerstoerung_monographie",
-      "name": "Schöpferische Zerstörung",
+      "name": "Sch\u00f6pferische Zerst\u00f6rung",
       "type": "Wirtschaft",
       "cluster": "Wirtschaft",
       "image": "/images/Creative_Destruction.jpg",
@@ -11936,7 +11829,7 @@
     },
     {
       "id": "commons_gemeinschaftsgut_ostrom_monographie",
-      "name": "Das Gut des Gemeinsamen – Commons",
+      "name": "Das Gut des Gemeinsamen \u2013 Commons",
       "type": "Wirtschaft",
       "cluster": "Wirtschaft",
       "image": "/images/2025-04-29-Sahra_Wagenknecht-Maischberger-3049_(cropped_2).jpg",
@@ -12131,7 +12024,7 @@
     },
     {
       "id": "leon_walras_monographie",
-      "name": "Léon Walras",
+      "name": "L\u00e9on Walras",
       "type": "Wirtschaft",
       "cluster": "Wirtschaft",
       "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Portrait_of_L%C3%A9on_Walras_1862_extract.png",
@@ -12365,7 +12258,7 @@
     },
     {
       "id": "chiralitaet_monographie",
-      "name": "Chiralität",
+      "name": "Chiralit\u00e4t",
       "type": "Wissenschaft",
       "cluster": "Wissenschaft",
       "image": "/images/Chiralitaet.jpg",
@@ -12664,7 +12557,7 @@
     },
     {
       "id": "unvollstaendigkeitssatz_monographie",
-      "name": "Unvollständigkeitssatz",
+      "name": "Unvollst\u00e4ndigkeitssatz",
       "type": "Wissenschaft",
       "cluster": "Wissenschaft",
       "image": "/images/Incompleteness_Theorem_Godel.jpg",
@@ -12684,19 +12577,6 @@
       "hasImage": true,
       "year": 1845,
       "wordCount": 789,
-      "val": 12,
-      "time": 11,
-      "color": "#60a5fa"
-    },
-    {
-      "id": "benoit_mandelbrot_monographie",
-      "name": "Benoît Mandelbrot",
-      "type": "Wissenschaft",
-      "cluster": "Wissenschaft",
-      "image": "/images/Benoit_Mandelbrot_mg_1804.jpg",
-      "hasImage": true,
-      "year": 1924,
-      "wordCount": 866,
       "val": 12,
       "time": 11,
       "color": "#60a5fa"
@@ -12794,7 +12674,7 @@
     },
     {
       "id": "alexander_bain_patente_primaerquelle",
-      "name": "Primärquellen",
+      "name": "Prim\u00e4rquellen",
       "type": "Wissenschaft",
       "cluster": "Wissenschaft",
       "image": "/images/HasekuraBookItalian.jpg",
@@ -12862,7 +12742,7 @@
       "name": "Alexander Gawrilowitsch Gurwitsch",
       "type": "Wissenschaft",
       "cluster": "Wissenschaft",
-      "image": "/images/Александр_Гаврилович_Гурвич_–_советский_и_русский_биолог.jpg",
+      "image": "/images/\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440_\u0413\u0430\u0432\u0440\u0438\u043b\u043e\u0432\u0438\u0447_\u0413\u0443\u0440\u0432\u0438\u0447_\u2013_\u0441\u043e\u0432\u0435\u0442\u0441\u043a\u0438\u0439_\u0438_\u0440\u0443\u0441\u0441\u043a\u0438\u0439_\u0431\u0438\u043e\u043b\u043e\u0433.jpg",
       "hasImage": false,
       "year": 1874,
       "wordCount": 426,
@@ -13014,8 +12894,8 @@
       "color": "#60a5fa"
     },
     {
-      "id": "allgemeine_relativitätstheorie_und_kosmologie",
-      "name": "Allgemeine Relativitätstheorie und Kosmologie",
+      "id": "allgemeine_relativit\u00e4tstheorie_und_kosmologie",
+      "name": "Allgemeine Relativit\u00e4tstheorie und Kosmologie",
       "type": "Wissenschaft",
       "cluster": "Wissenschaft",
       "image": "/images/Albert_Einstein_Head_cleaned.jpg",
@@ -13067,7 +12947,7 @@
     },
     {
       "id": "amedee_bollee_monographie",
-      "name": "Amédée Bollée",
+      "name": "Am\u00e9d\u00e9e Boll\u00e9e",
       "type": "Wissenschaft",
       "cluster": "Wissenschaft",
       "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/HCM-City_Kathedrale.JPG",
@@ -13106,10 +12986,10 @@
     },
     {
       "id": "ana_colovic_lesoska_monographie",
-      "name": "Ana Čolović Lešoska",
+      "name": "Ana \u010colovi\u0107 Le\u0161oska",
       "type": "Wissenschaft",
       "cluster": "Wissenschaft",
-      "image": "/images/Ana_Čolović_Lešoska_(2022)_(cropped).jpg",
+      "image": "/images/Ana_\u010colovi\u0107_Le\u0161oska_(2022)_(cropped).jpg",
       "hasImage": true,
       "year": 1979,
       "wordCount": 421,
@@ -13236,7 +13116,7 @@
     },
     {
       "id": "angelique_du_coudray_monographie",
-      "name": "Angélique du Coudray",
+      "name": "Ang\u00e9lique du Coudray",
       "type": "Wissenschaft",
       "cluster": "Wissenschaft",
       "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Ang%C3%A9lique_du_Courdray.jpg",
@@ -13327,7 +13207,7 @@
     },
     {
       "id": "annie_france_harrar_monographie",
-      "name": "Annie Francé-Harrar",
+      "name": "Annie Franc\u00e9-Harrar",
       "type": "Wissenschaft",
       "cluster": "Wissenschaft",
       "image": "/images/Humus_3.JPG",
@@ -13470,7 +13350,7 @@
     },
     {
       "id": "arnold_brass_monographie",
-      "name": "Arnold Braß",
+      "name": "Arnold Bra\u00df",
       "type": "Wissenschaft",
       "cluster": "Wissenschaft",
       "image": "/images/Affenproblem.jpg",
@@ -13612,8 +13492,8 @@
       "color": "#60a5fa"
     },
     {
-      "id": "chaosforschung_und_komplexitätswissenschaften",
-      "name": "Chaosforschung und Komplexitätswissenschaften",
+      "id": "chaosforschung_und_komplexit\u00e4tswissenschaften",
+      "name": "Chaosforschung und Komplexit\u00e4tswissenschaften",
       "type": "Wissenschaft",
       "cluster": "Wissenschaft",
       "image": "/images/800px-Hubble_Ultra_Deep_Field_High-res.jpg",
@@ -13717,9 +13597,9 @@
     },
     {
       "id": "gaia_theorie_erdsystem_lovelock_monographie",
-      "name": "Gaia-Theorie – Die Erde als lebendiges System",
-      "type": "Ökologie_und_Umwelt",
-      "cluster": "Ökologie_und_Umwelt",
+      "name": "Gaia-Theorie \u2013 Die Erde als lebendiges System",
+      "type": "\u00d6kologie_und_Umwelt",
+      "cluster": "\u00d6kologie_und_Umwelt",
       "image": "/images/Lynn_Margulis.jpg",
       "hasImage": true,
       "year": 9999,
@@ -13731,8 +13611,8 @@
     {
       "id": "klimakipppunkte_feedback_schleifen_monographie",
       "name": "Kipppunkte und Feedback-Schleifen im Klimasystem",
-      "type": "Ökologie_und_Umwelt",
-      "cluster": "Ökologie_und_Umwelt",
+      "type": "\u00d6kologie_und_Umwelt",
+      "cluster": "\u00d6kologie_und_Umwelt",
       "image": "/images/Feedback_Loop.jpg",
       "hasImage": true,
       "year": 9999,
@@ -13743,9 +13623,9 @@
     },
     {
       "id": "klimapsychologie_solastalgie_oeko_angst_monographie",
-      "name": "Klimapsychologie – Die psychischen Dimensionen der ökologischen Krise",
-      "type": "Ökologie_und_Umwelt",
-      "cluster": "Ökologie_und_Umwelt",
+      "name": "Klimapsychologie \u2013 Die psychischen Dimensionen der \u00f6kologischen Krise",
+      "type": "\u00d6kologie_und_Umwelt",
+      "cluster": "\u00d6kologie_und_Umwelt",
       "image": "/images/800px-Hubble_Ultra_Deep_Field_part_d.jpg",
       "hasImage": false,
       "year": 9999,
@@ -13756,9 +13636,9 @@
     },
     {
       "id": "planetare_grenzen_anthropozaen_monographie",
-      "name": "Planetare Grenzen und das Anthropozän",
-      "type": "Ökologie_und_Umwelt",
-      "cluster": "Ökologie_und_Umwelt",
+      "name": "Planetare Grenzen und das Anthropoz\u00e4n",
+      "type": "\u00d6kologie_und_Umwelt",
+      "cluster": "\u00d6kologie_und_Umwelt",
       "image": "/images/PBs2023-de.svg",
       "hasImage": true,
       "year": 2000,
@@ -13770,8 +13650,8 @@
     {
       "id": "symbiose_kooperation_natur_margulis_monographie",
       "name": "Symbiose und Kooperation in der Natur",
-      "type": "Ökologie_und_Umwelt",
-      "cluster": "Ökologie_und_Umwelt",
+      "type": "\u00d6kologie_und_Umwelt",
+      "cluster": "\u00d6kologie_und_Umwelt",
       "image": "/images/Common_clownfish.jpg",
       "hasImage": true,
       "year": 1938,
@@ -13781,10 +13661,10 @@
       "color": "#86efac"
     },
     {
-      "id": "tiefenökologie_naess_macy_monographie",
-      "name": "Tiefenökologie – Die Philosophie der Naturverbundenheit",
-      "type": "Ökologie_und_Umwelt",
-      "cluster": "Ökologie_und_Umwelt",
+      "id": "tiefen\u00f6kologie_naess_macy_monographie",
+      "name": "Tiefen\u00f6kologie \u2013 Die Philosophie der Naturverbundenheit",
+      "type": "\u00d6kologie_und_Umwelt",
+      "cluster": "\u00d6kologie_und_Umwelt",
       "image": "/images/800px-Hubble_Ultra_Deep_Field_part_d.jpg",
       "hasImage": false,
       "year": 1912,
@@ -13794,10 +13674,10 @@
       "color": "#86efac"
     },
     {
-      "id": "tiefenökologie_ökopsychologie_monographie",
-      "name": "Tiefenökologie und Ökopsychologie",
-      "type": "Ökologie_und_Umwelt",
-      "cluster": "Ökologie_und_Umwelt",
+      "id": "tiefen\u00f6kologie_\u00f6kopsychologie_monographie",
+      "name": "Tiefen\u00f6kologie und \u00d6kopsychologie",
+      "type": "\u00d6kologie_und_Umwelt",
+      "cluster": "\u00d6kologie_und_Umwelt",
       "image": "/images/800px-Hubble_Ultra_Deep_Field_part_d.jpg",
       "hasImage": false,
       "year": 1912,
@@ -16653,19 +16533,19 @@
       "time": 12
     },
     {
-      "source": "Gotthard_Günther_monographie",
+      "source": "Gotthard_G\u00fcnther_monographie",
       "target": "Niklas_Luhmann_monographie",
       "type": "similar",
       "time": 12
     },
     {
-      "source": "Gotthard_Günther_monographie",
+      "source": "Gotthard_G\u00fcnther_monographie",
       "target": "warren_mcculloch_monographie",
       "type": "similar",
       "time": 12
     },
     {
-      "source": "Gotthard_Günther_monographie",
+      "source": "Gotthard_G\u00fcnther_monographie",
       "target": "Arturo_Rosenblueth_monographie",
       "type": "similar",
       "time": 12
@@ -16732,7 +16612,7 @@
     },
     {
       "source": "viable_system_model_monographie",
-      "target": "Gotthard_Günther_monographie",
+      "target": "Gotthard_G\u00fcnther_monographie",
       "type": "similar",
       "time": 12
     },
@@ -16792,7 +16672,7 @@
     },
     {
       "source": "Norbert_Wiener_monographie",
-      "target": "Gotthard_Günther_monographie",
+      "target": "Gotthard_G\u00fcnther_monographie",
       "type": "similar",
       "time": 12
     },
@@ -16846,7 +16726,7 @@
     },
     {
       "source": "stafford_beer_monographie",
-      "target": "Gotthard_Günther_monographie",
+      "target": "Gotthard_G\u00fcnther_monographie",
       "type": "similar",
       "time": 12
     },
@@ -16948,7 +16828,7 @@
     },
     {
       "source": "Walter_Pitts_monographie",
-      "target": "Gotthard_Günther_monographie",
+      "target": "Gotthard_G\u00fcnther_monographie",
       "type": "similar",
       "time": 12
     },
@@ -18124,7 +18004,7 @@
     },
     {
       "source": "Thomas_Kuhn_monographie",
-      "target": "søren_kierkegaard_monographie",
+      "target": "s\u00f8ren_kierkegaard_monographie",
       "type": "similar",
       "time": 5
     },
@@ -18148,7 +18028,7 @@
     },
     {
       "source": "Aristoteles_monographie",
-      "target": "hegel_phaenomenologie_primärquelle",
+      "target": "hegel_phaenomenologie_prim\u00e4rquelle",
       "type": "similar",
       "time": 5
     },
@@ -18399,19 +18279,19 @@
       "time": 5
     },
     {
-      "source": "søren_kierkegaard_monographie",
+      "source": "s\u00f8ren_kierkegaard_monographie",
       "target": "paramahansa_yogananda_monographie",
       "type": "similar",
       "time": 5
     },
     {
-      "source": "søren_kierkegaard_monographie",
+      "source": "s\u00f8ren_kierkegaard_monographie",
       "target": "amor_fati_monographie",
       "type": "similar",
       "time": 5
     },
     {
-      "source": "søren_kierkegaard_monographie",
+      "source": "s\u00f8ren_kierkegaard_monographie",
       "target": "nietzsche_ewige_wiederkehr_amor_fati_vertiefung",
       "type": "similar",
       "time": 5
@@ -18610,7 +18490,7 @@
     },
     {
       "source": "pseudo_dionysius_areopagita_monographie",
-      "target": "søren_kierkegaard_monographie",
+      "target": "s\u00f8ren_kierkegaard_monographie",
       "type": "similar",
       "time": 5
     },
@@ -18688,7 +18568,7 @@
     },
     {
       "source": "nagarjuna_monographie",
-      "target": "hegel_phaenomenologie_primärquelle",
+      "target": "hegel_phaenomenologie_prim\u00e4rquelle",
       "type": "similar",
       "time": 5
     },
@@ -19029,19 +18909,19 @@
       "time": 5
     },
     {
-      "source": "prosochē_monographie",
+      "source": "prosoch\u0113_monographie",
       "target": "Michel_Foucault_monographie",
       "type": "similar",
       "time": 5
     },
     {
-      "source": "prosochē_monographie",
+      "source": "prosoch\u0113_monographie",
       "target": "Marcus_Aurelius_monographie",
       "type": "similar",
       "time": 5
     },
     {
-      "source": "prosochē_monographie",
+      "source": "prosoch\u0113_monographie",
       "target": "laozi_monographie",
       "type": "similar",
       "time": 5
@@ -19168,7 +19048,7 @@
     },
     {
       "source": "disziplinargesellschaft_monographie",
-      "target": "prosochē_monographie",
+      "target": "prosoch\u0113_monographie",
       "type": "similar",
       "time": 5
     },
@@ -19276,7 +19156,7 @@
     },
     {
       "source": "adorno_negative_dialektik_masterclass",
-      "target": "hegel_phaenomenologie_primärquelle",
+      "target": "hegel_phaenomenologie_prim\u00e4rquelle",
       "type": "similar",
       "time": 5
     },
@@ -19366,7 +19246,7 @@
     },
     {
       "source": "ambrosius_blarer_monographie",
-      "target": "prosochē_monographie",
+      "target": "prosoch\u0113_monographie",
       "type": "similar",
       "time": 5
     },
@@ -19378,7 +19258,7 @@
     },
     {
       "source": "ambrosius_feierabend_monographie",
-      "target": "hegel_phaenomenologie_primärquelle",
+      "target": "hegel_phaenomenologie_prim\u00e4rquelle",
       "type": "similar",
       "time": 5
     },
@@ -19474,7 +19354,7 @@
     },
     {
       "source": "andreas_bodenstein_monographie",
-      "target": "hegel_phaenomenologie_primärquelle",
+      "target": "hegel_phaenomenologie_prim\u00e4rquelle",
       "type": "similar",
       "time": 5
     },
@@ -20002,7 +19882,7 @@
     },
     {
       "source": "edward_said_monographie",
-      "target": "hegel_phaenomenologie_primärquelle",
+      "target": "hegel_phaenomenologie_prim\u00e4rquelle",
       "type": "similar",
       "time": 5
     },
@@ -20091,19 +19971,19 @@
       "time": 5
     },
     {
-      "source": "existentialismus_und_phänomenologie",
+      "source": "existentialismus_und_ph\u00e4nomenologie",
       "target": "andreas_bodenstein_monographie",
       "type": "similar",
       "time": 5
     },
     {
-      "source": "existentialismus_und_phänomenologie",
+      "source": "existentialismus_und_ph\u00e4nomenologie",
       "target": "jean_francois_lyotard_monographie",
       "type": "similar",
       "time": 5
     },
     {
-      "source": "existentialismus_und_phänomenologie",
+      "source": "existentialismus_und_ph\u00e4nomenologie",
       "target": "Hannah_Arendt",
       "type": "similar",
       "time": 5
@@ -20337,19 +20217,19 @@
       "time": 5
     },
     {
-      "source": "hegel_phaenomenologie_primärquelle",
+      "source": "hegel_phaenomenologie_prim\u00e4rquelle",
       "target": "David_Hume_monographie",
       "type": "similar",
       "time": 5
     },
     {
-      "source": "hegel_phaenomenologie_primärquelle",
+      "source": "hegel_phaenomenologie_prim\u00e4rquelle",
       "target": "porphyrios_monographie",
       "type": "similar",
       "time": 5
     },
     {
-      "source": "hegel_phaenomenologie_primärquelle",
+      "source": "hegel_phaenomenologie_prim\u00e4rquelle",
       "target": "emanation_monographie",
       "type": "similar",
       "time": 5
@@ -20752,7 +20632,7 @@
     },
     {
       "source": "montaigne_essais_masterclass",
-      "target": "søren_kierkegaard_monographie",
+      "target": "s\u00f8ren_kierkegaard_monographie",
       "type": "similar",
       "time": 5
     },
@@ -20956,7 +20836,7 @@
     },
     {
       "source": "simone_weil_vertiefung",
-      "target": "hegel_phaenomenologie_primärquelle",
+      "target": "hegel_phaenomenologie_prim\u00e4rquelle",
       "type": "similar",
       "time": 5
     },
@@ -21112,7 +20992,7 @@
     },
     {
       "source": "walter_benjamin_engel_geschichte_monographie",
-      "target": "existentialismus_und_phänomenologie",
+      "target": "existentialismus_und_ph\u00e4nomenologie",
       "type": "similar",
       "time": 5
     },
@@ -21142,7 +21022,7 @@
     },
     {
       "source": "zhuangzi_monographie",
-      "target": "hegel_phaenomenologie_primärquelle",
+      "target": "hegel_phaenomenologie_prim\u00e4rquelle",
       "type": "similar",
       "time": 5
     },
@@ -23943,19 +23823,19 @@
       "time": 3
     },
     {
-      "source": "chögyam_trungpa_monographie",
+      "source": "ch\u00f6gyam_trungpa_monographie",
       "target": "helena_blavatsky_monographie",
       "type": "similar",
       "time": 3
     },
     {
-      "source": "chögyam_trungpa_monographie",
+      "source": "ch\u00f6gyam_trungpa_monographie",
       "target": "meher_baba_monographie",
       "type": "similar",
       "time": 3
     },
     {
-      "source": "chögyam_trungpa_monographie",
+      "source": "ch\u00f6gyam_trungpa_monographie",
       "target": "ibn_arabi_monographie",
       "type": "similar",
       "time": 3
@@ -24430,7 +24310,7 @@
     },
     {
       "source": "Friedrich_Schleiermacher_monographie",
-      "target": "jakob_böhme_monographie",
+      "target": "jakob_b\u00f6hme_monographie",
       "type": "similar",
       "time": 3
     },
@@ -24562,7 +24442,7 @@
     },
     {
       "source": "anandamayi_ma_monographie",
-      "target": "chögyam_trungpa_monographie",
+      "target": "ch\u00f6gyam_trungpa_monographie",
       "type": "similar",
       "time": 3
     },
@@ -24634,7 +24514,7 @@
     },
     {
       "source": "bks_iyengar_monographie",
-      "target": "jakob_böhme_monographie",
+      "target": "jakob_b\u00f6hme_monographie",
       "type": "similar",
       "time": 3
     },
@@ -24874,7 +24754,7 @@
     },
     {
       "source": "sarada_devi_monographie",
-      "target": "jakob_böhme_monographie",
+      "target": "jakob_b\u00f6hme_monographie",
       "type": "similar",
       "time": 3
     },
@@ -24934,7 +24814,7 @@
     },
     {
       "source": "swami_muktananda_monographie",
-      "target": "chögyam_trungpa_monographie",
+      "target": "ch\u00f6gyam_trungpa_monographie",
       "type": "similar",
       "time": 3
     },
@@ -25497,19 +25377,19 @@
       "time": 3
     },
     {
-      "source": "jakob_böhme_monographie",
+      "source": "jakob_b\u00f6hme_monographie",
       "target": "johannes_vom_kreuz_monographie",
       "type": "similar",
       "time": 3
     },
     {
-      "source": "jakob_böhme_monographie",
+      "source": "jakob_b\u00f6hme_monographie",
       "target": "Karma_und_Samsara_monographie",
       "type": "similar",
       "time": 3
     },
     {
-      "source": "jakob_böhme_monographie",
+      "source": "jakob_b\u00f6hme_monographie",
       "target": "osho_monographie",
       "type": "similar",
       "time": 3
@@ -26572,7 +26452,7 @@
     },
     {
       "source": "Charles_Sanders_Peirce_monographie",
-      "target": "Karl_Bühler_monographie",
+      "target": "Karl_B\u00fchler_monographie",
       "type": "similar",
       "time": 14
     },
@@ -26614,7 +26494,7 @@
     },
     {
       "source": "Edward_Sapir_monographie",
-      "target": "Karl_Bühler_monographie",
+      "target": "Karl_B\u00fchler_monographie",
       "type": "similar",
       "time": 14
     },
@@ -26667,7 +26547,7 @@
       "time": 14
     },
     {
-      "source": "Karl_Bühler_monographie",
+      "source": "Karl_B\u00fchler_monographie",
       "target": "Roman_Jakobson_monographie",
       "type": "similar",
       "time": 14
@@ -26782,7 +26662,7 @@
     },
     {
       "source": "Yuri_Lotman_monographie",
-      "target": "Karl_Bühler_monographie",
+      "target": "Karl_B\u00fchler_monographie",
       "type": "similar",
       "time": 14
     },
@@ -29764,7 +29644,7 @@
     },
     {
       "source": "hebbsche_lernregel_monographie",
-      "target": "chaosforschung_und_komplexitätswissenschaften",
+      "target": "chaosforschung_und_komplexit\u00e4tswissenschaften",
       "type": "similar",
       "time": 13
     },
@@ -30130,7 +30010,7 @@
     },
     {
       "source": "Ray_Kurzweil_monographie",
-      "target": "chaosforschung_und_komplexitätswissenschaften",
+      "target": "chaosforschung_und_komplexit\u00e4tswissenschaften",
       "type": "similar",
       "time": 13
     },
@@ -30801,19 +30681,19 @@
       "time": 13
     },
     {
-      "source": "allgemeine_relativitätstheorie_und_kosmologie",
+      "source": "allgemeine_relativit\u00e4tstheorie_und_kosmologie",
       "target": "spieltheorie_monographie",
       "type": "similar",
       "time": 13
     },
     {
-      "source": "allgemeine_relativitätstheorie_und_kosmologie",
+      "source": "allgemeine_relativit\u00e4tstheorie_und_kosmologie",
       "target": "neuronale_netze_monographie",
       "type": "similar",
       "time": 13
     },
     {
-      "source": "allgemeine_relativitätstheorie_und_kosmologie",
+      "source": "allgemeine_relativit\u00e4tstheorie_und_kosmologie",
       "target": "andreas_von_bechtolsheim_monographie",
       "type": "similar",
       "time": 13
@@ -30832,7 +30712,7 @@
     },
     {
       "source": "alois_auer_von_welsbach_monographie",
-      "target": "allgemeine_relativitätstheorie_und_kosmologie",
+      "target": "allgemeine_relativit\u00e4tstheorie_und_kosmologie",
       "type": "similar",
       "time": 13
     },
@@ -30880,7 +30760,7 @@
     },
     {
       "source": "amedee_bollee_monographie",
-      "target": "chaosforschung_und_komplexitätswissenschaften",
+      "target": "chaosforschung_und_komplexit\u00e4tswissenschaften",
       "type": "similar",
       "time": 13
     },
@@ -30970,7 +30850,7 @@
     },
     {
       "source": "andreas_engel_monographie",
-      "target": "chaosforschung_und_komplexitätswissenschaften",
+      "target": "chaosforschung_und_komplexit\u00e4tswissenschaften",
       "type": "similar",
       "time": 13
     },
@@ -31222,7 +31102,7 @@
     },
     {
       "source": "anne_grapin_botton_monographie",
-      "target": "chaosforschung_und_komplexitätswissenschaften",
+      "target": "chaosforschung_und_komplexit\u00e4tswissenschaften",
       "type": "similar",
       "time": 13
     },
@@ -31605,19 +31485,19 @@
       "time": 13
     },
     {
-      "source": "chaosforschung_und_komplexitätswissenschaften",
+      "source": "chaosforschung_und_komplexit\u00e4tswissenschaften",
       "target": "alexander_bain_patente_primaerquelle",
       "type": "similar",
       "time": 13
     },
     {
-      "source": "chaosforschung_und_komplexitätswissenschaften",
+      "source": "chaosforschung_und_komplexit\u00e4tswissenschaften",
       "target": "long_term_potentiation_monographie",
       "type": "similar",
       "time": 13
     },
     {
-      "source": "chaosforschung_und_komplexitätswissenschaften",
+      "source": "chaosforschung_und_komplexit\u00e4tswissenschaften",
       "target": "alexander_etkind_monographie",
       "type": "similar",
       "time": 13
@@ -31750,7 +31630,7 @@
     },
     {
       "source": "gaia_theorie_erdsystem_lovelock_monographie",
-      "target": "tiefenökologie_ökopsychologie_monographie",
+      "target": "tiefen\u00f6kologie_\u00f6kopsychologie_monographie",
       "type": "similar",
       "time": 16
     },
@@ -31768,7 +31648,7 @@
     },
     {
       "source": "klimakipppunkte_feedback_schleifen_monographie",
-      "target": "tiefenökologie_ökopsychologie_monographie",
+      "target": "tiefen\u00f6kologie_\u00f6kopsychologie_monographie",
       "type": "similar",
       "time": 16
     },
@@ -31786,7 +31666,7 @@
     },
     {
       "source": "klimapsychologie_solastalgie_oeko_angst_monographie",
-      "target": "tiefenökologie_naess_macy_monographie",
+      "target": "tiefen\u00f6kologie_naess_macy_monographie",
       "type": "similar",
       "time": 16
     },
@@ -31809,25 +31689,25 @@
       "time": 16
     },
     {
-      "source": "tiefenökologie_naess_macy_monographie",
+      "source": "tiefen\u00f6kologie_naess_macy_monographie",
       "target": "gaia_theorie_erdsystem_lovelock_monographie",
       "type": "similar",
       "time": 16
     },
     {
-      "source": "tiefenökologie_naess_macy_monographie",
+      "source": "tiefen\u00f6kologie_naess_macy_monographie",
       "target": "symbiose_kooperation_natur_margulis_monographie",
       "type": "similar",
       "time": 16
     },
     {
-      "source": "tiefenökologie_ökopsychologie_monographie",
+      "source": "tiefen\u00f6kologie_\u00f6kopsychologie_monographie",
       "target": "klimapsychologie_solastalgie_oeko_angst_monographie",
       "type": "similar",
       "time": 16
     },
     {
-      "source": "tiefenökologie_ökopsychologie_monographie",
+      "source": "tiefen\u00f6kologie_\u00f6kopsychologie_monographie",
       "target": "symbiose_kooperation_natur_margulis_monographie",
       "type": "similar",
       "time": 16
@@ -32056,7 +31936,7 @@
     },
     {
       "source": "polyvagal_theorie_vertiefung_integration",
-      "target": "Karl_Bühler_monographie",
+      "target": "Karl_B\u00fchler_monographie",
       "type": "bridge",
       "time": 22
     },
@@ -32169,7 +32049,7 @@
       "target": "ramana_maharshi_monographie",
       "type": "semantic",
       "moonType": "structural_proximity",
-      "description": "Ramana Maharshi teaches pure Advaita — the direct inquiry \"Who am I?\" as the shortest path to non-dual recognition.",
+      "description": "Ramana Maharshi teaches pure Advaita \u2014 the direct inquiry \"Who am I?\" as the shortest path to non-dual recognition.",
       "time": 25
     },
     {
@@ -32185,7 +32065,7 @@
       "target": "buddha_edle_wahrheiten_masterclass",
       "type": "semantic",
       "moonType": "tension",
-      "description": "Nietzsche attacked Buddhism as a \"nihilism of weakness\" — a life-negating desire to escape suffering. The Buddha would reply that Nietzsche\\",
+      "description": "Nietzsche attacked Buddhism as a \"nihilism of weakness\" \u2014 a life-negating desire to escape suffering. The Buddha would reply that Nietzsche\\",
       "time": 25
     },
     {
@@ -32225,7 +32105,7 @@
       "target": "advaita_vedanta_monographie",
       "type": "semantic",
       "moonType": "structural_proximity",
-      "description": "Vivekananda is the primary figure responsible for the global transmission of Advaita Vedanta — his \\",
+      "description": "Vivekananda is the primary figure responsible for the global transmission of Advaita Vedanta \u2014 his \\",
       "time": 25
     },
     {
@@ -32290,63 +32170,63 @@
       "source": "zhuangzi_monographie",
       "target": "laozi_monographie",
       "type": "semantic",
-      "description": "Zen integriert daoistische Natürlichkeit",
+      "description": "Zen integriert daoistische Nat\u00fcrlichkeit",
       "time": 26
     },
     {
       "source": "zhuangzi_monographie",
       "target": "thich_nhat_hanh_monographie",
       "type": "semantic",
-      "description": "Zen integriert daoistische Natürlichkeit",
+      "description": "Zen integriert daoistische Nat\u00fcrlichkeit",
       "time": 26
     },
     {
       "source": "zhuangzi_monographie",
       "target": "siddhartha_gautama_monographie",
       "type": "semantic",
-      "description": "Zen integriert daoistische Natürlichkeit",
+      "description": "Zen integriert daoistische Nat\u00fcrlichkeit",
       "time": 26
     },
     {
       "source": "zhuangzi_monographie",
       "target": "Heraklit_monographie",
       "type": "semantic",
-      "description": "Zen integriert daoistische Natürlichkeit",
+      "description": "Zen integriert daoistische Nat\u00fcrlichkeit",
       "time": 26
     },
     {
       "source": "laozi_monographie",
       "target": "thich_nhat_hanh_monographie",
       "type": "semantic",
-      "description": "Zen integriert daoistische Natürlichkeit",
+      "description": "Zen integriert daoistische Nat\u00fcrlichkeit",
       "time": 26
     },
     {
       "source": "laozi_monographie",
       "target": "siddhartha_gautama_monographie",
       "type": "semantic",
-      "description": "Zen integriert daoistische Natürlichkeit",
+      "description": "Zen integriert daoistische Nat\u00fcrlichkeit",
       "time": 26
     },
     {
       "source": "laozi_monographie",
       "target": "Heraklit_monographie",
       "type": "semantic",
-      "description": "Zen integriert daoistische Natürlichkeit",
+      "description": "Zen integriert daoistische Nat\u00fcrlichkeit",
       "time": 26
     },
     {
       "source": "thich_nhat_hanh_monographie",
       "target": "Heraklit_monographie",
       "type": "semantic",
-      "description": "Zen integriert daoistische Natürlichkeit",
+      "description": "Zen integriert daoistische Nat\u00fcrlichkeit",
       "time": 26
     },
     {
       "source": "siddhartha_gautama_monographie",
       "target": "Heraklit_monographie",
       "type": "semantic",
-      "description": "Zen integriert daoistische Natürlichkeit",
+      "description": "Zen integriert daoistische Nat\u00fcrlichkeit",
       "time": 26
     },
     {

@@ -6,6 +6,10 @@ import SpriteText from 'three-spritetext';
 import { motion, AnimatePresence } from 'framer-motion';
 import * as THREE from 'three';
 
+const textureLoader = new THREE.TextureLoader();
+textureLoader.crossOrigin = 'anonymous';
+const textureCache = new Map();
+
 export default function Graph() {
   const [data, setData] = useState({ nodes: [], links: [] });
   const [hoverNode, setHoverNode] = useState(null);
@@ -108,12 +112,16 @@ export default function Graph() {
       if (node.__threeObj) {
         const isMatch = !isSearchActive || searchResults.some(res => res.id === node.id);
         
-        // Find the mesh (it's either the object itself or the first child if it has a sprite)
-        const mesh = node.__threeObj.type === 'Mesh' ? node.__threeObj : node.__threeObj.children.find(c => c.type === 'Mesh');
+        // Find the mesh or sprite (it's either the object itself or the first child if it has a material)
+        const renderable = node.__threeObj.type === 'Mesh' || node.__threeObj.type === 'Sprite' 
+          ? node.__threeObj 
+          : node.__threeObj.children.find(c => c.type === 'Mesh' || c.type === 'Sprite');
         
-        if (mesh && mesh.material) {
-          mesh.material.opacity = isSearchActive ? (isMatch ? 1.0 : 0.05) : (node === hoverNode ? 1.0 : 0.85);
-          mesh.material.color.set(isSearchActive && !isMatch ? '#1a1a24' : (node.color || '#94a3b8'));
+        if (renderable && renderable.material) {
+          renderable.material.opacity = isSearchActive ? (isMatch ? 1.0 : 0.05) : (node === hoverNode ? 1.0 : 0.85);
+          if (renderable.type === 'Mesh') {
+            renderable.material.color.set(isSearchActive && !isMatch ? '#1a1a24' : (node.color || '#94a3b8'));
+          }
         }
         
         // Handle labels
@@ -149,23 +157,44 @@ export default function Graph() {
           
           const group = new THREE.Group();
           
-          const geometry = new THREE.SphereGeometry(node.val ? Math.min(node.val / 3, 6) : 3, 10, 10);
-          const material = new THREE.MeshBasicMaterial({
-            color: isSearchActive && !isMatch ? '#1a1a24' : (node.color || '#94a3b8'),
-            transparent: true,
-            opacity: isSearchActive ? (isMatch ? 1.0 : 0.05) : 0.85,
-          });
-          const sphere = new THREE.Mesh(geometry, material);
-          group.add(sphere);
+          if (node.image) {
+            let material;
+            if (textureCache.has(node.image)) {
+              material = new THREE.SpriteMaterial({ map: textureCache.get(node.image), color: 0xffffff });
+            } else {
+              material = new THREE.SpriteMaterial({ color: 0xffffff });
+              textureLoader.load(node.image, (texture) => {
+                textureCache.set(node.image, texture);
+                material.map = texture;
+                material.needsUpdate = true;
+              });
+            }
+            material.transparent = true;
+            material.opacity = isSearchActive ? (isMatch ? 1.0 : 0.05) : 0.85;
+            const sprite = new THREE.Sprite(material);
+            const size = node.val ? Math.min(node.val, 12) : 8;
+            sprite.scale.set(size, size, 1);
+            group.add(sprite);
+          } else {
+            const geometry = new THREE.SphereGeometry(node.val ? Math.min(node.val / 3, 6) : 3, 10, 10);
+            const material = new THREE.MeshBasicMaterial({
+              color: isSearchActive && !isMatch ? '#1a1a24' : (node.color || '#94a3b8'),
+              transparent: true,
+              opacity: isSearchActive ? (isMatch ? 1.0 : 0.05) : 0.85,
+            });
+            const sphere = new THREE.Mesh(geometry, material);
+            group.add(sphere);
+          }
 
           if (node === hoverNode || node === selectedNode || (isSearchActive && isMatch && searchResults.length < 20)) {
             const sprite = new SpriteText(node.name);
             sprite.color = '#ffffff';
-            sprite.textHeight = 5;
+            sprite.textHeight = node.image ? 3 : 5;
             sprite.backgroundColor = 'rgba(0,0,0,0.7)';
             sprite.padding = 3;
             sprite.borderRadius = 4;
-            sprite.position.y = (node.val ? Math.min(node.val / 3, 6) : 3) + 4;
+            const yOffset = node.image ? (node.val ? Math.min(node.val, 12)/2 : 4) + 2 : (node.val ? Math.min(node.val / 3, 6) : 3) + 4;
+            sprite.position.y = yOffset;
             group.add(sprite);
           }
           return group;
@@ -245,45 +274,107 @@ export default function Graph() {
         </div>
       </div>
 
-      {/* Node Info Panel */}
+      {/* Node Info Side Panel */}
       <AnimatePresence>
         {activeNode && (
           <motion.div
             key={activeNode.id}
-            initial={{ opacity: 0, x: 20 }}
+            initial={{ opacity: 0, x: '100%' }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 20 }}
-            className="absolute top-10 right-10 w-80 bg-black/60 backdrop-blur-2xl border border-white/10 rounded-3xl text-white shadow-2xl overflow-hidden"
+            exit={{ opacity: 0, x: '100%' }}
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            className="absolute top-0 right-0 h-screen w-[450px] max-w-[100vw] bg-[#050508]/90 backdrop-blur-2xl border-l border-white/10 text-white shadow-2xl overflow-y-auto z-40 flex flex-col"
           >
-            {/* Portrait */}
-            {activeNode.image && (
-              <img
-                src={activeNode.image}
-                alt={activeNode.name}
-                className="w-full h-44 object-cover"
-                onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
-              />
-            )}
-            <div className="p-5">
-              <div
-                className="inline-block text-[10px] uppercase tracking-widest px-2 py-0.5 rounded-full mb-3 font-semibold"
-                style={{ backgroundColor: activeNode.color + '33', color: activeNode.color }}
-              >
-                {activeNode.cluster?.replace(/_/g, ' ')}
-              </div>
-              <h2 className="text-xl font-serif font-bold text-white mb-1">{activeNode.name}</h2>
-              {activeNode.year && activeNode.year !== 9999 && (
-                <p className="text-sm text-gray-400">* {activeNode.year}</p>
-              )}
-              {activeNode.wordCount > 0 && (
-                <p className="text-xs text-gray-600 mt-2">{activeNode.wordCount} Wörter im Monograph</p>
-              )}
-              {activeNode.description && (
-                <p className="text-xs text-gray-300 mt-3 line-clamp-4 leading-relaxed opacity-90 border-t border-white/10 pt-3">
-                  {activeNode.description}
-                </p>
-              )}
-            </div>
+             <div className="relative shrink-0">
+               {activeNode.image && (
+                 <img
+                   src={activeNode.image}
+                   alt={activeNode.name}
+                   className="w-full h-72 object-cover object-top"
+                   onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                 />
+               )}
+               <button 
+                 onClick={() => setSelectedNode(null)}
+                 className="absolute top-6 right-6 bg-black/50 hover:bg-white/20 rounded-full p-2 backdrop-blur-md transition-colors border border-white/10"
+               >
+                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+               </button>
+               {/* Gradient overlay for text readability */}
+               <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#050508]/90 to-transparent pointer-events-none"></div>
+             </div>
+             
+             <div className="p-8 flex-1 flex flex-col -mt-10 relative z-10">
+                <div
+                  className="inline-block self-start text-[10px] uppercase tracking-widest px-3 py-1 rounded-full mb-4 font-semibold shadow-lg backdrop-blur-md"
+                  style={{ backgroundColor: (activeNode.color || '#94a3b8') + '33', color: activeNode.color || '#94a3b8', border: `1px solid ${(activeNode.color || '#94a3b8')}40` }}
+                >
+                  {activeNode.cluster?.replace(/_/g, ' ')}
+                </div>
+                
+                <h2 className="text-4xl font-serif font-bold text-white mb-2 leading-tight drop-shadow-md">{activeNode.name}</h2>
+                {activeNode.lifespan && (
+                  <p className="text-sm text-[#b99b5d] tracking-widest font-mono mb-4">{activeNode.lifespan}</p>
+                )}
+                {(!activeNode.lifespan && activeNode.year && activeNode.year !== 9999) && (
+                  <p className="text-sm text-[#b99b5d] tracking-widest font-mono mb-4">* {activeNode.year}</p>
+                )}
+                
+                {activeNode.bio && (
+                   <div className="mt-8">
+                     <h3 className="text-[10px] uppercase tracking-widest text-gray-500 mb-3 font-semibold border-b border-white/10 pb-2">Biografie</h3>
+                     <p className="text-sm text-gray-300 leading-relaxed opacity-90 font-sans">{activeNode.bio}</p>
+                   </div>
+                )}
+                
+                {activeNode.description && (
+                   <div className="mt-8">
+                     <h3 className="text-[10px] uppercase tracking-widest text-gray-500 mb-3 font-semibold border-b border-white/10 pb-2">Philosophischer Kern</h3>
+                     <p className="text-sm text-gray-300 leading-relaxed opacity-90 font-sans">{activeNode.description}</p>
+                   </div>
+                )}
+                
+                {activeNode.keyConcepts && activeNode.keyConcepts.length > 0 && (
+                   <div className="mt-8">
+                     <h3 className="text-[10px] uppercase tracking-widest text-gray-500 mb-3 font-semibold border-b border-white/10 pb-2">Schlüsselkonzepte</h3>
+                     <div className="flex flex-wrap gap-2">
+                       {activeNode.keyConcepts.map(kc => (
+                         <span key={kc} className="text-xs px-3 py-1.5 bg-white/5 hover:bg-white/10 transition-colors border border-white/10 rounded-lg text-gray-300 cursor-default">{kc}</span>
+                       ))}
+                     </div>
+                   </div>
+                )}
+                
+                {/* Links / Connections Section */}
+                {filteredData.links.filter(l => 
+                  (l.source.id === activeNode.id || l.target.id === activeNode.id) || 
+                  (l.source === activeNode.id || l.target === activeNode.id)
+                ).length > 0 && (
+                  <div className="mt-8">
+                     <h3 className="text-[10px] uppercase tracking-widest text-gray-500 mb-3 font-semibold border-b border-white/10 pb-2">Verbindungen</h3>
+                     <div className="flex flex-col gap-2">
+                       {filteredData.links.filter(l => 
+                         (l.source.id === activeNode.id || l.target.id === activeNode.id) || 
+                         (l.source === activeNode.id || l.target === activeNode.id)
+                       ).slice(0, 15).map((l, idx) => {
+                         const isSource = l.source.id === activeNode.id || l.source === activeNode.id;
+                         const otherNodeId = isSource ? (l.target.id || l.target) : (l.source.id || l.source);
+                         const otherNode = filteredData.nodes.find(n => n.id === otherNodeId);
+                         if (!otherNode) return null;
+                         
+                         return (
+                           <div key={idx} className="flex flex-col p-3 bg-white/5 border border-white/5 rounded-xl hover:bg-white/10 transition-colors cursor-pointer" onClick={() => handleNodeClick(otherNode)}>
+                             <span className="text-sm font-semibold text-white">{otherNode.name}</span>
+                             {l.description && (
+                               <span className="text-xs text-gray-400 mt-1 leading-snug">{l.description}</span>
+                             )}
+                           </div>
+                         );
+                       })}
+                     </div>
+                  </div>
+                )}
+             </div>
           </motion.div>
         )}
       </AnimatePresence>

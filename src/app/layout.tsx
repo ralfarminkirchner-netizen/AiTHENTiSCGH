@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MiNDCEL",
+  title: "MiNDCEL ANTiGRAViTY",
   description: "Das mycelartige, lebendige Tensor-Netzwerk des ADHSOS-Systems",
 };
 
