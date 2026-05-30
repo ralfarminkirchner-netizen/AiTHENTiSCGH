@@ -10,6 +10,67 @@ const textureLoader = new THREE.TextureLoader();
 textureLoader.crossOrigin = 'anonymous';
 const textureCache = new Map();
 
+function createBaseTexture(node, width = 256, height = 320, radius = 32) {
+  const canvas = document.createElement('canvas');
+  canvas.width = width; canvas.height = height;
+  const ctx = canvas.getContext('2d');
+  
+  // Frame
+  ctx.fillStyle = 'rgba(15, 15, 20, 0.85)';
+  ctx.roundRect(0, 0, width, height, radius);
+  ctx.fill();
+  ctx.strokeStyle = node.color || '#94a3b8';
+  ctx.lineWidth = 6;
+  ctx.stroke();
+  
+  // Text
+  ctx.fillStyle = '#ffffff';
+  ctx.font = 'bold 24px sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  // If no image, center text, otherwise put at bottom
+  const textY = node.image ? width + ((height - width) / 2) : height / 2;
+  
+  // Word wrap for long names
+  const words = (node.name || '').split(' ');
+  if (words.length > 2) {
+    ctx.font = 'bold 18px sans-serif';
+    ctx.fillText(words.slice(0, 2).join(' '), width / 2, textY - 10, width - 20);
+    ctx.fillText(words.slice(2).join(' '), width / 2, textY + 12, width - 20);
+  } else {
+    ctx.fillText(node.name || '', width / 2, textY, width - 20);
+  }
+  
+  const tex = new THREE.CanvasTexture(canvas);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.minFilter = THREE.LinearMipmapLinearFilter;
+  return tex;
+}
+
+function createPhotoTexture(src, width = 256, radius = 32) {
+  const canvas = document.createElement('canvas');
+  canvas.width = width; canvas.height = width;
+  const ctx = canvas.getContext('2d');
+  const tex = new THREE.CanvasTexture(canvas);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.minFilter = THREE.LinearMipmapLinearFilter;
+  
+  const img = new Image();
+  img.crossOrigin = 'anonymous';
+  img.src = src;
+  img.onload = () => {
+    ctx.beginPath();
+    ctx.roundRect(0, 0, width, width, radius);
+    ctx.clip();
+    const scale = Math.max(width / img.width, width / img.height);
+    const x = (width / 2) - (img.width / 2) * scale;
+    const y = (width / 2) - (img.height / 2) * scale;
+    ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
+    tex.needsUpdate = true;
+  };
+  return tex;
+}
+
 export default function Graph() {
   const [data, setData] = useState({ nodes: [], links: [] });
   const [hoverNode, setHoverNode] = useState(null);
@@ -21,6 +82,28 @@ export default function Graph() {
   const [searchResults, setSearchResults] = useState([]);
   const [isSearchActive, setIsSearchActive] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+
+  // Category State
+  const [activeClusters, setActiveClusters] = useState(new Set());
+  const uniqueClusters = useMemo(() => {
+    const clusters = new Set(data.nodes.map(n => n.cluster).filter(Boolean));
+    return Array.from(clusters).sort();
+  }, [data.nodes]);
+
+  useEffect(() => {
+    if (uniqueClusters.length > 0 && activeClusters.size === 0) {
+      setActiveClusters(new Set(uniqueClusters));
+    }
+  }, [uniqueClusters]);
+
+  const toggleCluster = (c) => {
+    setActiveClusters(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(c)) newSet.delete(c);
+      else newSet.add(c);
+      return newSet;
+    });
+  };
 
   // Timeline State
   const [maxTime, setMaxTime] = useState(25);
@@ -99,50 +182,103 @@ export default function Graph() {
     }
   };
 
-  // Dynamically update Three.js objects for search highlighting without rebuilding graph
+  // Dynamically update opacities based on Search and Filter
   useEffect(() => {
     if (!fgRef.current) return;
     
-    // The force graph scene contains all our nodes
-    const scene = fgRef.current.scene();
-    
-    // Find all nodes in the current filtered data
     filteredData.nodes.forEach(node => {
-      // Force graph stores the three object on the node as __threeObj
       if (node.__threeObj) {
         const isMatch = !isSearchActive || searchResults.some(res => res.id === node.id);
+        const isActiveCluster = !node.cluster || activeClusters.has(node.cluster);
         
-        // Find the mesh or sprite (it's either the object itself or the first child if it has a material)
-        const renderable = node.__threeObj.type === 'Mesh' || node.__threeObj.type === 'Sprite' 
-          ? node.__threeObj 
-          : node.__threeObj.children.find(c => c.type === 'Mesh' || c.type === 'Sprite');
+        const isVisible = isMatch && isActiveCluster;
+        const targetOpacity = isVisible ? 1.0 : 0.05;
         
-        if (renderable && renderable.material) {
-          renderable.material.opacity = isSearchActive ? (isMatch ? 1.0 : 0.05) : (node === hoverNode ? 1.0 : 0.85);
-          if (renderable.type === 'Mesh') {
-            renderable.material.color.set(isSearchActive && !isMatch ? '#1a1a24' : (node.color || '#94a3b8'));
-          }
-        }
+        node.__threeObj.userData.baseOpacity = targetOpacity;
         
-        // Handle labels
-        const sprite = node.__threeObj.children?.find(c => c.type === 'Sprite');
-        if (sprite) {
-          // If searching, hide labels of non-matches. Otherwise show if hovered/selected.
-          sprite.visible = isSearchActive ? isMatch : (node === hoverNode || node === selectedNode);
-        } else if (isSearchActive && isMatch && searchResults.length < 20) {
-          // Add sprite if it's a search match and we don't have too many
-          const newSprite = new SpriteText(node.name);
-          newSprite.color = '#ffffff';
-          newSprite.textHeight = 5;
-          newSprite.backgroundColor = 'rgba(0,0,0,0.7)';
-          newSprite.padding = 3;
-          newSprite.borderRadius = 4;
-          newSprite.position.y = (node.val ? Math.min(node.val / 3, 6) : 3) + 4;
-          node.__threeObj.add(newSprite);
+        if (node.__threeObj.userData.baseMaterial) {
+          node.__threeObj.userData.baseMaterial.opacity = targetOpacity;
         }
       }
     });
-  }, [searchQuery, isSearchActive, searchResults, hoverNode, selectedNode, filteredData.nodes]);
+  }, [searchQuery, isSearchActive, searchResults, hoverNode, selectedNode, filteredData.nodes, activeClusters]);
+
+  // LOD Engine & Cluster Labels (Centroids)
+  useEffect(() => {
+    if (!fgRef.current || uniqueClusters.length === 0) return;
+    const scene = fgRef.current.scene();
+    const clusterLabels = [];
+    
+    uniqueClusters.forEach(cluster => {
+      const sprite = new SpriteText(cluster.replace(/_/g, ' ').toUpperCase());
+      sprite.color = 'rgba(255, 255, 255, 0.8)';
+      sprite.textHeight = 35;
+      sprite.fontWeight = 'bold';
+      sprite.renderOrder = -1; // Behind nodes
+      sprite.material.depthWrite = false;
+      scene.add(sprite);
+      clusterLabels.push({ cluster, sprite });
+    });
+    
+    let animationId;
+    const updateLOD = () => {
+      const camera = fgRef.current.camera();
+      if (!camera) return;
+      const camPos = camera.position;
+      
+      const sums = {}; const counts = {};
+      
+      filteredData.nodes.forEach(node => {
+        if (!node.__threeObj) return;
+        const group = node.__threeObj;
+        
+        // Centroid Math
+        if (node.cluster) {
+          if (!sums[node.cluster]) { sums[node.cluster] = {x:0, y:0, z:0}; counts[node.cluster] = 0; }
+          sums[node.cluster].x += group.position.x;
+          sums[node.cluster].y += group.position.y;
+          sums[node.cluster].z += group.position.z;
+        }
+        
+        // LOD Check
+        const dist = camPos.distanceTo(group.position);
+        let photoOp = 0;
+        if (dist < 200) photoOp = 1;
+        else if (dist < 400) photoOp = 1 - ((dist - 200) / 200);
+        
+        if (group.userData.photoMaterial) {
+          group.userData.photoMaterial.opacity = photoOp * (group.userData.baseOpacity || 1);
+        }
+      });
+      
+      // Update Cluster Labels
+      clusterLabels.forEach(({ cluster, sprite }) => {
+        if (counts[cluster] > 0 && activeClusters.has(cluster)) {
+          sprite.position.x = sums[cluster].x / counts[cluster];
+          sprite.position.y = (sums[cluster].y / counts[cluster]) + 40;
+          sprite.position.z = sums[cluster].z / counts[cluster];
+          
+          const dist = camPos.distanceTo(sprite.position);
+          let op = 0;
+          if (dist > 700) op = 0.8;
+          else if (dist > 300) op = 0.8 * ((dist - 300) / 400);
+          
+          sprite.material.opacity = op;
+          sprite.visible = op > 0.01;
+        } else {
+          sprite.visible = false;
+        }
+      });
+      
+      animationId = requestAnimationFrame(updateLOD);
+    };
+    updateLOD();
+    
+    return () => {
+      cancelAnimationFrame(animationId);
+      clusterLabels.forEach(({ sprite }) => scene.remove(sprite));
+    };
+  }, [filteredData.nodes, uniqueClusters, activeClusters]);
 
   const activeNode = selectedNode || hoverNode;
 
@@ -152,51 +288,52 @@ export default function Graph() {
         ref={fgRef}
         graphData={filteredData}
         nodeThreeObject={node => {
-          // Only evaluate the initial state
           const isMatch = !isSearchActive || searchResults.some(res => res.id === node.id);
+          const isActiveCluster = !node.cluster || activeClusters.has(node.cluster);
+          const initialOpacity = (isMatch && isActiveCluster) ? 1.0 : 0.05;
           
           const group = new THREE.Group();
+          group.userData = { baseOpacity: initialOpacity };
           
-          if (node.image) {
-            let material;
-            if (textureCache.has(node.image)) {
-              material = new THREE.SpriteMaterial({ map: textureCache.get(node.image), color: 0xffffff });
-            } else {
-              material = new THREE.SpriteMaterial({ color: 0xffffff });
-              textureLoader.load(node.image, (texture) => {
-                textureCache.set(node.image, texture);
-                material.map = texture;
-                material.needsUpdate = true;
-              });
-            }
-            material.transparent = true;
-            material.opacity = isSearchActive ? (isMatch ? 1.0 : 0.05) : 0.85;
-            const sprite = new THREE.Sprite(material);
-            const size = node.val ? Math.min(node.val, 12) : 8;
-            sprite.scale.set(size, size, 1);
-            group.add(sprite);
+          const size = node.val ? Math.min(node.val, 16) : 10;
+          const frameWidth = size * 1.5;
+          const frameHeight = size * 1.875; // 0.8 aspect ratio
+          
+          // 1. Base Sprite (Rounded Frame + Name)
+          let baseMaterial;
+          const cacheKey = `base_${node.name}_${node.color}`;
+          if (textureCache.has(cacheKey)) {
+             baseMaterial = new THREE.SpriteMaterial({ map: textureCache.get(cacheKey), color: 0xffffff, transparent: true });
           } else {
-            const geometry = new THREE.SphereGeometry(node.val ? Math.min(node.val / 3, 6) : 3, 10, 10);
-            const material = new THREE.MeshBasicMaterial({
-              color: isSearchActive && !isMatch ? '#1a1a24' : (node.color || '#94a3b8'),
-              transparent: true,
-              opacity: isSearchActive ? (isMatch ? 1.0 : 0.05) : 0.85,
-            });
-            const sphere = new THREE.Mesh(geometry, material);
-            group.add(sphere);
+             const baseTex = createBaseTexture(node);
+             textureCache.set(cacheKey, baseTex);
+             baseMaterial = new THREE.SpriteMaterial({ map: baseTex, color: 0xffffff, transparent: true });
           }
-
-          if (node === hoverNode || node === selectedNode || (isSearchActive && isMatch && searchResults.length < 20)) {
-            const sprite = new SpriteText(node.name);
-            sprite.color = '#ffffff';
-            sprite.textHeight = node.image ? 3 : 5;
-            sprite.backgroundColor = 'rgba(0,0,0,0.7)';
-            sprite.padding = 3;
-            sprite.borderRadius = 4;
-            const yOffset = node.image ? (node.val ? Math.min(node.val, 12)/2 : 4) + 2 : (node.val ? Math.min(node.val / 3, 6) : 3) + 4;
-            sprite.position.y = yOffset;
-            group.add(sprite);
+          baseMaterial.opacity = initialOpacity;
+          const baseSprite = new THREE.Sprite(baseMaterial);
+          baseSprite.scale.set(frameWidth, frameHeight, 1);
+          group.add(baseSprite);
+          group.userData.baseMaterial = baseMaterial;
+          
+          // 2. Photo Sprite (Fades in via LOD)
+          if (node.image) {
+             let photoMaterial;
+             if (textureCache.has(node.image)) {
+                photoMaterial = new THREE.SpriteMaterial({ map: textureCache.get(node.image), color: 0xffffff, transparent: true, opacity: 0 });
+             } else {
+                photoMaterial = new THREE.SpriteMaterial({ color: 0xffffff, transparent: true, opacity: 0 });
+                const photoTex = createPhotoTexture(node.image);
+                textureCache.set(node.image, photoTex);
+                photoMaterial.map = photoTex;
+             }
+             const photoSprite = new THREE.Sprite(photoMaterial);
+             photoSprite.scale.set(frameWidth, frameWidth, 1);
+             // Align top of square photo to top of rectangular frame
+             photoSprite.position.y = (frameHeight - frameWidth) / 2;
+             group.add(photoSprite);
+             group.userData.photoMaterial = photoMaterial;
           }
+          
           return group;
         }}
         nodeThreeObjectExtend={false}
@@ -379,24 +516,31 @@ export default function Graph() {
         )}
       </AnimatePresence>
 
-      {/* Legend */}
-      <div className="absolute top-10 left-10 pointer-events-none max-w-sm">
+      {/* Legend & Categories Filter */}
+      <div className="absolute top-10 left-10 max-w-sm z-20 pointer-events-auto">
         <h1 className="text-5xl font-serif font-bold text-white tracking-widest drop-shadow-2xl">MiNDCEL</h1>
-        <p className="text-[#b99b5d] tracking-[0.2em] text-xs mt-3 uppercase font-semibold">Das lebendige Tensor-Netzwerk</p>
-        <p className="text-gray-400 text-xs mt-2 leading-relaxed opacity-80">{filteredData.nodes.length} / 1055 Tensoren sichtbar</p>
-        <div className="mt-4 flex flex-wrap gap-2">
-          {[
-            { label: 'Philosophie', color: '#93c5fd' },
-            { label: 'Psychologie', color: '#fbbf24' },
-            { label: 'Spiritualität', color: '#c084fc' },
-            { label: 'Wissenschaft', color: '#60a5fa' },
-            { label: 'Synthesen', color: '#00ffcc' },
-          ].map(c => (
-            <span key={c.label} className="flex items-center gap-1 text-[10px]" style={{ color: c.color }}>
-              <span className="w-2 h-2 rounded-full" style={{ backgroundColor: c.color }} />
-              {c.label}
-            </span>
-          ))}
+        <p className="text-[#b99b5d] tracking-[0.2em] text-[10px] mt-3 uppercase font-semibold">Das lebendige Tensor-Netzwerk</p>
+        <p className="text-gray-400 text-xs mt-2 mb-6 leading-relaxed opacity-80">{filteredData.nodes.filter(n => !n.cluster || activeClusters.has(n.cluster)).length} / 1055 Tensoren sichtbar</p>
+        
+        <div className="max-h-[60vh] overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent">
+          <div className="flex flex-col gap-1.5">
+            {uniqueClusters.map(c => {
+              const isActive = activeClusters.has(c);
+              const nodeWithCluster = data.nodes.find(n => n.cluster === c);
+              const color = nodeWithCluster ? nodeWithCluster.color : '#ffffff';
+              
+              return (
+                <button 
+                  key={c}
+                  onClick={() => toggleCluster(c)}
+                  className={`flex items-center text-left gap-3 px-3 py-2 rounded-xl transition-all border ${isActive ? 'bg-white/10 border-white/20 hover:bg-white/20' : 'bg-black/60 border-transparent opacity-40 hover:opacity-80'}`}
+                >
+                  <span className="w-2.5 h-2.5 rounded-full shadow-[0_0_8px_rgba(255,255,255,0.3)]" style={{ backgroundColor: color }} />
+                  <span className="text-xs font-semibold text-white tracking-wider truncate">{c.replace(/_/g, ' ')}</span>
+                </button>
+              );
+            })}
+          </div>
         </div>
       </div>
 
