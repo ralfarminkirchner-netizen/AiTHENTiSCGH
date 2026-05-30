@@ -96,13 +96,13 @@ export default function Graph() {
           return sphere;
         }}
         nodeThreeObjectExtend={false}
-        linkWidth={link => link.type === 'bridge' ? 1.5 : 0.5}
-        linkColor={link => link.type === 'bridge' ? '#00ffcc' : '#1e3a5f'}
-        linkOpacity={0.3}
-        linkDirectionalParticles={link => link.type === 'bridge' ? 2 : 0}
-        linkDirectionalParticleSpeed={0.004}
-        linkDirectionalParticleWidth={1.5}
-        linkDirectionalParticleColor={() => '#00ffcc'}
+        linkWidth={link => link.type === 'semantic' ? 2 : (link.type === 'bridge' ? 1.5 : 0.5)}
+        linkColor={link => link.type === 'semantic' ? '#e879f9' : (link.type === 'bridge' ? '#00ffcc' : '#1e3a5f')}
+        linkOpacity={link => link.type === 'semantic' ? 0.6 : 0.3}
+        linkDirectionalParticles={link => link.type === 'semantic' ? 4 : (link.type === 'bridge' ? 2 : 0)}
+        linkDirectionalParticleSpeed={0.005}
+        linkDirectionalParticleWidth={link => link.type === 'semantic' ? 2 : 1.5}
+        linkDirectionalParticleColor={link => link.type === 'semantic' ? '#e879f9' : '#00ffcc'}
         onNodeHover={setHoverNode}
         onNodeClick={handleNodeClick}
         backgroundColor="#050508"
@@ -136,11 +136,16 @@ export default function Graph() {
                 {activeNode.cluster?.replace(/_/g, ' ')}
               </div>
               <h2 className="text-xl font-serif font-bold text-white mb-1">{activeNode.name}</h2>
-              {activeNode.year && (
+              {activeNode.year && activeNode.year !== 9999 && (
                 <p className="text-sm text-gray-400">* {activeNode.year}</p>
               )}
               {activeNode.wordCount > 0 && (
                 <p className="text-xs text-gray-600 mt-2">{activeNode.wordCount} Wörter im Monograph</p>
+              )}
+              {activeNode.description && (
+                <p className="text-xs text-gray-300 mt-3 line-clamp-4 leading-relaxed opacity-90 border-t border-white/10 pt-3">
+                  {activeNode.description}
+                </p>
               )}
             </div>
           </motion.div>

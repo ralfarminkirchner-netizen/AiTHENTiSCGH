@@ -132,5 +132,54 @@ synthesenNodes.forEach(sn => {
   }
 });
 
+// Apply Moonfingers descriptions
+let moonDescriptions = {};
+try {
+  moonDescriptions = JSON.parse(fs.readFileSync(path.join(__dirname, 'moonfingers_descriptions.json'), 'utf8'));
+} catch(e) {
+  console.log('No moonfingers_descriptions.json found, skipping descriptions.');
+}
+
+// Add descriptions to nodes
+nodes.forEach(n => {
+  if (moonDescriptions[n.id]) {
+    n.description = moonDescriptions[n.id];
+  }
+});
+
+// Load Moonfingers relations if available
+let idMap = { moonToMindcel: {} };
+let moonRelations = [];
+try {
+  idMap = JSON.parse(fs.readFileSync(path.join(__dirname, 'moon_id_map.json'), 'utf8'));
+  moonRelations = JSON.parse(fs.readFileSync(path.join(__dirname, 'moonfingers_relations.json'), 'utf8'));
+} catch(e) {
+  console.log('No Moonfingers mapping files found, skipping semantic relations.');
+}
+
+const moonToMindcel = idMap.moonToMindcel || {};
+let semanticLinksCount = 0;
+
+moonRelations.forEach(r => {
+  if (moonToMindcel[r.source] && moonToMindcel[r.target]) {
+    const mindcelSource = moonToMindcel[r.source];
+    const mindcelTarget = moonToMindcel[r.target];
+    
+    const key = [mindcelSource, mindcelTarget].sort().join('|');
+    if (!addedLinks.has(key)) {
+      addedLinks.add(key);
+      links.push({
+        source: mindcelSource,
+        target: mindcelTarget,
+        type: 'semantic',
+        moonType: r.type,
+        description: r.description,
+        time: 25
+      });
+      semanticLinksCount++;
+    }
+  }
+});
+
 fs.writeFileSync(OUT, JSON.stringify({ nodes, links }, null, 2));
-console.log(`✓ Generated ${nodes.length} nodes and ${links.length} links → public/data.json`);
+console.log(`✓ Generated ${nodes.length} nodes and ${links.length} links (${semanticLinksCount} semantic) → public/data.json`);

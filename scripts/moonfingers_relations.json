@@ -1,0 +1,1101 @@
+[
+  {
+    "id": "r01",
+    "source": "advaita-vedanta",
+    "target": "shankara",
+    "type": "structural_proximity",
+    "description": "Shankara is the systematic founder of Advaita Vedanta, whose commentaries define the tradition."
+  },
+  {
+    "id": "r02",
+    "source": "advaita-vedanta",
+    "target": "ramana-maharshi",
+    "type": "structural_proximity",
+    "description": "Ramana Maharshi teaches pure Advaita — the direct inquiry \"Who am I?\" as the shortest path to non-dual recognition."
+  },
+  {
+    "id": "r03",
+    "source": "zen-buddhism",
+    "target": "dogen",
+    "type": "structural_proximity",
+    "description": "Dogen founded Soto Zen in Japan; his Shobogenzo is the tradition\\"
+  },
+  {
+    "id": "r04",
+    "source": "zen-buddhism",
+    "target": "thich-nhat-hanh",
+    "type": "structural_proximity",
+    "description": "Thich Nhat Hanh is a Vietnamese Zen master who extended the tradition into engaged social action."
+  },
+  {
+    "id": "r05",
+    "source": "sufism",
+    "target": "rumi",
+    "type": "structural_proximity",
+    "description": "Rumi is the most celebrated Sufi poet, his Masnavi a complete spiritual curriculum in verse."
+  },
+  {
+    "id": "r06",
+    "source": "sufism",
+    "target": "ibn-arabi",
+    "type": "structural_proximity",
+    "description": "Ibn Arabi\\"
+  },
+  {
+    "id": "r07",
+    "source": "sufism",
+    "target": "al-ghazali",
+    "type": "structural_proximity",
+    "description": "Ghazali synthesized Sufism with orthodox Islamic theology, legitimizing the mystical path for millions."
+  },
+  {
+    "id": "r08",
+    "source": "stoicism",
+    "target": "marcus-aurelius",
+    "type": "structural_proximity",
+    "description": "Marcus Aurelius is the most celebrated practitioner of late Stoicism, applying its principles as Roman emperor."
+  },
+  {
+    "id": "r09",
+    "source": "stoicism",
+    "target": "epictetus",
+    "type": "structural_proximity",
+    "description": "Epictetus is the most rigorous Stoic teacher of inner freedom, whose work influenced Marcus Aurelius directly."
+  },
+  {
+    "id": "r10",
+    "source": "stoicism",
+    "target": "seneca",
+    "type": "structural_proximity",
+    "description": "Seneca bridges philosophy and literature as Rome\\"
+  },
+  {
+    "id": "r11",
+    "source": "daoism",
+    "target": "lao-tzu",
+    "type": "structural_proximity",
+    "description": "Laozi is the legendary founder of Daoism, composer of the Tao Te Ching."
+  },
+  {
+    "id": "r12",
+    "source": "daoism",
+    "target": "zhuangzi",
+    "type": "structural_proximity",
+    "description": "Zhuangzi radicalizes Laozi\\"
+  },
+  {
+    "id": "r13",
+    "source": "platonism",
+    "target": "plato",
+    "type": "structural_proximity",
+    "description": "Plato is the founder of the entire Platonic tradition; all later Platonism is commentary on his dialogues."
+  },
+  {
+    "id": "r14",
+    "source": "platonism",
+    "target": "plotinus",
+    "type": "structural_proximity",
+    "description": "Plotinus is the founder of Neoplatonism, synthesizing Plato into a systematic mystical metaphysics."
+  },
+  {
+    "id": "r15",
+    "source": "kabbalah",
+    "target": "martin-buber",
+    "type": "structural_proximity",
+    "description": "Buber, deeply formed by Hasidic Kabbalah, translated its insights into a modern philosophy of encounter and dialogue."
+  },
+  {
+    "id": "r16",
+    "source": "christian-mysticism",
+    "target": "meister-eckhart",
+    "type": "structural_proximity",
+    "description": "Eckhart is the most radical and philosophically significant Christian mystic, the heart of the Rhineland tradition."
+  },
+  {
+    "id": "r17",
+    "source": "christian-mysticism",
+    "target": "hildegard-von-bingen",
+    "type": "structural_proximity",
+    "description": "Hildegard is among the earliest and most visionary figures in Christian mysticism, a prophet and doctor of the Church."
+  },
+  {
+    "id": "r18",
+    "source": "hinduism-yoga",
+    "target": "patanjali",
+    "type": "structural_proximity",
+    "description": "Patanjali is the systematizer of classical Yoga philosophy; his Sutras remain the definitive Yoga text."
+  },
+  {
+    "id": "r19",
+    "source": "hinduism-yoga",
+    "target": "sri-aurobindo",
+    "type": "structural_proximity",
+    "description": "Aurobindo developed Integral Yoga as an evolutionary transformation of the Hindu-Vedantic framework."
+  },
+  {
+    "id": "r20",
+    "source": "theravada-buddhism",
+    "target": "the-buddha",
+    "type": "structural_proximity",
+    "description": "Theravada claims to preserve the original teaching of the historical Buddha through the Pali Canon."
+  },
+  {
+    "id": "r21",
+    "source": "tibetan-buddhism",
+    "target": "milarepa",
+    "type": "structural_proximity",
+    "description": "Milarepa is the defining saint of the Kagyu school of Tibetan Buddhism, whose life embodies the tradition\\"
+  },
+  {
+    "id": "r22",
+    "source": "confucianism",
+    "target": "confucius",
+    "type": "structural_proximity",
+    "description": "Confucius is the founder of the Confucian tradition, whose Analects remain its core sacred text."
+  },
+  {
+    "id": "r23",
+    "source": "existentialism",
+    "target": "sartre",
+    "type": "structural_proximity",
+    "description": "Sartre is the defining figure of twentieth-century French existentialism."
+  },
+  {
+    "id": "r24",
+    "source": "existentialism",
+    "target": "kierkegaard",
+    "type": "structural_proximity",
+    "description": "Kierkegaard is the founding father of existentialist thought, whose emphasis on subjectivity, anxiety, and faith set the agenda."
+  },
+  {
+    "id": "r25",
+    "source": "existentialism",
+    "target": "nietzsche",
+    "type": "structural_proximity",
+    "description": "Nietzsche\\"
+  },
+  {
+    "id": "r26",
+    "source": "phenomenology",
+    "target": "heidegger",
+    "type": "structural_proximity",
+    "description": "Heidegger radicalized phenomenology from a method into a fundamental ontology, transforming Western philosophy."
+  },
+  {
+    "id": "r27",
+    "source": "theravada-buddhism",
+    "target": "four-noble-truths",
+    "type": "structural_proximity",
+    "description": "The Four Noble Truths are the center of all Theravada teaching — the Buddha\\"
+  },
+  {
+    "id": "r28",
+    "source": "theravada-buddhism",
+    "target": "anatta",
+    "type": "structural_proximity",
+    "description": "Anatta (no-self) is one of the three marks of existence central to Theravada analysis and practice."
+  },
+  {
+    "id": "r29",
+    "source": "theravada-buddhism",
+    "target": "dependent-origination",
+    "type": "structural_proximity",
+    "description": "Dependent origination is the Buddha\\"
+  },
+  {
+    "id": "r30",
+    "source": "sufism",
+    "target": "fana",
+    "type": "structural_proximity",
+    "description": "Fana is the central mystical station of Sufism — the annihilation of the ego in the divine."
+  },
+  {
+    "id": "r31",
+    "source": "christian-mysticism",
+    "target": "theosis",
+    "type": "structural_proximity",
+    "description": "Theosis is the foundational goal of Eastern Christian mysticism — union with God through participation in divine energies."
+  },
+  {
+    "id": "r32",
+    "source": "hinduism-yoga",
+    "target": "kundalini",
+    "type": "structural_proximity",
+    "description": "Kundalini and the chakra system are the central framework of Tantric Yoga\\"
+  },
+  {
+    "id": "r33",
+    "source": "zen-buddhism",
+    "target": "satori",
+    "type": "structural_proximity",
+    "description": "Satori/kensho is the direct experiential goal of Zen practice — the sudden awakening to one\\"
+  },
+  {
+    "id": "r34",
+    "source": "non-duality",
+    "target": "fana",
+    "type": "analogy",
+    "description": "Both non-duality (Advaita) and fana (Sufism) point to the dissolution of the sense of a separate self into an undivided reality. The difference lies in the frame: Advaita sees this as recognition of what always was; Sufism as the annihilation of the ego that veiled God."
+  },
+  {
+    "id": "r35",
+    "source": "non-duality",
+    "target": "theosis",
+    "type": "analogy",
+    "description": "Advaita\\"
+  },
+  {
+    "id": "r36",
+    "source": "sunyata",
+    "target": "non-duality",
+    "type": "analogy",
+    "description": "Sunyata (emptiness) and non-duality both negate independent, fixed selfhood. Yet where Advaita posits a positive ultimate reality (Brahman), Madhyamaka Buddhism uses emptiness as a logical refutation without positing any positive ultimate."
+  },
+  {
+    "id": "r37",
+    "source": "henosis",
+    "target": "fana",
+    "type": "analogy",
+    "description": "Plotinus\\"
+  },
+  {
+    "id": "r38",
+    "source": "wu-wei",
+    "target": "karma",
+    "type": "analogy",
+    "description": "Wu wei (non-striving action) and karma yoga (action without attachment to results) both describe a way of acting that does not accumulate the karmic or egoic weight that ordinary action does. The mechanism differs, but the quality of effortless righteousness is parallel."
+  },
+  {
+    "id": "r39",
+    "source": "satori",
+    "target": "henosis",
+    "type": "analogy",
+    "description": "Satori in Zen and henosis in Neoplatonism are both described as a sudden collapse of the subject-object divide into undivided awareness. Both are said to be already present, not produced by effort."
+  },
+  {
+    "id": "r40",
+    "source": "confucianism",
+    "target": "daoism",
+    "type": "contrast",
+    "description": "The great internal Chinese debate: Confucius emphasizes active moral cultivation, ritual, social roles, and humaneness. Daoism finds this artificiality — the sage knows by forgetting conventions and following the spontaneous Dao. Yet both seek harmony, differing on how to achieve it."
+  },
+  {
+    "id": "r41",
+    "source": "existentialism",
+    "target": "stoicism",
+    "type": "contrast",
+    "description": "Both demand that we face our condition without illusion and take responsibility for our lives. But Stoicism finds this condition embedded in a rational cosmic Logos, while existentialism insists the cosmos is indifferent — freedom floats in an absurd void."
+  },
+  {
+    "id": "r42",
+    "source": "theravada-buddhism",
+    "target": "hinduism-yoga",
+    "type": "contrast",
+    "description": "Both traditions seek liberation from suffering through meditative discipline, but differ on what is liberated: Buddhism denies any permanent self (anatta) while Hinduism affirms the eternal Atman. This is perhaps the most precise and philosophically important disagreement in Indian philosophy."
+  },
+  {
+    "id": "r43",
+    "source": "dogen",
+    "target": "meister-eckhart",
+    "type": "contrast",
+    "description": "Dogen and Eckhart both teach a profound non-dualism, but Eckhart\\"
+  },
+  {
+    "id": "r44",
+    "source": "nietzsche",
+    "target": "the-buddha",
+    "type": "tension",
+    "description": "Nietzsche attacked Buddhism as a \"nihilism of weakness\" — a life-negating desire to escape suffering. The Buddha would reply that Nietzsche\\"
+  },
+  {
+    "id": "r45",
+    "source": "existentialism",
+    "target": "advaita-vedanta",
+    "type": "tension",
+    "description": "Existentialism insists that the self is radically free and must create its own meaning; Advaita insists the individual self is illusory and that liberation lies in recognizing this. Both deconstruct the ordinary self — but toward opposite conclusions about what remains."
+  },
+  {
+    "id": "r46",
+    "source": "sein-zum-tode",
+    "target": "tibetan-buddhism",
+    "type": "tension",
+    "description": "Heidegger\\"
+  },
+  {
+    "id": "r47",
+    "source": "karma",
+    "target": "amor-fati",
+    "type": "tension",
+    "description": "Karma and amor fati both counsel acceptance of one\\"
+  },
+  {
+    "id": "r48",
+    "source": "freier-wille",
+    "target": "dependent-origination",
+    "type": "tension",
+    "description": "Buddhist dependent origination holds that every act arises from prior conditions without any independent agent — yet Buddhism also holds that practice and intention matter. This tension between conditioned causality and the efficacy of the spiritual path is one of Buddhism\\"
+  },
+  {
+    "id": "r49",
+    "source": "wu-wei",
+    "target": "satori",
+    "type": "translatability",
+    "description": "Wu wei\\"
+  },
+  {
+    "id": "r50",
+    "source": "logos",
+    "target": "dharma",
+    "type": "translatability",
+    "description": "The Stoic Logos (the rational principle pervading all) and the Hindu-Buddhist Dharma (the cosmic order and teaching) both articulate a universal law or pattern underlying reality that the wise person aligns with. Both traditions use the metaphor of following or acting in accord with this principle."
+  },
+  {
+    "id": "r51",
+    "source": "tikkun-olam",
+    "target": "was-ist-heilige",
+    "type": "translatability",
+    "description": "Tikkun Olam — the repair of the world through ethical action — gives concrete form to what the sacred demands: that holiness is not merely an inward state but a mandate for transforming reality toward justice and wholeness."
+  },
+  {
+    "id": "r52",
+    "source": "theosis",
+    "target": "non-duality",
+    "type": "partial_translatability",
+    "description": "Theosis and Advaita non-duality share the vision of human existence as called to divine union. They partially translate: both use the language of union, light, and the transcendence of ordinary self. But theosis maintains the creature-Creator distinction; Advaita dissolves it entirely."
+  },
+  {
+    "id": "r53",
+    "source": "i-thou",
+    "target": "was-ist-liebe",
+    "type": "partial_translatability",
+    "description": "Buber\\"
+  },
+  {
+    "id": "r54",
+    "source": "integral-theory",
+    "target": "advaita-vedanta",
+    "type": "partial_translatability",
+    "description": "Wilber\\"
+  },
+  {
+    "id": "r55",
+    "source": "advaita-vedanta",
+    "target": "christian-mysticism",
+    "type": "bridge_via_third",
+    "description": "Alan Watts serves as a key mediating bridge: his work explicitly compared Advaita Vedanta and Christian mysticism (especially Meister Eckhart), showing how the \"eye with which God sees me\" and the Atman-Brahman equation map onto each other. Simone Weil\\"
+  },
+  {
+    "id": "r56",
+    "source": "zen-buddhism",
+    "target": "daoism",
+    "type": "bridge_via_third",
+    "description": "Chan (Zen) Buddhism in China emerged as a bridge between Buddhist meditation and Daoist spontaneity — historically, Daoism provided the vocabulary (wu wei, ziran, te) through which Buddhism was translated. Zhuangzi and the Zen patriarchs are the great bridge figures."
+  },
+  {
+    "id": "r57",
+    "source": "platonism",
+    "target": "kabbalah",
+    "type": "bridge_via_third",
+    "description": "Medieval Jewish Neoplatonism (Solomon ibn Gabirol, Maimonides) bridges Platonic emanation metaphysics and Kabbalistic Sefirot doctrine. The Zohar\\"
+  },
+  {
+    "id": "r58",
+    "source": "theravada-buddhism",
+    "target": "advaita-vedanta",
+    "type": "incommensurable",
+    "description": "Despite surface similarities (meditation, liberation, impermanence), these traditions are genuinely incommensurable on the central question of selfhood: Advaita posits an eternal, unchanging Atman-Brahman as the real self; Theravada Buddhism specifically refutes any such eternal self as the root delusion to be overcome."
+  },
+  {
+    "id": "r59",
+    "source": "existentialism",
+    "target": "shamanism",
+    "type": "incommensurable",
+    "description": "Existentialism\\"
+  },
+  {
+    "id": "r60",
+    "source": "phenomenology",
+    "target": "indigenous-wisdom",
+    "type": "incommensurable",
+    "description": "Heidegger\\"
+  },
+  {
+    "id": "r61",
+    "source": "kundalini",
+    "target": "satori",
+    "type": "same_metaphor_different_ontology",
+    "description": "Both Tantric Yoga and Zen use the metaphor of fire/light for spiritual awakening — kundalini as fire ascending the spine, Zen\\"
+  },
+  {
+    "id": "r62",
+    "source": "logos",
+    "target": "daoism",
+    "type": "same_metaphor_different_ontology",
+    "description": "Both the Stoic Logos and the Daoist Dao are described as an ineffable principle pervading all things that the wise person aligns with. But the Logos is rational (rational law), personal (divine mind), and normative; the Dao is pre-rational, impersonal, and beyond all norms — their shared vocabulary obscures a deep metaphysical divergence."
+  },
+  {
+    "id": "r63",
+    "source": "stoicism",
+    "target": "theravada-buddhism",
+    "type": "similar_effect_different_logic",
+    "description": "Both Stoic practice and Buddhist meditation produce equanimity in the face of suffering. Stoicism achieves this through rational discrimination (virtue alone is good; externals are indifferent). Buddhism achieves it through seeing that the self who would suffer is itself empty. The effect — freedom from reactivity — is similar; the philosophical justification is wholly different."
+  },
+  {
+    "id": "r64",
+    "source": "shamanism",
+    "target": "tibetan-buddhism",
+    "type": "similar_effect_different_logic",
+    "description": "Both shamanism and Tibetan Buddhism work extensively with death — shamans journey to the underworld; Tibetan Buddhism provides detailed maps of the bardos. Both produce practitioners skilled in navigating between-states. But shamanism\\"
+  },
+  {
+    "id": "r65",
+    "source": "was-ist-bewusstsein",
+    "target": "advaita-vedanta",
+    "type": "same_question_different_answer",
+    "description": "The question \"What is consciousness?\" receives Advaita\\"
+  },
+  {
+    "id": "r66",
+    "source": "was-ist-bewusstsein",
+    "target": "theravada-buddhism",
+    "type": "same_question_different_answer",
+    "description": "Buddhism\\"
+  },
+  {
+    "id": "r67",
+    "source": "leiden-endet",
+    "target": "stoicism",
+    "type": "same_question_different_answer",
+    "description": "The question \"How does suffering end?\" receives the Stoic answer: by distinguishing what is in your control from what is not, and placing your good only in what is. External suffering (sickness, death, poverty) cannot touch the virtuous will — the sage is free even on the rack."
+  },
+  {
+    "id": "r68",
+    "source": "leiden-endet",
+    "target": "sufism",
+    "type": "same_question_different_answer",
+    "description": "Sufism\\"
+  },
+  {
+    "id": "r69",
+    "source": "gibt-es-selbst",
+    "target": "existentialism",
+    "type": "same_question_different_answer",
+    "description": "Existentialism answers the question \"Is there a self?\" with: yes — but it is radically free, without pre-given essence, and must be continuously created through choice and commitment. The self is a project, not a substance."
+  },
+  {
+    "id": "r70",
+    "source": "gibt-es-selbst",
+    "target": "theravada-buddhism",
+    "type": "same_question_different_answer",
+    "description": "Theravada answers the same question: no — what we call the self is a conventional label for five impermanent aggregates (skandhas). Clinging to this label as a permanent self is the root cause of all suffering."
+  },
+  {
+    "id": "r71",
+    "source": "alan-watts",
+    "target": "zen-buddhism",
+    "type": "bridge_via_third",
+    "description": "Alan Watts introduced Zen to Western audiences with an interpretive lightness and humor that made the tradition accessible — he is the most influential bridge figure between East Asian and Western thought in the twentieth century."
+  },
+  {
+    "id": "r72",
+    "source": "alan-watts",
+    "target": "daoism",
+    "type": "bridge_via_third",
+    "description": "Watts was deeply drawn to Daoism and translated its concepts into Western idioms of psychology and physics, helping generations of Western readers encounter wu wei, ziran, and the Tao through his The Way of Zen and Tao: The Watercourse Way."
+  },
+  {
+    "id": "r73",
+    "source": "ken-wilber",
+    "target": "hinduism-yoga",
+    "type": "bridge_via_third",
+    "description": "Wilber\\"
+  },
+  {
+    "id": "r74",
+    "source": "simone-weil",
+    "target": "stoicism",
+    "type": "analogy",
+    "description": "Simone Weil\\"
+  },
+  {
+    "id": "r75",
+    "source": "simone-weil",
+    "target": "theravada-buddhism",
+    "type": "analogy",
+    "description": "Weil\\"
+  },
+  {
+    "id": "r76",
+    "source": "hinduism-yoga",
+    "target": "tibetan-buddhism",
+    "type": "same_praxis_different_framing",
+    "description": "Both Tantric Yoga and Tibetan Vajrayana use elaborate visualization practices, mantras, mudras, and the activation of the subtle body. The practices are structurally nearly identical but framed in entirely different metaphysical registers: Yoga seeks union of Shiva-Shakti; Vajrayana seeks recognition of the dharmadhatu (emptiness-luminosity)."
+  },
+  {
+    "id": "r77",
+    "source": "was-ist-liebe",
+    "target": "sufism",
+    "type": "same_question_different_answer",
+    "description": "Sufism answers the question \"What is love?\" with the most radical possible claim: love is the very substance of reality — the divine self-longing that drives all of creation. The universe exists because the divine wanted to be loved and to love. All human love is a refraction of this primordial divine love."
+  },
+  {
+    "id": "r78",
+    "source": "nach-dem-tod",
+    "target": "tibetan-buddhism",
+    "type": "same_question_different_answer",
+    "description": "Tibetan Buddhism\\"
+  },
+  {
+    "id": "r79",
+    "source": "theravada-buddhism",
+    "target": "samsara",
+    "type": "structural_proximity",
+    "description": "Samsara is the fundamental condition Buddhism seeks to escape. The Four Noble Truths are the diagnosis and cure for samsaric existence driven by ignorance and craving."
+  },
+  {
+    "id": "r80",
+    "source": "hinduism-yoga",
+    "target": "karma",
+    "type": "structural_proximity",
+    "description": "Karma is central to Hindu-Yogic soteriology: karma yoga (action without attachment) is one of the three primary paths to liberation in the Bhagavad Gita."
+  },
+  {
+    "id": "r81",
+    "source": "hinduism-yoga",
+    "target": "dharma",
+    "type": "structural_proximity",
+    "description": "Dharma — cosmic order, duty, and sacred law — is the foundational framework within which Hindu Yoga operates. Living one\\"
+  },
+  {
+    "id": "r82",
+    "source": "tibetan-buddhism",
+    "target": "bodhichitta",
+    "type": "structural_proximity",
+    "description": "Bodhichitta is the motivational heart of Tibetan Buddhist practice. Without this altruistic aspiration, Vajrayana methods are considered spiritually hollow or dangerous."
+  },
+  {
+    "id": "r83",
+    "source": "confucianism",
+    "target": "ren-humaneness",
+    "type": "structural_proximity",
+    "description": "Ren (humaneness) is the supreme virtue of Confucianism — the inner reality of which all ritual conduct (li) is the outer expression."
+  },
+  {
+    "id": "r84",
+    "source": "theravada-buddhism",
+    "target": "nirvana",
+    "type": "structural_proximity",
+    "description": "Nirvana is the ultimate goal of Theravada practice — the complete cessation of craving and the end of the rebirth cycle."
+  },
+  {
+    "id": "r85",
+    "source": "theravada-buddhism",
+    "target": "mindfulness",
+    "type": "structural_proximity",
+    "description": "Sati (mindfulness) is the seventh factor of the Eightfold Path and the foundation of Theravada vipassana practice."
+  },
+  {
+    "id": "r86",
+    "source": "christian-mysticism",
+    "target": "via-negativa",
+    "type": "structural_proximity",
+    "description": "The via negativa is the defining epistemological approach of Christian mysticism — God is known through unknowing, silence, and the negation of all concepts."
+  },
+  {
+    "id": "r87",
+    "source": "theravada-buddhism",
+    "target": "nagarjuna",
+    "type": "structural_proximity",
+    "description": "Nagarjuna\\"
+  },
+  {
+    "id": "r88",
+    "source": "mindfulness",
+    "target": "wu-wei",
+    "type": "translatability",
+    "description": "Buddhist mindfulness and Daoist wu wei both describe a quality of non-reactive, present-moment attunement. The meditator watching thoughts without grasping and the Daoist sage acting without forcing share a fundamentally similar inner posture of effortless presence."
+  },
+  {
+    "id": "r89",
+    "source": "bodhichitta",
+    "target": "tikkun-olam",
+    "type": "analogy",
+    "description": "The bodhisattva\\"
+  },
+  {
+    "id": "r90",
+    "source": "via-negativa",
+    "target": "sunyata",
+    "type": "analogy",
+    "description": "The Christian via negativa (denying all attributes of God) and Buddhist sunyata (emptying phenomena of inherent existence) both operate through systematic negation. Both also warn against reifying the result — emptiness is empty; the divine darkness is not a positive entity."
+  },
+  {
+    "id": "r91",
+    "source": "nirvana",
+    "target": "henosis",
+    "type": "same_metaphor_different_ontology",
+    "description": "Both nirvana and Neoplatonic henosis describe the soul\\"
+  },
+  {
+    "id": "r92",
+    "source": "ren-humaneness",
+    "target": "i-thou",
+    "type": "analogy",
+    "description": "Confucian ren (genuine care and attention to the other) and Buber\\"
+  },
+  {
+    "id": "r93",
+    "source": "was-ist-heilige",
+    "target": "shamanism",
+    "type": "same_question_different_answer",
+    "description": "Shamanism\\"
+  },
+  {
+    "id": "r94",
+    "source": "nach-dem-tod",
+    "target": "advaita-vedanta",
+    "type": "same_question_different_answer",
+    "description": "Advaita\\"
+  },
+  {
+    "id": "r95",
+    "source": "freier-wille",
+    "target": "advaita-vedanta",
+    "type": "same_question_different_answer",
+    "description": "Advaita dissolves the free will question: there is no individual will, only the divine will appearing as multiple agents. From the ultimate standpoint no one acts; from the conventional, karma operates. Liberation ends the problem by ending the one who asked it."
+  },
+  {
+    "id": "r96",
+    "source": "kabbalah",
+    "target": "sacred-feminine",
+    "type": "structural_proximity",
+    "description": "The Shekhinah — the divine feminine presence dwelling in the world — is central to Kabbalistic theology. It is the last of the ten Sefirot, the point where divine energy touches the created world and yearns for reunion with its source."
+  },
+  {
+    "id": "r97",
+    "source": "hinduism-yoga",
+    "target": "sacred-feminine",
+    "type": "structural_proximity",
+    "description": "Shakti — the dynamic feminine power of the cosmos — is inseparable from Tantric Hindu metaphysics. The entire universe is Shakti dancing in the stillness of Shiva-consciousness."
+  },
+  {
+    "id": "r98",
+    "source": "indigenous-wisdom",
+    "target": "sacred-feminine",
+    "type": "analogy",
+    "description": "Indigenous traditions worldwide — from the Andean Pachamama to the Lakota White Buffalo Calf Woman to Aboriginal earth-mother figures — express the same recognition: the earth is sacred, alive, and feminine. This parallels the Tantric Shakti and Kabbalistic Shekhinah."
+  },
+  {
+    "id": "r99",
+    "source": "integral-theory",
+    "target": "theravada-buddhism",
+    "type": "same_praxis_different_framing",
+    "description": "Wilber\\"
+  },
+  {
+    "id": "r100",
+    "source": "sein-zum-tode",
+    "target": "stoicism",
+    "type": "same_praxis_different_framing",
+    "description": "Both Heidegger\\"
+  },
+  {
+    "id": "r101",
+    "source": "jainism",
+    "target": "ahimsa",
+    "type": "structural_proximity",
+    "description": "Ahimsa (non-violence) is the supreme principle of Jainism — its foundation, its touchstone, and the measure of all other virtues. Mahavira made it the core of the Jain ethical system, extending it to every living creature."
+  },
+  {
+    "id": "r102",
+    "source": "jainism",
+    "target": "theravada-buddhism",
+    "type": "analogy",
+    "description": "Jainism and Theravada Buddhism both emerged from the Shramana movement in ancient India, both reject Vedic authority and caste hierarchy, and both emphasize rigorous ethical conduct, meditation, and liberation from the cycle of rebirth. Their key difference: Jainism affirms eternal individual souls (jivas) while Buddhism denies any permanent self."
+  },
+  {
+    "id": "r103",
+    "source": "sikhism",
+    "target": "sufism",
+    "type": "bridge_via_third",
+    "description": "Sikhism was profoundly shaped by the Sufi tradition, particularly through the Sant movement and figures like Kabir, whose nirguna bhakti (devotion to formless God) blended Islamic Sufi and Hindu bhakti elements. The Guru Granth Sahib includes compositions by Sufi saints, reflecting a genuine theological encounter."
+  },
+  {
+    "id": "r104",
+    "source": "sikhism",
+    "target": "bhakti",
+    "type": "structural_proximity",
+    "description": "Sikhism emerged from and transformed the northern Indian Bhakti movement. The Sikh Gurus\\"
+  },
+  {
+    "id": "r105",
+    "source": "zoroastrianism",
+    "target": "christian-mysticism",
+    "type": "bridge_via_third",
+    "description": "Zoroastrianism profoundly shaped the theological concepts that entered Christianity — including the cosmic dualism of good and evil, the angelic hierarchy, the devil as a fallen being, bodily resurrection, final judgment, and apocalyptic renovation. The Persian-Jewish contact during the Babylonian exile was the primary channel of transmission."
+  },
+  {
+    "id": "r106",
+    "source": "zoroastrianism",
+    "target": "kabbalah",
+    "type": "analogy",
+    "description": "Both Zoroastrianism and Kabbalah frame cosmic history as a drama of divine light in struggle with darkness — Zoroastrianism\\"
+  },
+  {
+    "id": "r107",
+    "source": "hermeticism",
+    "target": "neoplatonism",
+    "type": "structural_proximity",
+    "description": "Hermeticism and Neoplatonism share a common Alexandrian origin, common metaphysical assumptions (emanation from a divine One, the soul\\"
+  },
+  {
+    "id": "r108",
+    "source": "hermeticism",
+    "target": "kabbalah",
+    "type": "analogy",
+    "description": "Christian Kabbalah and Hermeticism merged in the Renaissance into a unified Western esoteric tradition: Pico della Mirandola combined Kabbalistic interpretation of Hebrew letters with Hermetic cosmology, and the Golden Dawn system explicitly united the Kabbalistic Tree of Life with Hermetic correspondence tables."
+  },
+  {
+    "id": "r109",
+    "source": "neoplatonism",
+    "target": "platonism",
+    "type": "structural_proximity",
+    "description": "Neoplatonism is the systematic mystical development of Plato\\"
+  },
+  {
+    "id": "r110",
+    "source": "neoplatonism",
+    "target": "christian-mysticism",
+    "type": "bridge_via_third",
+    "description": "Neoplatonism entered Christianity primarily through Augustine (who read \\"
+  },
+  {
+    "id": "r111",
+    "source": "process-philosophy",
+    "target": "panentheism",
+    "type": "structural_proximity",
+    "description": "Process philosophy provides the metaphysical foundation for panentheism\\"
+  },
+  {
+    "id": "r112",
+    "source": "process-philosophy",
+    "target": "dependent-origination",
+    "type": "analogy",
+    "description": "Whitehead\\"
+  },
+  {
+    "id": "r113",
+    "source": "ubuntu-philosophy",
+    "target": "i-thou",
+    "type": "analogy",
+    "description": "Ubuntu\\"
+  },
+  {
+    "id": "r114",
+    "source": "ubuntu-philosophy",
+    "target": "indigenous-wisdom",
+    "type": "structural_proximity",
+    "description": "Ubuntu is the most widely known concept from southern African philosophy and represents the larger field of African indigenous wisdom traditions — relational, communal, land-connected, and ancestor-honoring. It is to African wisdom traditions what ahimsa is to South Asian: the most globally recognized expression of a deeper philosophical orientation."
+  },
+  {
+    "id": "r115",
+    "source": "teresa-of-avila",
+    "target": "christian-mysticism",
+    "type": "structural_proximity",
+    "description": "Teresa of Ávila is one of the two defining figures (with John of the Cross) of the high-water mark of Spanish Catholic mysticism and one of only four women declared Doctors of the Church. Her Interior Castle is the most systematic practical guide to Christian contemplative stages in the tradition."
+  },
+  {
+    "id": "r116",
+    "source": "john-of-the-cross",
+    "target": "christian-mysticism",
+    "type": "structural_proximity",
+    "description": "John of the Cross provides the most demanding and systematic account of the via negativa in practical contemplative instruction — his \\"
+  },
+  {
+    "id": "r117",
+    "source": "teresa-of-avila",
+    "target": "john-of-the-cross",
+    "type": "structural_proximity",
+    "description": "Teresa of Ávila and John of the Cross were co-founders of the Discalced Carmelite reform and the most important spiritual partnership in Christian mystical history. Their approaches complement each other: Teresa maps the experiential stages with psychological precision; John maps the purification with theological rigor."
+  },
+  {
+    "id": "r118",
+    "source": "john-of-the-cross",
+    "target": "via-negativa",
+    "type": "structural_proximity",
+    "description": "John of the Cross is the supreme practical exponent of the via negativa in the Christian tradition — his nada (\\"
+  },
+  {
+    "id": "r119",
+    "source": "maimonides",
+    "target": "kabbalah",
+    "type": "tension",
+    "description": "Maimonides and the Kabbalistic tradition represent the great intellectual-spiritual tension within medieval Judaism: Maimonides insisted on negative theology, the incorporeality of God, and rationalist interpretation of scripture; the Kabbalists developed a rich mythology of divine names, emanations, and anthropomorphic divine structures that Maimonides would have condemned as heresy."
+  },
+  {
+    "id": "r120",
+    "source": "maimonides",
+    "target": "platonism",
+    "type": "bridge_via_third",
+    "description": "Maimonides bridges Aristotelian-Platonic philosophy and Jewish theology — he is the paradigmatic case of the medieval synthesis project, demonstrating that philosophical rationalism and revealed religion can be reconciled through allegorical interpretation, negative theology, and the subordination of imagination to intellect."
+  },
+  {
+    "id": "r121",
+    "source": "averroes",
+    "target": "al-ghazali",
+    "type": "contrast",
+    "description": "The Averroes-Ghazali debate (Incoherence of the Incoherence vs. Incoherence of the Philosophers) is the decisive confrontation between rationalist philosophy and theological orthodoxy in Islamic intellectual history — Ghazali attacking philosophy\\"
+  },
+  {
+    "id": "r122",
+    "source": "averroes",
+    "target": "platonism",
+    "type": "bridge_via_third",
+    "description": "Averroes\\"
+  },
+  {
+    "id": "r123",
+    "source": "bodhidharma",
+    "target": "zen-buddhism",
+    "type": "structural_proximity",
+    "description": "Bodhidharma is the founding patriarch of Chan/Zen Buddhism — the tradition\\"
+  },
+  {
+    "id": "r124",
+    "source": "hui-neng",
+    "target": "zen-buddhism",
+    "type": "structural_proximity",
+    "description": "Hui Neng\\"
+  },
+  {
+    "id": "r125",
+    "source": "hui-neng",
+    "target": "dogen",
+    "type": "contrast",
+    "description": "The Hui Neng vs. Dogen comparison represents the classic sudden-gradual debate in Zen: Hui Neng\\"
+  },
+  {
+    "id": "r126",
+    "source": "pythagoras",
+    "target": "platonism",
+    "type": "structural_proximity",
+    "description": "Pythagorean number mysticism and the doctrine of metempsychosis (soul transmigration) are among the most important influences on Plato — his theory of mathematical Forms, his doctrine of recollection (anamnesis), and his arguments for the soul\\"
+  },
+  {
+    "id": "r127",
+    "source": "heraclitus",
+    "target": "logos",
+    "type": "structural_proximity",
+    "description": "Heraclitus is the originator of the philosophical concept of Logos as the universal rational principle underlying all things — a concept adopted by the Stoics as the center of their entire cosmology and theology, and eventually by John\\"
+  },
+  {
+    "id": "r128",
+    "source": "heraclitus",
+    "target": "daoism",
+    "type": "analogy",
+    "description": "The Heraclitean Logos and the Daoist Dao are the two most sustained philosophical attempts in antiquity to articulate a universal, ineffable principle that underlies constant flux. Both are described as governing all things while being incomprehensible to most people; both use water metaphors; both insist on the unity of opposites. The parallel is one of the most discussed cross-cultural philosophical convergences."
+  },
+  {
+    "id": "r129",
+    "source": "spinoza",
+    "target": "advaita-vedanta",
+    "type": "analogy",
+    "description": "Spinoza\\"
+  },
+  {
+    "id": "r130",
+    "source": "spinoza",
+    "target": "daoism",
+    "type": "analogy",
+    "description": "Spinoza\\"
+  },
+  {
+    "id": "r131",
+    "source": "wittgenstein",
+    "target": "via-negativa",
+    "type": "analogy",
+    "description": "Wittgenstein\\"
+  },
+  {
+    "id": "r132",
+    "source": "wittgenstein",
+    "target": "zen-buddhism",
+    "type": "analogy",
+    "description": "Wittgenstein\\"
+  },
+  {
+    "id": "r133",
+    "source": "swami-vivekananda",
+    "target": "advaita-vedanta",
+    "type": "structural_proximity",
+    "description": "Vivekananda is the primary figure responsible for the global transmission of Advaita Vedanta — his \\"
+  },
+  {
+    "id": "r134",
+    "source": "swami-vivekananda",
+    "target": "hinduism-yoga",
+    "type": "structural_proximity",
+    "description": "Vivekananda\\"
+  },
+  {
+    "id": "r135",
+    "source": "dt-suzuki",
+    "target": "zen-buddhism",
+    "type": "structural_proximity",
+    "description": "D.T. Suzuki is the primary scholarly transmitter of Zen Buddhism to Western audiences — his Essays in Zen Buddhism and dozens of other works provided the conceptual vocabulary through which educated Westerners first understood Zen practice and philosophy."
+  },
+  {
+    "id": "r136",
+    "source": "dt-suzuki",
+    "target": "meister-eckhart",
+    "type": "analogy",
+    "description": "Suzuki\\"
+  },
+  {
+    "id": "r137",
+    "source": "ahimsa",
+    "target": "karma",
+    "type": "structural_proximity",
+    "description": "Ahimsa and karma are complementary principles in South Asian religious ethics: violence generates the heaviest karma; non-violence is the supreme means of ceasing karma\\"
+  },
+  {
+    "id": "r138",
+    "source": "bhakti",
+    "target": "sufism",
+    "type": "analogy",
+    "description": "The Hindu Bhakti tradition and Islamic Sufism converged in medieval India into a remarkable synthesis — exemplified in the life and poetry of Kabir, who drew equally on both. Both traditions center on the transforming power of love directed toward the divine; both use music and poetry as vehicles; both challenge the authority of religious formalism."
+  },
+  {
+    "id": "r139",
+    "source": "bhakti",
+    "target": "sacred-feminine",
+    "type": "structural_proximity",
+    "description": "The Bhakti movement produced some of the most powerful expressions of the sacred feminine in world religion: Mirabai\\"
+  },
+  {
+    "id": "r140",
+    "source": "tao-te-ching-concept",
+    "target": "wu-wei",
+    "type": "structural_proximity",
+    "description": "The Tao Te Ching is the primary source text for wu wei — almost every chapter touches on the theme of effortless, non-forcing action aligned with the Dao\\"
+  },
+  {
+    "id": "r141",
+    "source": "panentheism",
+    "target": "kabbalah",
+    "type": "analogy",
+    "description": "Kabbalistic cosmology — Ein Sof contracting (tzimtzum) to create space for the world, the world as the self-expression of divine names, the need for tikkun to restore divine harmony — is structurally panentheistic: the world is within the divine process without being simply identical with God."
+  },
+  {
+    "id": "r142",
+    "source": "perennial-philosophy",
+    "target": "integral-theory",
+    "type": "tension",
+    "description": "Ken Wilber\\"
+  },
+  {
+    "id": "r143",
+    "source": "perennial-philosophy",
+    "target": "advaita-vedanta",
+    "type": "bridge_via_third",
+    "description": "Advaita Vedanta is the tradition most frequently cited as the paradigmatic exemplification of the perennial philosophy — its claim that Atman equals Brahman is read as the clearest formulation of the universal mystical insight that the individual self and the divine ground are ultimately one. Huxley, Schuon, and Wilber all use Advaita as their primary reference point."
+  },
+  {
+    "id": "r144",
+    "source": "emptiness-fullness",
+    "target": "sunyata",
+    "type": "structural_proximity",
+    "description": "The Emptiness-Fullness paradox is most directly articulated in the Buddhist tradition through sunyata — particularly the Heart Sutra\\"
+  },
+  {
+    "id": "r145",
+    "source": "emptiness-fullness",
+    "target": "via-negativa",
+    "type": "analogy",
+    "description": "The via negativa and the sunyata/emptiness tradition both arrive at the same paradox through negation: stripping God/reality of all positive attributes, they find not empty absence but an overflowing plenitude that no positive description captures. The fullness discovered in radical emptying is the shared insight."
+  },
+  {
+    "id": "r146",
+    "source": "thomas-merton",
+    "target": "christian-mysticism",
+    "type": "structural_proximity",
+    "description": "Thomas Merton is the most widely read representative of Christian mystical tradition in the 20th century, who renewed interest in the Desert Fathers, the Rhineland mystics, and Christian contemplative prayer for a mass audience while simultaneously engaging Buddhist and Sufi contemplatives as genuine dialogue partners."
+  },
+  {
+    "id": "r147",
+    "source": "thomas-merton",
+    "target": "zen-buddhism",
+    "type": "bridge_via_third",
+    "description": "Merton\\"
+  },
+  {
+    "id": "r148",
+    "source": "ram-dass",
+    "target": "hinduism-yoga",
+    "type": "structural_proximity",
+    "description": "Ram Dass was transformed by his encounter with the Hindu devotional tradition (through Neem Karoli Baba) and became one of the most influential transmitters of bhakti yoga and Advaita teachings to Western audiences — demonstrating that genuine transformation through the Hindu path was available to Westerners."
+  },
+  {
+    "id": "r149",
+    "source": "ram-dass",
+    "target": "alan-watts",
+    "type": "analogy",
+    "description": "Ram Dass and Alan Watts are the two most culturally influential bridges between Eastern spiritual traditions and Western seekers in the 20th century. Both began as Western intellectuals (Watts as theologian, Alpert as psychologist), both encountered transformative Eastern teachers or practices, and both spoke from experience rather than mere scholarly knowledge."
+  },
+  {
+    "id": "r150",
+    "source": "jainism",
+    "target": "hinduism-yoga",
+    "type": "contrast",
+    "description": "Jainism and Hinduism share the karma-dharma-samsara framework but differ fundamentally on the soul: Jainism affirms eternal, unchanging individual jivas imprisoned in karmic matter; Hinduism (particularly Advaita) sees the individual atman as ultimately identical with Brahman. Jainism also rejects the Vedic authority and the caste system that orthodox Hinduism maintains."
+  },
+  {
+    "id": "r151",
+    "source": "zoroastrianism",
+    "target": "existentialism",
+    "type": "analogy",
+    "description": "Zoroastrianism\\"
+  },
+  {
+    "id": "r152",
+    "source": "aryadeva",
+    "target": "nagarjuna",
+    "type": "structural_proximity",
+    "description": "Aryadeva is Nagarjuna\\"
+  },
+  {
+    "id": "r153",
+    "source": "nagarjunas-student-aryadeva",
+    "target": "nagarjuna",
+    "type": "structural_proximity",
+    "description": "The Madhyamaka school was founded by Nagarjuna; its entire subsequent development is commentary on, extension of, and argument about his Mulamadhyamakakarika and related works."
+  },
+  {
+    "id": "r154",
+    "source": "nagarjunas-student-aryadeva",
+    "target": "tibetan-buddhism",
+    "type": "structural_proximity",
+    "description": "Madhyamaka is the dominant philosophical framework of all four schools of Tibetan Buddhism; the Gelug tradition\\"
+  },
+  {
+    "id": "r155",
+    "source": "apophatic-theology",
+    "target": "via-negativa",
+    "type": "structural_proximity",
+    "description": "Apophatic theology and via negativa are effectively synonymous terms — the Latin \\"
+  },
+  {
+    "id": "r156",
+    "source": "apophatic-theology",
+    "target": "sunyata",
+    "type": "analogy",
+    "description": "Apophatic theology and Buddhist sunyata both operate through systematic negation to arrive at an inexpressible reality beyond all positive and negative predicates. The Christian \\"
+  },
+  {
+    "id": "r157",
+    "source": "aryadeva",
+    "target": "nagarjunas-student-aryadeva",
+    "type": "structural_proximity",
+    "description": "Aryadeva is the Madhyamaka school\\"
+  }
+]
