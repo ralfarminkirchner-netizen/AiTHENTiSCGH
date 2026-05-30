@@ -65,11 +65,11 @@ export default function Graph() {
     }
   }, [fgRef]);
 
-  // Filter data based on timeline
-  const filteredData = {
+  // Filter data based on timeline - wrap in useMemo to prevent graph rebuilds on every keystroke
+  const filteredData = useMemo(() => ({
     nodes: data.nodes.filter(n => n.time <= currentTime),
     links: data.links.filter(l => l.time <= currentTime),
-  };
+  }), [data, currentTime]);
 
   // Search Logic
   useEffect(() => {
@@ -95,6 +95,47 @@ export default function Graph() {
     }
   };
 
+  // Dynamically update Three.js objects for search highlighting without rebuilding graph
+  useEffect(() => {
+    if (!fgRef.current) return;
+    
+    // The force graph scene contains all our nodes
+    const scene = fgRef.current.scene();
+    
+    // Find all nodes in the current filtered data
+    filteredData.nodes.forEach(node => {
+      // Force graph stores the three object on the node as __threeObj
+      if (node.__threeObj) {
+        const isMatch = !isSearchActive || searchResults.some(res => res.id === node.id);
+        
+        // Find the mesh (it's either the object itself or the first child if it has a sprite)
+        const mesh = node.__threeObj.type === 'Mesh' ? node.__threeObj : node.__threeObj.children.find(c => c.type === 'Mesh');
+        
+        if (mesh && mesh.material) {
+          mesh.material.opacity = isSearchActive ? (isMatch ? 1.0 : 0.05) : (node === hoverNode ? 1.0 : 0.85);
+          mesh.material.color.set(isSearchActive && !isMatch ? '#1a1a24' : (node.color || '#94a3b8'));
+        }
+        
+        // Handle labels
+        const sprite = node.__threeObj.children?.find(c => c.type === 'Sprite');
+        if (sprite) {
+          // If searching, hide labels of non-matches. Otherwise show if hovered/selected.
+          sprite.visible = isSearchActive ? isMatch : (node === hoverNode || node === selectedNode);
+        } else if (isSearchActive && isMatch && searchResults.length < 20) {
+          // Add sprite if it's a search match and we don't have too many
+          const newSprite = new SpriteText(node.name);
+          newSprite.color = '#ffffff';
+          newSprite.textHeight = 5;
+          newSprite.backgroundColor = 'rgba(0,0,0,0.7)';
+          newSprite.padding = 3;
+          newSprite.borderRadius = 4;
+          newSprite.position.y = (node.val ? Math.min(node.val / 3, 6) : 3) + 4;
+          node.__threeObj.add(newSprite);
+        }
+      }
+    });
+  }, [searchQuery, isSearchActive, searchResults, hoverNode, selectedNode, filteredData.nodes]);
+
   const activeNode = selectedNode || hoverNode;
 
   return (
@@ -103,19 +144,20 @@ export default function Graph() {
         ref={fgRef}
         graphData={filteredData}
         nodeThreeObject={node => {
-          // Check if node matches search
+          // Only evaluate the initial state
           const isMatch = !isSearchActive || searchResults.some(res => res.id === node.id);
           
-          // Small glowing sphere for every node
+          const group = new THREE.Group();
+          
           const geometry = new THREE.SphereGeometry(node.val ? Math.min(node.val / 3, 6) : 3, 10, 10);
           const material = new THREE.MeshBasicMaterial({
-            color: node.color || '#94a3b8',
+            color: isSearchActive && !isMatch ? '#1a1a24' : (node.color || '#94a3b8'),
             transparent: true,
-            opacity: isSearchActive ? (isMatch ? 1.0 : 0.05) : (node === hoverNode ? 1.0 : 0.85),
+            opacity: isSearchActive ? (isMatch ? 1.0 : 0.05) : 0.85,
           });
           const sphere = new THREE.Mesh(geometry, material);
+          group.add(sphere);
 
-          // Only render text label for hovered/selected node or if it's a search match
           if (node === hoverNode || node === selectedNode || (isSearchActive && isMatch && searchResults.length < 20)) {
             const sprite = new SpriteText(node.name);
             sprite.color = '#ffffff';
@@ -124,9 +166,9 @@ export default function Graph() {
             sprite.padding = 3;
             sprite.borderRadius = 4;
             sprite.position.y = (node.val ? Math.min(node.val / 3, 6) : 3) + 4;
-            sphere.add(sprite);
+            group.add(sprite);
           }
-          return sphere;
+          return group;
         }}
         nodeThreeObjectExtend={false}
         linkWidth={link => link.type === 'semantic' ? 2 : (link.type === 'bridge' ? 1.5 : 0.5)}
