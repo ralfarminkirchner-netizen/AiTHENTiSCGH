@@ -10,66 +10,22 @@ const textureLoader = new THREE.TextureLoader();
 textureLoader.crossOrigin = 'anonymous';
 const textureCache = new Map();
 
-function createBaseTexture(node, width = 256, height = 320, radius = 32) {
+// Generates a single, perfect circular alpha mask on the GPU for all images
+const createCircleAlphaMap = () => {
   const canvas = document.createElement('canvas');
-  canvas.width = width; canvas.height = height;
+  canvas.width = 128; canvas.height = 128;
   const ctx = canvas.getContext('2d');
-  
-  // Frame
-  ctx.fillStyle = 'rgba(15, 15, 20, 0.85)';
-  ctx.roundRect(0, 0, width, height, radius);
-  ctx.fill();
-  ctx.strokeStyle = node.color || '#94a3b8';
-  ctx.lineWidth = 6;
-  ctx.stroke();
-  
-  // Text
+  ctx.fillStyle = '#000000';
+  ctx.fillRect(0,0,128,128);
   ctx.fillStyle = '#ffffff';
-  ctx.font = 'bold 24px sans-serif';
-  ctx.textAlign = 'center';
-  ctx.textBaseline = 'middle';
-  // If no image, center text, otherwise put at bottom
-  const textY = node.image ? width + ((height - width) / 2) : height / 2;
-  
-  // Word wrap for long names
-  const words = (node.name || '').split(' ');
-  if (words.length > 2) {
-    ctx.font = 'bold 18px sans-serif';
-    ctx.fillText(words.slice(0, 2).join(' '), width / 2, textY - 10, width - 20);
-    ctx.fillText(words.slice(2).join(' '), width / 2, textY + 12, width - 20);
-  } else {
-    ctx.fillText(node.name || '', width / 2, textY, width - 20);
-  }
-  
+  ctx.beginPath();
+  ctx.arc(64,64,64,0,Math.PI*2);
+  ctx.fill();
   const tex = new THREE.CanvasTexture(canvas);
-  tex.colorSpace = THREE.SRGBColorSpace;
   tex.minFilter = THREE.LinearMipmapLinearFilter;
   return tex;
-}
-
-function createPhotoTexture(src, width = 256, radius = 32) {
-  const canvas = document.createElement('canvas');
-  canvas.width = width; canvas.height = width;
-  const ctx = canvas.getContext('2d');
-  const tex = new THREE.CanvasTexture(canvas);
-  tex.colorSpace = THREE.SRGBColorSpace;
-  tex.minFilter = THREE.LinearMipmapLinearFilter;
-  
-  const img = new Image();
-  img.crossOrigin = 'anonymous';
-  img.src = src;
-  img.onload = () => {
-    ctx.beginPath();
-    ctx.roundRect(0, 0, width, width, radius);
-    ctx.clip();
-    const scale = Math.max(width / img.width, width / img.height);
-    const x = (width / 2) - (img.width / 2) * scale;
-    const y = (width / 2) - (img.height / 2) * scale;
-    ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
-    tex.needsUpdate = true;
-  };
-  return tex;
-}
+};
+const circleAlphaMap = createCircleAlphaMap();
 
 export default function Graph() {
   const [data, setData] = useState({ nodes: [], links: [] });
@@ -152,11 +108,22 @@ export default function Graph() {
     }
   }, [fgRef]);
 
-  // Filter data based on timeline - wrap in useMemo to prevent graph rebuilds on every keystroke
-  const filteredData = useMemo(() => ({
-    nodes: data.nodes.filter(n => n.time <= currentTime),
-    links: data.links.filter(l => l.time <= currentTime),
-  }), [data, currentTime]);
+  // Filter data based on timeline and active categories - Strict filtering!
+  const filteredData = useMemo(() => {
+    const activeNodes = data.nodes.filter(n => 
+      n.time <= currentTime && 
+      (!n.cluster || activeClusters.has(n.cluster))
+    );
+    
+    const activeNodeIds = new Set(activeNodes.map(n => n.id));
+    const activeLinks = data.links.filter(l => {
+      const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
+      const targetId = typeof l.target === 'object' ? l.target.id : l.target;
+      return l.time <= currentTime && activeNodeIds.has(sourceId) && activeNodeIds.has(targetId);
+    });
+
+    return { nodes: activeNodes, links: activeLinks };
+  }, [data, currentTime, activeClusters]);
 
   // Search Logic
   useEffect(() => {
@@ -173,7 +140,7 @@ export default function Graph() {
     ).slice(0, 8);
     setSearchResults(results);
     setIsSearchActive(true);
-  }, [searchQuery, data.nodes, currentTime]);
+  }, [searchQuery, filteredData.nodes, currentTime]);
 
   const handleSearchEnter = (e) => {
     if (e.key === 'Enter' && searchResults.length > 0) {
@@ -181,27 +148,6 @@ export default function Graph() {
       setShowDropdown(false);
     }
   };
-
-  // Dynamically update opacities based on Search and Filter
-  useEffect(() => {
-    if (!fgRef.current) return;
-    
-    filteredData.nodes.forEach(node => {
-      if (node.__threeObj) {
-        const isMatch = !isSearchActive || searchResults.some(res => res.id === node.id);
-        const isActiveCluster = !node.cluster || activeClusters.has(node.cluster);
-        
-        const isVisible = isMatch && isActiveCluster;
-        const targetOpacity = isVisible ? 1.0 : 0.05;
-        
-        node.__threeObj.userData.baseOpacity = targetOpacity;
-        
-        if (node.__threeObj.userData.baseMaterial) {
-          node.__threeObj.userData.baseMaterial.opacity = targetOpacity;
-        }
-      }
-    });
-  }, [searchQuery, isSearchActive, searchResults, hoverNode, selectedNode, filteredData.nodes, activeClusters]);
 
   // LOD Engine & Cluster Labels (Centroids)
   useEffect(() => {
@@ -240,14 +186,20 @@ export default function Graph() {
           sums[node.cluster].z += group.position.z;
         }
         
-        // LOD Check
+        // Discrete LOD Check
         const dist = camPos.distanceTo(group.position);
-        let photoOp = 0;
-        if (dist < 200) photoOp = 1;
-        else if (dist < 400) photoOp = 1 - ((dist - 200) / 200);
         
-        if (group.userData.photoMaterial) {
-          group.userData.photoMaterial.opacity = photoOp * (group.userData.baseOpacity || 1);
+        // Search opacity override
+        const isMatch = !isSearchActive || searchResults.some(res => res.id === node.id);
+        const baseOpacity = isSearchActive && !isMatch ? 0.05 : 1.0;
+        
+        if (group.userData.mesh) {
+          group.userData.mesh.material.opacity = baseOpacity;
+        }
+        
+        // Sharp toggle for name visibility based on distance
+        if (group.userData.nameSprite) {
+          group.userData.nameSprite.visible = (dist < 250) && (baseOpacity > 0.1);
         }
       });
       
@@ -259,12 +211,9 @@ export default function Graph() {
           sprite.position.z = sums[cluster].z / counts[cluster];
           
           const dist = camPos.distanceTo(sprite.position);
-          let op = 0;
-          if (dist > 700) op = 0.8;
-          else if (dist > 300) op = 0.8 * ((dist - 300) / 400);
           
-          sprite.material.opacity = op;
-          sprite.visible = op > 0.01;
+          // Sharp toggle for cluster text based on distance
+          sprite.visible = (dist >= 250);
         } else {
           sprite.visible = false;
         }
@@ -289,50 +238,64 @@ export default function Graph() {
         graphData={filteredData}
         nodeThreeObject={node => {
           const isMatch = !isSearchActive || searchResults.some(res => res.id === node.id);
-          const isActiveCluster = !node.cluster || activeClusters.has(node.cluster);
-          const initialOpacity = (isMatch && isActiveCluster) ? 1.0 : 0.05;
+          const initialOpacity = isSearchActive && !isMatch ? 0.05 : 1.0;
           
           const group = new THREE.Group();
-          group.userData = { baseOpacity: initialOpacity };
-          
           const size = node.val ? Math.min(node.val, 16) : 10;
-          const frameWidth = size * 1.5;
-          const frameHeight = size * 1.875; // 0.8 aspect ratio
           
-          // 1. Base Sprite (Rounded Frame + Name)
-          let baseMaterial;
-          const cacheKey = `base_${node.name}_${node.color}`;
-          if (textureCache.has(cacheKey)) {
-             baseMaterial = new THREE.SpriteMaterial({ map: textureCache.get(cacheKey), color: 0xffffff, transparent: true });
-          } else {
-             const baseTex = createBaseTexture(node);
-             textureCache.set(cacheKey, baseTex);
-             baseMaterial = new THREE.SpriteMaterial({ map: baseTex, color: 0xffffff, transparent: true });
-          }
-          baseMaterial.opacity = initialOpacity;
-          const baseSprite = new THREE.Sprite(baseMaterial);
-          baseSprite.scale.set(frameWidth, frameHeight, 1);
-          group.add(baseSprite);
-          group.userData.baseMaterial = baseMaterial;
-          
-          // 2. Photo Sprite (Fades in via LOD)
+          // 1. Photo (Native Circle via AlphaMap)
           if (node.image) {
-             let photoMaterial;
-             if (textureCache.has(node.image)) {
-                photoMaterial = new THREE.SpriteMaterial({ map: textureCache.get(node.image), color: 0xffffff, transparent: true, opacity: 0 });
-             } else {
-                photoMaterial = new THREE.SpriteMaterial({ color: 0xffffff, transparent: true, opacity: 0 });
-                const photoTex = createPhotoTexture(node.image);
-                textureCache.set(node.image, photoTex);
-                photoMaterial.map = photoTex;
-             }
-             const photoSprite = new THREE.Sprite(photoMaterial);
-             photoSprite.scale.set(frameWidth, frameWidth, 1);
-             // Align top of square photo to top of rectangular frame
-             photoSprite.position.y = (frameHeight - frameWidth) / 2;
-             group.add(photoSprite);
-             group.userData.photoMaterial = photoMaterial;
+            let material;
+            if (textureCache.has(node.image)) {
+              material = new THREE.SpriteMaterial({ 
+                map: textureCache.get(node.image), 
+                alphaMap: circleAlphaMap, 
+                color: 0xffffff, 
+                transparent: true,
+                alphaTest: 0.1
+              });
+            } else {
+              material = new THREE.SpriteMaterial({ 
+                alphaMap: circleAlphaMap, 
+                color: 0xffffff, 
+                transparent: true,
+                alphaTest: 0.1
+              });
+              textureLoader.load(node.image, (texture) => {
+                textureCache.set(node.image, texture);
+                material.map = texture;
+                material.needsUpdate = true;
+              });
+            }
+            material.opacity = initialOpacity;
+            const sprite = new THREE.Sprite(material);
+            sprite.scale.set(size, size, 1);
+            group.add(sprite);
+            group.userData.mesh = sprite;
+          } else {
+            // Fallback sphere
+            const geometry = new THREE.SphereGeometry(size / 2, 16, 16);
+            const material = new THREE.MeshBasicMaterial({
+              color: node.color || '#94a3b8',
+              transparent: true,
+              opacity: initialOpacity,
+            });
+            const sphere = new THREE.Mesh(geometry, material);
+            group.add(sphere);
+            group.userData.mesh = sphere;
           }
+          
+          // 2. Name Text (Controlled discretely by LOD loop)
+          const nameSprite = new SpriteText(node.name);
+          nameSprite.color = '#ffffff';
+          nameSprite.textHeight = size * 0.4;
+          nameSprite.backgroundColor = 'rgba(0,0,0,0.8)';
+          nameSprite.padding = 3;
+          nameSprite.borderRadius = 4;
+          nameSprite.position.y = -(size / 2) - (size * 0.3); // Place below image
+          nameSprite.visible = false; // Hidden by default, LOD handles it
+          group.add(nameSprite);
+          group.userData.nameSprite = nameSprite;
           
           return group;
         }}
