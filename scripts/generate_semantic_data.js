@@ -148,7 +148,7 @@ nodes.forEach(n => {
 });
 
 // Load Moonfingers relations if available
-let idMap = { moonToMindcel: {} };
+let idMap = { moonToMindcel: {}, sharedToMindcel: {} };
 let moonRelations = [];
 try {
   idMap = JSON.parse(fs.readFileSync(path.join(__dirname, 'moon_id_map.json'), 'utf8'));
@@ -158,6 +158,7 @@ try {
 }
 
 const moonToMindcel = idMap.moonToMindcel || {};
+const sharedToMindcel = idMap.sharedToMindcel || {};
 let semanticLinksCount = 0;
 
 moonRelations.forEach(r => {
@@ -177,6 +178,61 @@ moonRelations.forEach(r => {
         time: 25
       });
       semanticLinksCount++;
+    }
+  }
+});
+
+// Load Shared Core data
+let personalities = [];
+let bridges = [];
+try {
+  personalities = JSON.parse(fs.readFileSync(path.join(__dirname, '../../shared-core/data/personalities.json'), 'utf8'));
+  bridges = JSON.parse(fs.readFileSync(path.join(__dirname, '../../shared-core/data/bridges.json'), 'utf8'));
+} catch (e) {
+  console.log('No shared-core data found, skipping.');
+}
+
+// Add shared-core personalities descriptions
+personalities.forEach(p => {
+  const mindcelId = sharedToMindcel[p.id];
+  if (mindcelId) {
+    const node = nodes.find(n => n.id === mindcelId);
+    if (node) {
+      if (p.bio) {
+        node.description = (node.description ? node.description + '\n\n' : '') + p.bio;
+      }
+      if (p.role) {
+        node.role = p.role;
+      }
+    }
+  }
+});
+
+// Add shared-core bridges
+bridges.forEach(b => {
+  const mappedIds = (b.relatedNodeIds || [])
+    .map(id => sharedToMindcel[id])
+    .filter(id => id && nodes.some(n => n.id === id));
+    
+  // Create combinations of links
+  for (let i = 0; i < mappedIds.length; i++) {
+    for (let j = i + 1; j < mappedIds.length; j++) {
+      const source = mappedIds[i];
+      const target = mappedIds[j];
+      if (source === target) continue;
+      
+      const key = [source, target].sort().join('|');
+      if (!addedLinks.has(key)) {
+        addedLinks.add(key);
+        links.push({
+          source,
+          target,
+          type: 'semantic',
+          description: b.label || b.summary,
+          time: 26
+        });
+        semanticLinksCount++;
+      }
     }
   }
 });

@@ -12,6 +12,12 @@ export default function Graph() {
   const [selectedNode, setSelectedNode] = useState(null);
   const fgRef = useRef();
 
+  // Search State
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+  const [isSearchActive, setIsSearchActive] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
+
   // Timeline State
   const [maxTime, setMaxTime] = useState(25);
   const [currentTime, setCurrentTime] = useState(0);
@@ -65,6 +71,30 @@ export default function Graph() {
     links: data.links.filter(l => l.time <= currentTime),
   };
 
+  // Search Logic
+  useEffect(() => {
+    if (!searchQuery.trim()) {
+      setSearchResults([]);
+      setIsSearchActive(false);
+      return;
+    }
+    const q = searchQuery.toLowerCase();
+    const results = filteredData.nodes.filter(n => 
+      (n.name && n.name.toLowerCase().includes(q)) || 
+      (n.cluster && n.cluster.toLowerCase().includes(q)) ||
+      (n.description && n.description.toLowerCase().includes(q))
+    ).slice(0, 8);
+    setSearchResults(results);
+    setIsSearchActive(true);
+  }, [searchQuery, data.nodes, currentTime]);
+
+  const handleSearchEnter = (e) => {
+    if (e.key === 'Enter' && searchResults.length > 0) {
+      handleNodeClick(searchResults[0]);
+      setShowDropdown(false);
+    }
+  };
+
   const activeNode = selectedNode || hoverNode;
 
   return (
@@ -73,17 +103,20 @@ export default function Graph() {
         ref={fgRef}
         graphData={filteredData}
         nodeThreeObject={node => {
-          // Small glowing sphere for every node - much faster than sprites at 1055 nodes
+          // Check if node matches search
+          const isMatch = !isSearchActive || searchResults.some(res => res.id === node.id);
+          
+          // Small glowing sphere for every node
           const geometry = new THREE.SphereGeometry(node.val ? Math.min(node.val / 3, 6) : 3, 10, 10);
           const material = new THREE.MeshBasicMaterial({
             color: node.color || '#94a3b8',
             transparent: true,
-            opacity: node === hoverNode ? 1.0 : 0.85,
+            opacity: isSearchActive ? (isMatch ? 1.0 : 0.05) : (node === hoverNode ? 1.0 : 0.85),
           });
           const sphere = new THREE.Mesh(geometry, material);
 
-          // Only render text label for hovered/selected node (performance)
-          if (node === hoverNode || node === selectedNode) {
+          // Only render text label for hovered/selected node or if it's a search match
+          if (node === hoverNode || node === selectedNode || (isSearchActive && isMatch && searchResults.length < 20)) {
             const sprite = new SpriteText(node.name);
             sprite.color = '#ffffff';
             sprite.textHeight = 5;
@@ -108,6 +141,67 @@ export default function Graph() {
         backgroundColor="#050508"
         enableNodeDrag={false}
       />
+
+      {/* Search Panel */}
+      <div className="absolute top-10 left-1/2 transform -translate-x-1/2 z-20 w-[28rem] max-w-[90vw]">
+        <div className="bg-black/50 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl flex flex-col overflow-hidden transition-all">
+          <div className="flex items-center px-4 py-3">
+            <svg className="w-5 h-5 text-gray-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+            <input
+              type="text"
+              placeholder="Suche Tensoren..."
+              value={searchQuery}
+              onChange={e => {
+                setSearchQuery(e.target.value);
+                setShowDropdown(true);
+              }}
+              onFocus={() => setShowDropdown(true)}
+              onKeyDown={handleSearchEnter}
+              className="bg-transparent border-none text-white w-full focus:outline-none placeholder-gray-500 font-sans"
+            />
+            {searchQuery && (
+              <button onClick={() => { setSearchQuery(''); setShowDropdown(false); setIsSearchActive(false); }} className="text-gray-400 hover:text-white transition-colors shrink-0 p-1">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+              </button>
+            )}
+          </div>
+          
+          {/* Dropdown Results */}
+          <AnimatePresence>
+            {showDropdown && isSearchActive && searchResults.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                className="border-t border-white/10 max-h-72 overflow-y-auto"
+              >
+                {searchResults.map(node => (
+                  <div
+                    key={node.id}
+                    onClick={() => {
+                      handleNodeClick(node);
+                      setShowDropdown(false);
+                    }}
+                    className="px-4 py-3 hover:bg-white/10 cursor-pointer flex flex-col gap-1 border-b border-white/5 last:border-0 transition-colors"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="text-white text-sm font-semibold">{node.name}</span>
+                      {node.cluster && (
+                         <span className="text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-full whitespace-nowrap ml-2" style={{ backgroundColor: (node.color || '#9ca3af') + '33', color: node.color || '#9ca3af' }}>
+                           {node.cluster.replace(/_/g, ' ')}
+                         </span>
+                      )}
+                    </div>
+                    {node.description && (
+                      <span className="text-xs text-gray-400 line-clamp-1">{node.description}</span>
+                    )}
+                  </div>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      </div>
 
       {/* Node Info Panel */}
       <AnimatePresence>
@@ -203,11 +297,14 @@ export default function Graph() {
         </div>
       </div>
 
-      {/* Close detail panel on click outside */}
-      {selectedNode && (
+      {/* Close detail panel and dropdown on click outside */}
+      {(selectedNode || showDropdown) && (
         <button
-          className="absolute inset-0 z-0"
-          onClick={() => setSelectedNode(null)}
+          className="absolute inset-0 z-0 cursor-default"
+          onClick={() => {
+            setSelectedNode(null);
+            setShowDropdown(false);
+          }}
         />
       )}
     </div>
