@@ -38,6 +38,12 @@ export default function Graph() {
   const [searchResults, setSearchResults] = useState([]);
   const [isSearchActive, setIsSearchActive] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  
+  // Ref for LOD animation loop to access latest search state without re-binding
+  const searchStateRef = useRef({ active: false, results: [] });
+  useEffect(() => {
+    searchStateRef.current = { active: isSearchActive, results: searchResults };
+  }, [isSearchActive, searchResults]);
 
   // Category State
   const [activeClusters, setActiveClusters] = useState(new Set());
@@ -190,9 +196,9 @@ export default function Graph() {
         // Discrete LOD Check
         const distSq = camPos.distanceToSquared(group.position);
         
-        // Search opacity override
-        const isMatch = !isSearchActive || searchResults.some(res => res.id === node.id);
-        const baseOpacity = isSearchActive && !isMatch ? 0.05 : 1.0;
+        // Search opacity override (using ref for latest state)
+        const isMatch = !searchStateRef.current.active || searchStateRef.current.results.some(res => res.id === node.id);
+        const baseOpacity = searchStateRef.current.active && !isMatch ? 0.05 : 1.0;
         
         if (group.userData.mesh && group.userData.mesh.material.opacity !== baseOpacity) {
           group.userData.mesh.material.opacity = baseOpacity;
@@ -241,8 +247,11 @@ export default function Graph() {
         ref={fgRef}
         graphData={filteredData}
         nodeThreeObject={node => {
-          const isMatch = !isSearchActive || searchResults.some(res => res.id === node.id);
-          const initialOpacity = isSearchActive && !isMatch ? 0.05 : 1.0;
+          // MEMORY LEAK FIX: Return cached object if it exists!
+          if (node.__cachedObj) return node.__cachedObj;
+
+          const isMatch = !searchStateRef.current.active || searchStateRef.current.results.some(res => res.id === node.id);
+          const initialOpacity = searchStateRef.current.active && !isMatch ? 0.05 : 1.0;
           
           const group = new THREE.Group();
           // Smooth non-linear sizing
@@ -306,6 +315,7 @@ export default function Graph() {
           group.add(nameSprite);
           group.userData.nameSprite = nameSprite;
           
+          node.__cachedObj = group;
           return group;
         }}
         nodeThreeObjectExtend={false}
@@ -383,7 +393,7 @@ export default function Graph() {
         </div>
       </div>
 
-      {/* Node Info Side Panel */}
+      {/* Node Info Side Panel (Split-Screen Wikipedia) */}
       <AnimatePresence>
         {activeNode && (
           <motion.div
@@ -392,98 +402,125 @@ export default function Graph() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="absolute top-0 right-0 h-screen w-[450px] max-w-[100vw] bg-[#050508]/90 backdrop-blur-2xl border-l border-white/10 text-white shadow-2xl overflow-y-auto z-40 flex flex-col"
+            className="absolute top-0 right-0 h-screen w-[50vw] min-w-[800px] max-w-[100vw] bg-[#050508]/95 backdrop-blur-3xl border-l border-white/10 text-white shadow-2xl z-40 flex"
           >
-             <div className="relative shrink-0">
-               {activeNode.image && (
-                 <img
-                   src={activeNode.image}
-                   alt={activeNode.name}
-                   className="w-full h-72 object-cover object-top"
-                   onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
-                 />
-               )}
-               <button 
-                 onClick={() => setSelectedNode(null)}
-                 className="absolute top-6 right-6 bg-black/50 hover:bg-white/20 rounded-full p-2 backdrop-blur-md transition-colors border border-white/10"
-               >
-                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
-               </button>
-               {/* Gradient overlay for text readability */}
-               <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#050508]/90 to-transparent pointer-events-none"></div>
-             </div>
-             
-             <div className="p-8 flex-1 flex flex-col -mt-10 relative z-10">
-                <div
-                  className="inline-block self-start text-[10px] uppercase tracking-widest px-3 py-1 rounded-full mb-4 font-semibold shadow-lg backdrop-blur-md"
-                  style={{ backgroundColor: (activeNode.color || '#94a3b8') + '33', color: activeNode.color || '#94a3b8', border: `1px solid ${(activeNode.color || '#94a3b8')}40` }}
-                >
-                  {activeNode.cluster?.replace(/_/g, ' ')}
-                </div>
-                
-                <h2 className="text-4xl font-serif font-bold text-white mb-2 leading-tight drop-shadow-md">{activeNode.name}</h2>
-                {activeNode.lifespan && (
-                  <p className="text-sm text-[#b99b5d] tracking-widest font-mono mb-4">{activeNode.lifespan}</p>
-                )}
-                {(!activeNode.lifespan && activeNode.year && activeNode.year !== 9999) && (
-                  <p className="text-sm text-[#b99b5d] tracking-widest font-mono mb-4">* {activeNode.year}</p>
-                )}
-                
-                {activeNode.bio && (
-                   <div className="mt-8">
-                     <h3 className="text-[10px] uppercase tracking-widest text-gray-500 mb-3 font-semibold border-b border-white/10 pb-2">Biografie</h3>
-                     <p className="text-sm text-gray-300 leading-relaxed opacity-90 font-sans">{activeNode.bio}</p>
-                   </div>
-                )}
-                
-                {activeNode.description && (
-                   <div className="mt-8">
-                     <h3 className="text-[10px] uppercase tracking-widest text-gray-500 mb-3 font-semibold border-b border-white/10 pb-2">Philosophischer Kern</h3>
-                     <p className="text-sm text-gray-300 leading-relaxed opacity-90 font-sans">{activeNode.description}</p>
-                   </div>
-                )}
-                
-                {activeNode.keyConcepts && activeNode.keyConcepts.length > 0 && (
-                   <div className="mt-8">
-                     <h3 className="text-[10px] uppercase tracking-widest text-gray-500 mb-3 font-semibold border-b border-white/10 pb-2">Schlüsselkonzepte</h3>
-                     <div className="flex flex-wrap gap-2">
-                       {activeNode.keyConcepts.map(kc => (
-                         <span key={kc} className="text-xs px-3 py-1.5 bg-white/5 hover:bg-white/10 transition-colors border border-white/10 rounded-lg text-gray-300 cursor-default">{kc}</span>
-                       ))}
-                     </div>
-                   </div>
-                )}
-                
-                {/* Links / Connections Section */}
-                {filteredData.links.filter(l => 
-                  (l.source.id === activeNode.id || l.target.id === activeNode.id) || 
-                  (l.source === activeNode.id || l.target === activeNode.id)
-                ).length > 0 && (
-                  <div className="mt-8">
-                     <h3 className="text-[10px] uppercase tracking-widest text-gray-500 mb-3 font-semibold border-b border-white/10 pb-2">Verbindungen</h3>
-                     <div className="flex flex-col gap-2">
-                       {filteredData.links.filter(l => 
-                         (l.source.id === activeNode.id || l.target.id === activeNode.id) || 
-                         (l.source === activeNode.id || l.target === activeNode.id)
-                       ).slice(0, 15).map((l, idx) => {
-                         const isSource = l.source.id === activeNode.id || l.source === activeNode.id;
-                         const otherNodeId = isSource ? (l.target.id || l.target) : (l.source.id || l.source);
-                         const otherNode = filteredData.nodes.find(n => n.id === otherNodeId);
-                         if (!otherNode) return null;
-                         
-                         return (
-                           <div key={idx} className="flex flex-col p-3 bg-white/5 border border-white/5 rounded-xl hover:bg-white/10 transition-colors cursor-pointer" onClick={() => handleNodeClick(otherNode)}>
-                             <span className="text-sm font-semibold text-white">{otherNode.name}</span>
-                             {l.description && (
-                               <span className="text-xs text-gray-400 mt-1 leading-snug">{l.description}</span>
-                             )}
-                           </div>
-                         );
-                       })}
-                     </div>
+            {/* Left Side: Internal Tensor Metadata */}
+            <div className="w-1/2 h-full overflow-y-auto flex flex-col relative border-r border-white/10">
+               <div className="relative shrink-0">
+                 {activeNode.image && (
+                   <img
+                     src={activeNode.image}
+                     alt={activeNode.name}
+                     className="w-full h-64 object-cover object-top"
+                     onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                   />
+                 )}
+                 <button 
+                   onClick={() => setSelectedNode(null)}
+                   className="absolute top-6 right-6 bg-black/50 hover:bg-white/20 rounded-full p-2 backdrop-blur-md transition-colors border border-white/10 z-50"
+                 >
+                   <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+                 </button>
+                 {/* Gradient overlay for text readability */}
+                 <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#050508]/95 to-transparent pointer-events-none"></div>
+               </div>
+               
+               <div className="p-8 flex-1 flex flex-col -mt-10 relative z-10">
+                  <div
+                    className="inline-block self-start text-[10px] uppercase tracking-widest px-3 py-1 rounded-full mb-4 font-semibold shadow-lg backdrop-blur-md"
+                    style={{ backgroundColor: (activeNode.color || '#94a3b8') + '33', color: activeNode.color || '#94a3b8', border: `1px solid ${(activeNode.color || '#94a3b8')}40` }}
+                  >
+                    {activeNode.cluster?.replace(/_/g, ' ')}
                   </div>
-                )}
-             </div>
+                  
+                  <h2 className="text-4xl font-serif font-bold text-white mb-2 leading-tight drop-shadow-md">{activeNode.name}</h2>
+                  {activeNode.lifespan && (
+                    <p className="text-sm text-[#b99b5d] tracking-widest font-mono mb-4">{activeNode.lifespan}</p>
+                  )}
+                  {(!activeNode.lifespan && activeNode.year && activeNode.year !== 9999) && (
+                    <p className="text-sm text-[#b99b5d] tracking-widest font-mono mb-4">* {activeNode.year}</p>
+                  )}
+                  
+                  {activeNode.bio && (
+                     <div className="mt-8">
+                       <h3 className="text-[10px] uppercase tracking-widest text-gray-500 mb-3 font-semibold border-b border-white/10 pb-2">Biografie</h3>
+                       <p className="text-sm text-gray-300 leading-relaxed opacity-90 font-sans">{activeNode.bio}</p>
+                     </div>
+                  )}
+                  
+                  {activeNode.description && (
+                     <div className="mt-8">
+                       <h3 className="text-[10px] uppercase tracking-widest text-gray-500 mb-3 font-semibold border-b border-white/10 pb-2">Philosophischer Kern</h3>
+                       <p className="text-sm text-gray-300 leading-relaxed opacity-90 font-sans">{activeNode.description}</p>
+                     </div>
+                  )}
+                  
+                  {activeNode.keyConcepts && activeNode.keyConcepts.length > 0 && (
+                     <div className="mt-8">
+                       <h3 className="text-[10px] uppercase tracking-widest text-gray-500 mb-3 font-semibold border-b border-white/10 pb-2">Schlüsselkonzepte</h3>
+                       <div className="flex flex-wrap gap-2">
+                         {activeNode.keyConcepts.map(kc => (
+                           <span key={kc} className="text-xs px-3 py-1.5 bg-white/5 hover:bg-white/10 transition-colors border border-white/10 rounded-lg text-gray-300 cursor-default">{kc}</span>
+                         ))}
+                       </div>
+                     </div>
+                  )}
+                  
+                  {/* Links / Connections Section */}
+                  {filteredData.links.filter(l => 
+                    (l.source.id === activeNode.id || l.target.id === activeNode.id) || 
+                    (l.source === activeNode.id || l.target === activeNode.id)
+                  ).length > 0 && (
+                    <div className="mt-8">
+                       <h3 className="text-[10px] uppercase tracking-widest text-gray-500 mb-3 font-semibold border-b border-white/10 pb-2">Verbindungen</h3>
+                       <div className="flex flex-col gap-2">
+                         {filteredData.links.filter(l => 
+                           (l.source.id === activeNode.id || l.target.id === activeNode.id) || 
+                           (l.source === activeNode.id || l.target === activeNode.id)
+                         ).slice(0, 15).map((l, idx) => {
+                           const isSource = l.source.id === activeNode.id || l.source === activeNode.id;
+                           const otherNodeId = isSource ? (l.target.id || l.target) : (l.source.id || l.source);
+                           const otherNode = filteredData.nodes.find(n => n.id === otherNodeId);
+                           if (!otherNode) return null;
+                           
+                           return (
+                             <div key={idx} className="flex flex-col p-3 bg-white/5 border border-white/5 rounded-xl hover:bg-white/10 transition-colors cursor-pointer" onClick={() => handleNodeClick(otherNode)}>
+                               <span className="text-sm font-semibold text-white">{otherNode.name}</span>
+                               {l.description && (
+                                 <span className="text-xs text-gray-400 mt-1 leading-snug">{l.description}</span>
+                               )}
+                             </div>
+                           );
+                         })}
+                       </div>
+                    </div>
+                  )}
+               </div>
+            </div>
+
+            {/* Right Side: Wikipedia Web-View */}
+            <div className="w-1/2 h-full bg-white relative flex flex-col">
+              <div className="h-12 bg-gray-100 border-b border-gray-300 flex items-center px-4 shrink-0">
+                <span className="text-gray-500 text-xs font-mono uppercase tracking-widest flex-1 truncate">
+                  wikipedia.org/wiki/{activeNode.name.replace(/ /g, '_')}
+                </span>
+                <a 
+                  href={`https://de.wikipedia.org/wiki/${encodeURIComponent(activeNode.name.replace(/ /g, '_'))}`} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-500 text-xs hover:underline flex items-center gap-1"
+                >
+                  Im Browser öffnen
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                </a>
+              </div>
+              <iframe 
+                src={`https://de.wikipedia.org/wiki/${encodeURIComponent(activeNode.name.replace(/ /g, '_'))}`} 
+                className="w-full flex-1 border-none bg-white"
+                sandbox="allow-same-origin allow-scripts allow-popups"
+                title="Wikipedia"
+              />
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
