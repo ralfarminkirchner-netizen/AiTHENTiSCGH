@@ -155,12 +155,21 @@ export default function Graph() {
     }
   };
 
-  // LOD Engine & Cluster Labels (Centroids)
+  const clusterLabelsRef = useRef([]);
+
+  // Pre-generate cluster labels once, independently of the timeline/filter loop
   useEffect(() => {
     if (!fgRef.current || uniqueClusters.length === 0) return;
     const scene = fgRef.current.scene();
-    const clusterLabels = [];
+    if (!scene) return;
     
+    // Cleanup old labels
+    clusterLabelsRef.current.forEach(({ sprite }) => {
+      scene.remove(sprite);
+      if (sprite.material) sprite.material.dispose();
+    });
+    
+    const newLabels = [];
     uniqueClusters.forEach(cluster => {
       const sprite = new SpriteText(cluster.replace(/_/g, ' ').toUpperCase());
       sprite.color = 'rgba(255, 255, 255, 0.8)';
@@ -168,9 +177,24 @@ export default function Graph() {
       sprite.fontWeight = 'bold';
       sprite.renderOrder = -1; // Behind nodes
       sprite.material.depthWrite = false;
+      sprite.visible = false;
       scene.add(sprite);
-      clusterLabels.push({ cluster, sprite });
+      newLabels.push({ cluster, sprite });
     });
+    clusterLabelsRef.current = newLabels;
+    
+    return () => {
+      newLabels.forEach(({ sprite }) => {
+        scene.remove(sprite);
+        if (sprite.material) sprite.material.dispose();
+      });
+      clusterLabelsRef.current = [];
+    };
+  }, [uniqueClusters]);
+
+  // LOD Engine & Centroids
+  useEffect(() => {
+    if (!fgRef.current || uniqueClusters.length === 0) return;
     
     let animationId;
     const updateLOD = () => {
@@ -182,8 +206,9 @@ export default function Graph() {
       uniqueClusters.forEach(c => { sums[c] = {x:0, y:0, z:0}; counts[c] = 0; });
       
       filteredData.nodes.forEach(node => {
-        if (!node.__threeObj) return;
-        const group = node.__threeObj;
+        if (!node.__cachedObj) return;
+        const group = node.__cachedObj;
+        const size = group.userData.size || 8;
         
         // Centroid Math
         if (node.cluster && sums[node.cluster]) {
@@ -204,17 +229,34 @@ export default function Graph() {
           group.userData.mesh.material.opacity = baseOpacity;
         }
         
-        // Toggle Name Sprite based on LOD (Pre-computed, just toggling visibility = 60 FPS)
+        // Toggle Name Sprite based on LOD (Incremental Lazy-Load)
         const showText = (distSq < 250 * 250) && (baseOpacity > 0.1);
-        if (group.userData.nameSprite) {
-          if (group.userData.nameSprite.visible !== showText) {
-             group.userData.nameSprite.visible = showText;
+        
+        if (showText) {
+          if (!group.userData.nameSprite) {
+            // Instantiate exactly ONCE when the user zooms in! Fixes initial freeze.
+            const nameSprite = new SpriteText(node.name);
+            nameSprite.color = '#ffffff';
+            nameSprite.textHeight = size * 0.3;
+            nameSprite.backgroundColor = 'rgba(0,0,0,0.6)';
+            nameSprite.padding = 2;
+            nameSprite.borderRadius = 2;
+            nameSprite.position.y = -(size / 2) - (size * 0.2);
+            group.add(nameSprite);
+            group.userData.nameSprite = nameSprite;
+          }
+          if (!group.userData.nameSprite.visible) {
+            group.userData.nameSprite.visible = true;
+          }
+        } else {
+          if (group.userData.nameSprite && group.userData.nameSprite.visible) {
+             group.userData.nameSprite.visible = false;
           }
         }
       });
       
       // Update Cluster Labels
-      clusterLabels.forEach(({ cluster, sprite }) => {
+      clusterLabelsRef.current.forEach(({ cluster, sprite }) => {
         if (counts[cluster] > 0 && activeClusters.has(cluster)) {
           sprite.position.x = sums[cluster].x / counts[cluster];
           sprite.position.y = (sums[cluster].y / counts[cluster]) + 40;
@@ -235,7 +277,6 @@ export default function Graph() {
     
     return () => {
       cancelAnimationFrame(animationId);
-      clusterLabels.forEach(({ sprite }) => scene.remove(sprite));
     };
   }, [filteredData.nodes, uniqueClusters, activeClusters]);
 
@@ -303,17 +344,9 @@ export default function Graph() {
             group.userData.mesh = sprite;
           }
           
-          // 2. Name Text (Pre-computed, hidden initially)
-          const nameSprite = new SpriteText(node.name);
-          nameSprite.color = '#ffffff';
-          nameSprite.textHeight = size * 0.3; // Clean, proportionate text
-          nameSprite.backgroundColor = 'rgba(0,0,0,0.6)';
-          nameSprite.padding = 2;
-          nameSprite.borderRadius = 2;
-          nameSprite.position.y = -(size / 2) - (size * 0.2); // Right below the circle
-          nameSprite.visible = false; // LOD engine will toggle this later
-          group.add(nameSprite);
-          group.userData.nameSprite = nameSprite;
+          // 2. Name Text Placeholder (Initialized as null to prevent freeze)
+          // The SpriteText will be dynamically built inside updateLOD only when zooming in.
+          group.userData.nameSprite = null;
           
           node.__cachedObj = group;
           return group;
