@@ -156,6 +156,7 @@ export default function Graph() {
   };
 
   const clusterLabelsRef = useRef([]);
+  const loadedNodesRef = useRef([]);
 
   // Pre-generate cluster labels once, independently of the timeline/filter loop
   useEffect(() => {
@@ -230,34 +231,10 @@ export default function Graph() {
         if (group.userData.mesh && group.userData.mesh.material.opacity !== baseOpacity) {
           group.userData.mesh.material.opacity = baseOpacity;
         }
-        
         // Toggle Name Sprite based on LOD (Incremental Lazy-Load with Throttle)
         const showText = (distSq < 250 * 250) && (baseOpacity > 0.1);
-        const showImage = (distSq < 400 * 400) && (baseOpacity > 0.1);
         
-        // 1. Lazy-Load Image Texture
-        if (showImage && node.image && !group.userData.imageLoaded) {
-          group.userData.imageLoaded = true; // Mark instantly to prevent repeat fetches
-          if (textureCache.has(node.image)) {
-            const tex = textureCache.get(node.image);
-            if (group.userData.mesh) {
-              group.userData.mesh.material.map = tex;
-              group.userData.mesh.material.color.setHex(0xffffff); // clear fallback color
-              group.userData.mesh.material.needsUpdate = true;
-            }
-          } else {
-            textureLoader.load(node.image, (texture) => {
-              textureCache.set(node.image, texture);
-              if (group.userData.mesh) {
-                group.userData.mesh.material.map = texture;
-                group.userData.mesh.material.color.setHex(0xffffff);
-                group.userData.mesh.material.needsUpdate = true;
-              }
-            });
-          }
-        }
-        
-        // 2. Lazy-Load Text Sprite
+        // 1. Lazy-Load Text Sprite
         if (showText) {
           if (!group.userData.nameSprite) {
             // Throttle: max 2 texts per frame to prevent CPU lockup when all nodes start at (0,0,0)
@@ -309,6 +286,59 @@ export default function Graph() {
       cancelAnimationFrame(animationId);
     };
   }, [filteredData.nodes, uniqueClusters, activeClusters]);
+
+  // Active Node Image Loading (Strict Click-to-Load with 3-Image LRU Cache & UV Cropping)
+  useEffect(() => {
+    if (!selectedNode || !selectedNode.image || !selectedNode.__cachedObj) return;
+    
+    const group = selectedNode.__cachedObj;
+    if (group.userData.imageLoaded) return;
+    
+    textureLoader.load(selectedNode.image, (texture) => {
+      // Fix Cut-off Heads (UV Math)
+      texture.colorSpace = THREE.SRGBColorSpace;
+      const aspect = texture.image.width / texture.image.height;
+      if (aspect < 1) {
+        // Portrait: Align Top
+        texture.repeat.set(1, aspect);
+        texture.offset.set(0, 1.0 - aspect);
+      } else {
+        // Landscape: Center horizontally
+        const invAspect = texture.image.height / texture.image.width;
+        texture.repeat.set(invAspect, 1);
+        texture.offset.set((1.0 - invAspect) / 2, 0);
+      }
+      
+      group.userData.imageLoaded = true;
+      group.userData.texture = texture;
+      
+      if (group.userData.mesh) {
+        group.userData.mesh.material.map = texture;
+        group.userData.mesh.material.color.setHex(0xffffff);
+        group.userData.mesh.material.needsUpdate = true;
+      }
+      
+      loadedNodesRef.current.push(selectedNode);
+      
+      // Strict 3-Image LRU Cache: Destroy older textures!
+      if (loadedNodesRef.current.length > 3) {
+        const oldNode = loadedNodesRef.current.shift();
+        if (oldNode.__cachedObj && oldNode.__cachedObj.userData.mesh) {
+          const oldGroup = oldNode.__cachedObj;
+          const mat = oldGroup.userData.mesh.material;
+          mat.map = null;
+          mat.color.setHex(new THREE.Color(oldNode.color || '#94a3b8').getHex());
+          mat.needsUpdate = true;
+          oldGroup.userData.imageLoaded = false;
+          
+          if (oldGroup.userData.texture) {
+            oldGroup.userData.texture.dispose(); // CRITICAL: Free WebGL RAM!
+            oldGroup.userData.texture = null;
+          }
+        }
+      }
+    });
+  }, [selectedNode, textureLoader]);
 
   const activeNode = selectedNode || hoverNode;
 
