@@ -233,7 +233,31 @@ export default function Graph() {
         
         // Toggle Name Sprite based on LOD (Incremental Lazy-Load with Throttle)
         const showText = (distSq < 250 * 250) && (baseOpacity > 0.1);
+        const showImage = (distSq < 400 * 400) && (baseOpacity > 0.1);
         
+        // 1. Lazy-Load Image Texture
+        if (showImage && node.image && !group.userData.imageLoaded) {
+          group.userData.imageLoaded = true; // Mark instantly to prevent repeat fetches
+          if (textureCache.has(node.image)) {
+            const tex = textureCache.get(node.image);
+            if (group.userData.mesh) {
+              group.userData.mesh.material.map = tex;
+              group.userData.mesh.material.color.setHex(0xffffff); // clear fallback color
+              group.userData.mesh.material.needsUpdate = true;
+            }
+          } else {
+            textureLoader.load(node.image, (texture) => {
+              textureCache.set(node.image, texture);
+              if (group.userData.mesh) {
+                group.userData.mesh.material.map = texture;
+                group.userData.mesh.material.color.setHex(0xffffff);
+                group.userData.mesh.material.needsUpdate = true;
+              }
+            });
+          }
+        }
+        
+        // 2. Lazy-Load Text Sprite
         if (showText) {
           if (!group.userData.nameSprite) {
             // Throttle: max 2 texts per frame to prevent CPU lockup when all nodes start at (0,0,0)
@@ -305,49 +329,22 @@ export default function Graph() {
           const size = node.val ? Math.min(Math.max(Math.sqrt(node.val) * 3, 6), 18) : 8;
           group.userData.size = size;
           
-          // 1. Mesh / Sprite (Pre-computed)
+          // 1. Mesh / Sprite (Pre-computed FALLBACK only, zero images loaded initially)
+          const colorHex = node.color || '#94a3b8';
+          const material = new THREE.SpriteMaterial({
+            alphaMap: circleAlphaMap,
+            color: colorHex,
+            transparent: true,
+            opacity: initialOpacity,
+            alphaTest: 0.1
+          });
+          const sprite = new THREE.Sprite(material);
+          sprite.scale.set(size, size, 1);
+          group.add(sprite);
+          group.userData.mesh = sprite;
+          
           if (node.image) {
-            let material;
-            if (textureCache.has(node.image)) {
-              material = new THREE.SpriteMaterial({ 
-                map: textureCache.get(node.image), 
-                alphaMap: circleAlphaMap, 
-                color: 0xffffff, 
-                transparent: true,
-                alphaTest: 0.1
-              });
-            } else {
-              material = new THREE.SpriteMaterial({ 
-                alphaMap: circleAlphaMap, 
-                color: 0xffffff, 
-                transparent: true,
-                alphaTest: 0.1
-              });
-              // Load async, apply when ready (No stutter!)
-              textureLoader.load(node.image, (texture) => {
-                textureCache.set(node.image, texture);
-                material.map = texture;
-                material.needsUpdate = true;
-              });
-            }
-            material.opacity = initialOpacity;
-            const sprite = new THREE.Sprite(material);
-            sprite.scale.set(size, size, 1);
-            group.add(sprite);
-            group.userData.mesh = sprite;
-          } else {
-            // Elegant Fallback: Flat colored circle using the Alpha Mask (No ugly 3D spheres!)
-            const material = new THREE.SpriteMaterial({
-              alphaMap: circleAlphaMap,
-              color: node.color || '#94a3b8',
-              transparent: true,
-              opacity: initialOpacity,
-              alphaTest: 0.1
-            });
-            const sprite = new THREE.Sprite(material);
-            sprite.scale.set(size, size, 1);
-            group.add(sprite);
-            group.userData.mesh = sprite;
+            group.userData.imageLoaded = false;
           }
           
           // 2. Name Text Placeholder (Initialized as null to prevent freeze)
