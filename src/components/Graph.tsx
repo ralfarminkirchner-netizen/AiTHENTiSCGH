@@ -205,6 +205,8 @@ export default function Graph() {
       const sums = {}; const counts = {};
       uniqueClusters.forEach(c => { sums[c] = {x:0, y:0, z:0}; counts[c] = 0; });
       
+      let textsCreatedThisFrame = 0;
+      
       filteredData.nodes.forEach(node => {
         if (!node.__cachedObj) return;
         const group = node.__cachedObj;
@@ -229,12 +231,15 @@ export default function Graph() {
           group.userData.mesh.material.opacity = baseOpacity;
         }
         
-        // Toggle Name Sprite based on LOD (Incremental Lazy-Load)
+        // Toggle Name Sprite based on LOD (Incremental Lazy-Load with Throttle)
         const showText = (distSq < 250 * 250) && (baseOpacity > 0.1);
         
         if (showText) {
           if (!group.userData.nameSprite) {
-            // Instantiate exactly ONCE when the user zooms in! Fixes initial freeze.
+            // Throttle: max 2 texts per frame to prevent CPU lockup when all nodes start at (0,0,0)
+            if (textsCreatedThisFrame >= 2) return; 
+            
+            // Instantiate exactly ONCE when the user zooms in!
             const nameSprite = new SpriteText(node.name);
             nameSprite.color = '#ffffff';
             nameSprite.textHeight = size * 0.3;
@@ -244,6 +249,7 @@ export default function Graph() {
             nameSprite.position.y = -(size / 2) - (size * 0.2);
             group.add(nameSprite);
             group.userData.nameSprite = nameSprite;
+            textsCreatedThisFrame++;
           }
           if (!group.userData.nameSprite.visible) {
             group.userData.nameSprite.visible = true;
