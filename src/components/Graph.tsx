@@ -173,33 +173,37 @@ export default function Graph() {
       const camPos = camera.position;
       
       const sums = {}; const counts = {};
+      uniqueClusters.forEach(c => { sums[c] = {x:0, y:0, z:0}; counts[c] = 0; });
       
       filteredData.nodes.forEach(node => {
         if (!node.__threeObj) return;
         const group = node.__threeObj;
         
         // Centroid Math
-        if (node.cluster) {
-          if (!sums[node.cluster]) { sums[node.cluster] = {x:0, y:0, z:0}; counts[node.cluster] = 0; }
+        if (node.cluster && sums[node.cluster]) {
           sums[node.cluster].x += group.position.x;
           sums[node.cluster].y += group.position.y;
           sums[node.cluster].z += group.position.z;
+          counts[node.cluster]++;
         }
         
         // Discrete LOD Check
-        const dist = camPos.distanceTo(group.position);
+        const distSq = camPos.distanceToSquared(group.position);
         
         // Search opacity override
         const isMatch = !isSearchActive || searchResults.some(res => res.id === node.id);
         const baseOpacity = isSearchActive && !isMatch ? 0.05 : 1.0;
         
-        if (group.userData.mesh) {
+        if (group.userData.mesh && group.userData.mesh.material.opacity !== baseOpacity) {
           group.userData.mesh.material.opacity = baseOpacity;
         }
         
-        // Sharp toggle for name visibility based on distance
+        // Toggle Name Sprite based on LOD (Pre-computed, just toggling visibility = 60 FPS)
+        const showText = (distSq < 250 * 250) && (baseOpacity > 0.1);
         if (group.userData.nameSprite) {
-          group.userData.nameSprite.visible = (dist < 250) && (baseOpacity > 0.1);
+          if (group.userData.nameSprite.visible !== showText) {
+             group.userData.nameSprite.visible = showText;
+          }
         }
       });
       
@@ -241,9 +245,11 @@ export default function Graph() {
           const initialOpacity = isSearchActive && !isMatch ? 0.05 : 1.0;
           
           const group = new THREE.Group();
-          const size = node.val ? Math.min(node.val, 16) : 10;
+          // Smooth non-linear sizing
+          const size = node.val ? Math.min(Math.max(Math.sqrt(node.val) * 3, 6), 18) : 8;
+          group.userData.size = size;
           
-          // 1. Photo (Native Circle via AlphaMap)
+          // 1. Mesh / Sprite (Pre-computed)
           if (node.image) {
             let material;
             if (textureCache.has(node.image)) {
@@ -261,6 +267,7 @@ export default function Graph() {
                 transparent: true,
                 alphaTest: 0.1
               });
+              // Load async, apply when ready (No stutter!)
               textureLoader.load(node.image, (texture) => {
                 textureCache.set(node.image, texture);
                 material.map = texture;
@@ -273,27 +280,29 @@ export default function Graph() {
             group.add(sprite);
             group.userData.mesh = sprite;
           } else {
-            // Fallback sphere
-            const geometry = new THREE.SphereGeometry(size / 2, 16, 16);
-            const material = new THREE.MeshBasicMaterial({
+            // Elegant Fallback: Flat colored circle using the Alpha Mask (No ugly 3D spheres!)
+            const material = new THREE.SpriteMaterial({
+              alphaMap: circleAlphaMap,
               color: node.color || '#94a3b8',
               transparent: true,
               opacity: initialOpacity,
+              alphaTest: 0.1
             });
-            const sphere = new THREE.Mesh(geometry, material);
-            group.add(sphere);
-            group.userData.mesh = sphere;
+            const sprite = new THREE.Sprite(material);
+            sprite.scale.set(size, size, 1);
+            group.add(sprite);
+            group.userData.mesh = sprite;
           }
           
-          // 2. Name Text (Controlled discretely by LOD loop)
+          // 2. Name Text (Pre-computed, hidden initially)
           const nameSprite = new SpriteText(node.name);
           nameSprite.color = '#ffffff';
-          nameSprite.textHeight = size * 0.4;
-          nameSprite.backgroundColor = 'rgba(0,0,0,0.8)';
-          nameSprite.padding = 3;
-          nameSprite.borderRadius = 4;
-          nameSprite.position.y = -(size / 2) - (size * 0.3); // Place below image
-          nameSprite.visible = false; // Hidden by default, LOD handles it
+          nameSprite.textHeight = size * 0.3; // Clean, proportionate text
+          nameSprite.backgroundColor = 'rgba(0,0,0,0.6)';
+          nameSprite.padding = 2;
+          nameSprite.borderRadius = 2;
+          nameSprite.position.y = -(size / 2) - (size * 0.2); // Right below the circle
+          nameSprite.visible = false; // LOD engine will toggle this later
           group.add(nameSprite);
           group.userData.nameSprite = nameSprite;
           
