@@ -9,6 +9,15 @@ import * as THREE from 'three';
 const textureLoader = new THREE.TextureLoader();
 textureLoader.crossOrigin = 'anonymous';
 const textureCache = new Map();
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
+const withBasePath = (path: string) => {
+  if (!path.startsWith('/') || (basePath && path.startsWith(`${basePath}/`))) {
+    return path;
+  }
+
+  return `${basePath}${path}`;
+};
 
 // Generates a single, perfect circular alpha mask on the GPU for all images
 const createCircleAlphaMap = () => {
@@ -73,9 +82,16 @@ export default function Graph() {
   const [isPlaying, setIsPlaying] = useState(true);
 
   useEffect(() => {
-    fetch('/data.json')
+    fetch(withBasePath('/data.json'))
       .then(res => res.json())
       .then(fetchedData => {
+        fetchedData.nodes.forEach(node => {
+          if (typeof node.image === 'string') {
+            node.image = basePath && node.image.startsWith('/images/')
+              ? null
+              : withBasePath(node.image);
+          }
+        });
         setData(fetchedData);
         let maxT = 0;
         fetchedData.nodes.forEach(n => { if (n.time > maxT) maxT = n.time; });
@@ -399,7 +415,7 @@ export default function Graph() {
       />
 
       {/* Search Panel */}
-      <div className="absolute top-10 left-1/2 transform -translate-x-1/2 z-20 w-[28rem] max-w-[90vw]">
+      <div className="absolute top-36 md:top-10 left-1/2 transform -translate-x-1/2 z-20 w-[28rem] max-w-[90vw]">
         <div className="bg-black/50 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl flex flex-col overflow-hidden transition-all">
           <div className="flex items-center px-4 py-3">
             <svg className="w-5 h-5 text-gray-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
@@ -468,16 +484,16 @@ export default function Graph() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="absolute top-0 right-0 h-screen w-[50vw] min-w-[800px] max-w-[100vw] bg-[#050508]/95 backdrop-blur-3xl border-l border-white/10 text-white shadow-2xl z-40 flex"
+            className="absolute top-0 right-0 h-screen w-full min-w-0 max-w-full bg-[#050508]/95 backdrop-blur-3xl border-l border-white/10 text-white shadow-2xl z-40 flex flex-col lg:w-[50vw] lg:min-w-[800px] lg:max-w-[100vw] lg:flex-row"
           >
             {/* Left Side: Internal Tensor Metadata */}
-            <div className="w-1/2 h-full overflow-y-auto flex flex-col relative border-r border-white/10">
+            <div className="w-full h-1/2 overflow-y-auto flex flex-col relative border-b border-white/10 lg:w-1/2 lg:h-full lg:border-b-0 lg:border-r">
                <div className="relative shrink-0">
                  {activeNode.image && (
                    <img
                      src={activeNode.image}
                      alt={activeNode.name}
-                     className="w-full h-64 object-cover object-top"
+                     className="w-full h-32 object-cover object-top sm:h-64"
                      onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
                    />
                  )}
@@ -491,7 +507,7 @@ export default function Graph() {
                  <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#050508]/95 to-transparent pointer-events-none"></div>
                </div>
                
-               <div className="p-8 flex-1 flex flex-col -mt-10 relative z-10">
+               <div className="p-4 flex-1 flex flex-col -mt-10 relative z-10 sm:p-8">
                   <div
                     className="inline-block self-start text-[10px] uppercase tracking-widest px-3 py-1 rounded-full mb-4 font-semibold shadow-lg backdrop-blur-md"
                     style={{ backgroundColor: (activeNode.color || '#94a3b8') + '33', color: activeNode.color || '#94a3b8', border: `1px solid ${(activeNode.color || '#94a3b8')}40` }}
@@ -499,7 +515,7 @@ export default function Graph() {
                     {activeNode.cluster?.replace(/_/g, ' ')}
                   </div>
                   
-                  <h2 className="text-4xl font-serif font-bold text-white mb-2 leading-tight drop-shadow-md">{activeNode.name}</h2>
+                  <h2 className="text-2xl font-serif font-bold text-white mb-2 leading-tight drop-shadow-md sm:text-4xl">{activeNode.name}</h2>
                   {activeNode.lifespan && (
                     <p className="text-sm text-[#b99b5d] tracking-widest font-mono mb-4">{activeNode.lifespan}</p>
                   )}
@@ -565,7 +581,7 @@ export default function Graph() {
             </div>
 
             {/* Right Side: Wikipedia Web-View */}
-            <div className="w-1/2 h-full bg-white relative flex flex-col">
+            <div className="w-full h-1/2 bg-white relative flex flex-col lg:w-1/2 lg:h-full">
               <div className="h-12 bg-gray-100 border-b border-gray-300 flex items-center px-4 shrink-0">
                 <span className="text-gray-500 text-xs font-mono uppercase tracking-widest flex-1 truncate">
                   wikipedia.org/wiki/{activeNode.name.replace(/ /g, '_')}
@@ -592,12 +608,12 @@ export default function Graph() {
       </AnimatePresence>
 
       {/* Legend & Categories Filter */}
-      <div className="absolute top-10 left-10 max-w-sm z-20 pointer-events-auto">
-        <h1 className="text-5xl font-serif font-bold text-white tracking-widest drop-shadow-2xl">MiNDCEL</h1>
+      <div className="absolute top-4 left-4 max-w-sm z-20 pointer-events-auto md:top-10 md:left-10">
+        <h1 className="text-4xl font-serif font-bold text-white tracking-widest drop-shadow-2xl md:text-5xl">MiNDCEL</h1>
         <p className="text-[#b99b5d] tracking-[0.2em] text-[10px] mt-3 uppercase font-semibold">Das lebendige Tensor-Netzwerk</p>
-        <p className="text-gray-400 text-xs mt-2 mb-6 leading-relaxed opacity-80">{filteredData.nodes.filter(n => !n.cluster || activeClusters.has(n.cluster)).length} / 1055 Tensoren sichtbar</p>
+        <p className="text-gray-400 text-xs mt-2 mb-6 leading-relaxed opacity-80">{filteredData.nodes.length} / {data.nodes.length} Tensoren sichtbar</p>
         
-        <div className="max-h-[60vh] overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent">
+        <div className="hidden max-h-[60vh] overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent md:block">
           <div className="flex flex-col gap-1.5">
             {uniqueClusters.map(c => {
               const isActive = activeClusters.has(c);
@@ -620,7 +636,7 @@ export default function Graph() {
       </div>
 
       {/* Timeline Controls */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-full max-w-2xl px-8 py-5 bg-black/40 backdrop-blur-2xl border border-white/10 rounded-3xl flex items-center gap-8 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-[calc(100%-1rem)] max-w-2xl px-4 py-3 bg-black/40 backdrop-blur-2xl border border-white/10 rounded-3xl flex items-center gap-3 shadow-[0_0_40px_rgba(0,0,0,0.5)] md:bottom-10 md:w-full md:px-8 md:py-5 md:gap-8">
         <button
           onClick={() => setIsPlaying(!isPlaying)}
           className="w-14 h-14 flex items-center justify-center rounded-full bg-[#b99b5d]/10 text-[#b99b5d] hover:bg-[#b99b5d]/30 hover:scale-105 transition-all border border-[#b99b5d]/40 shadow-lg"
