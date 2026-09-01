@@ -2,6 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/ralfarminkirchner-netizen/AiTHENTiSCGH/blob/main/project-atlas/registry.schema.json",
   "title": "RAKi Project Atlas Index",
+  "description": "Schema des leichten Zentralindex. Detailfelder wie github_size_kb, evidence, confidence, tags und relations liegen in den verlinkten Familienregistern.",
   "type": "object",
   "required": [
     "schema_version",
@@ -73,7 +74,6 @@
           "name",
           "visibility",
           "default_branch",
-          "github_size_kb",
           "primary_family",
           "status"
         ],
