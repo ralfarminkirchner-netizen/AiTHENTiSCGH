@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ralfarminkirchner-netizen/AiTHENTiSCGH/blob/main/project-atlas/registry.schema.json",
+  "title": "RAKi Project Atlas Index",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "record_type",
+    "status",
+    "snapshot",
+    "family_files",
+    "projects"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "record_type": {
+      "const": "raki_project_atlas_index"
+    },
+    "status": {
+      "type": "string"
+    },
+    "snapshot": {
+      "type": "object",
+      "required": [
+        "date",
+        "owner",
+        "repository_count",
+        "public_repository_count",
+        "private_repository_count"
+      ],
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "owner": {
+          "type": "string"
+        },
+        "repository_count": {
+          "type": "integer",
+          "const": 92
+        },
+        "public_repository_count": {
+          "type": "integer",
+          "const": 30
+        },
+        "private_repository_count": {
+          "type": "integer",
+          "const": 62
+        },
+        "github_coverage": {
+          "type": "string"
+        },
+        "local_only_coverage": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "family_files": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "projects": {
+      "type": "array",
+      "minItems": 92,
+      "maxItems": 92,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "visibility",
+          "default_branch",
+          "github_size_kb",
+          "primary_family",
+          "status"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "visibility": {
+            "enum": [
+              "public",
+              "private"
+            ]
+          },
+          "default_branch": {
+            "type": "string",
+            "minLength": 1
+          },
+          "github_size_kb": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "primary_family": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": true
+}
