@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AiTHENTiSCGH
 
-## Getting Started
+Dieses Repository enthält zwei **getrennte** Bereiche:
 
-First, run the development server:
+1. **AiTHENTiSCGH / MiNDCEL-Graph** – eine Next.js-Anwendung für einen zeitlich und thematisch filterbaren 3D-Wissensgraphen.
+2. **RAKi Projektatlas** – eine öffentliche, menschen- und maschinenlesbare Projektion des App- und Systembestands.
+
+## RAKi Projektatlas
+
+**[Zum Projektatlas](project-atlas/README.md)**
+
+Der Atlas dokumentiert den am **1. September 2026** über das authentifizierte GitHub-Konto gemessenen Bestand:
+
+- **92** eigene Repositories
+- **30** öffentlich
+- **62** privat
+- zusätzlich eine [Systemkarte](project-atlas/SYSTEM_MAP.md) der repo-übergreifenden Konzepte
+- ein [Handover für andere KI-Instanzen](project-atlas/INSTANCE_HANDOVER.md)
+- das [maschinenlesbare Register](project-atlas/projects.json)
+- ein [Synchronisationswerkzeug](project-atlas/sync_repositories.py) für einen zweiten Rechner
+
+Der Atlas ist **keine kanonische Wahrheit**. GitHub-Metadaten, gelesene Quellen und interpretierte Zuordnungen werden getrennt ausgewiesen. Ähnliche Namen werden nicht automatisch zu einem einzigen Produkt zusammengezogen.
+
+## AiTHENTiSCGH lokal starten
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Danach im Browser öffnen:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Der bestehende Graph lädt seine Knoten und Relationen aus `public/data.json`. Der Projektatlas liegt als separate Dokumentationsschicht unter `project-atlas/` und verändert den Graphbestand nicht.
 
-## Learn More
+## Wichtige Grenze
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Der GitHub-Snapshot erfasst alle Repositories, die am Stichtag mit Eigentümer-Zugehörigkeit sichtbar waren. **Nur lokal vorhandene, nie zu GitHub gepushte Ordner konnten in dieser Sitzung nicht gemessen werden.** Diese Grenze steht auch im Register und darf von späteren Instanzen nicht stillschweigend überschrieben werden.
